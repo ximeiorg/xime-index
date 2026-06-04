@@ -1,0 +1,118 @@
+# Xime 插件与方案市场索引
+# 维护方式：PR 修改此文件，CI 自动校验
+index_version: 1
+updated_at: "2026-06-04"
+
+# ─── 输入方案 ───────────────────────────────────────────
+schemas:
+
+  # --- 内置方案（随 Xime App 发布） ---
+  - id: "wubi86"
+    name: "五笔86"
+    version: "1.0"
+    author: "王永民"
+    description: "五笔字形 86 版，经典五笔输入方案"
+    type: "built-in"
+    tags: ["五笔", "形码"]
+    appVersion: ">=1.0.0"
+
+  - id: "wubi86_pinyin"
+    name: "五笔拼音"
+    version: "0.9"
+    author: "王永民"
+    description: "五笔拼音混输方案，输入五笔编码或拼音均可出字"
+    type: "built-in"
+    tags: ["五笔", "拼音", "混输"]
+    dependencies: ["pinyin_simp"]
+    appVersion: ">=1.0.0"
+
+  - id: "pinyin_simp"
+    name: "简体拼音"
+    version: "0.8"
+    author: "佚名"
+    description: "源自 Android 拼音的简体拼音方案"
+    type: "built-in"
+    tags: ["拼音"]
+    appVersion: ">=1.0.0"
+
+  # --- 社区方案（从上游 GitHub Releases 分发） ---
+  - id: "rime-ice"
+    name: "雾凇拼音"
+    version: "2025.03.15"
+    author: "iDvel"
+    description: "长期维护的 rime 词库配置方案，含海量词库和优化配置"
+    type: "remote"
+    tags: ["拼音", "大词库"]
+    downloadUrl: "https://github.com/iDvel/rime-ice/releases/latest/download/rime-ice.tar.gz"
+    homepage: "https://github.com/iDvel/rime-ice"
+    license: "GPL-3.0"
+    sha256: ""
+    size: "25MB"
+    appVersion: ">=2.3.0"
+    warning: "包含大词库，首次部署可能需要数分钟，建议仅启用需要的词库"
+
+  - id: "wubi98"
+    name: "五笔98"
+    version: "0.4"
+    author: "rime"
+    description: "五笔字形 98 版，支持繁体字"
+    type: "remote"
+    tags: ["五笔", "形码", "繁体"]
+    downloadUrl: "https://github.com/rime/rime-wubi98/releases/latest/download/rime-wubi98.tar.gz"
+    homepage: "https://github.com/rime/rime-wubi98"
+    license: "GPL-3.0"
+    appVersion: ">=2.2.0"
+
+  - id: "terra_pinyin"
+    name: "地球拼音"
+    version: "0.4"
+    author: "rime"
+    description: "带声调的拼音输入方案"
+    type: "remote"
+    tags: ["拼音", "声调"]
+    downloadUrl: "https://github.com/rime/rime-terra-pinyin/releases/latest/download/rime-terra-pinyin.tar.gz"
+    homepage: "https://github.com/rime/rime-terra-pinyin"
+    license: "GPL-3.0"
+    appVersion: ">=2.2.0"
+
+  - id: "double_pinyin"
+    name: "双拼"
+    version: "0.3"
+    author: "rime"
+    description: "自然码双拼方案"
+    type: "remote"
+    tags: ["拼音", "双拼"]
+    downloadUrl: "https://github.com/rime/rime-double-pinyin/releases/latest/download/rime-double-pinyin.tar.gz"
+    homepage: "https://github.com/rime/rime-double-pinyin"
+    license: "GPL-3.0"
+    appVersion: ">=2.2.0"
+
+# ─── 插件 ────────────────────────────────────────────────
+plugins:
+
+  - id: "xime.kaomoji"
+    name: "颜文字"
+    version: "2.0.0"
+    author: "Xime"
+    description: "丰富的颜文字表情集，(◕‿◕✿) 让输入更有趣"
+    type: "built-in"
+    tags: ["颜文字", "表情"]
+    pluginType: "emoji"
+    appVersion: ">=2.0.0"
+
+  - id: "xime.meme-bunny"
+    name: "表情兔"
+    version: "2.0.0"
+    author: "Xime"
+    description: "可爱的表情包贴纸合集"
+    type: "built-in"
+    tags: ["表情包", "贴纸"]
+    pluginType: "emoji"
+    appVersion: ">=2.0.0"
+
+# ─── 索引源 ───────────────────────────────────────────────
+sources:
+  - id: "xime-official"
+    name: "Xime 官方源"
+    url: "https://raw.githubusercontent.com/ximeiorg/xime-index/main/index.yaml"
+    description: "Xime 官方维护的插件和方案市场"
