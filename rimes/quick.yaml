@@ -4,7 +4,7 @@ author: "rime"
 description: "速成取倉頡碼的首尾二碼,本方案支持詞句連書、自動調整詞頻、記憶新詞"
 type: "remote"
 tags: ["速成"]
-appVersion: ">=1.0.0"
+appVersion: ">=2.3.0"
 currentVersion: "master"
 versions:
   - version: "master"

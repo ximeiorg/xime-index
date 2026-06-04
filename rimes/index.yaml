@@ -14,4 +14,6 @@ schemas:
     version: "master"
   - file: "./stroke.yaml"
     version: "master"
+  - file: "./rime-ice.yaml"
+    version: "2026.06.03"
 

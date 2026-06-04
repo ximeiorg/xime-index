@@ -4,7 +4,7 @@ author: "rime"
 description: "倉頡五代，支持擴展區漢字、「快趣」詞組編碼"
 type: "remote"
 tags: ["倉頡"]
-appVersion: ">=1.0.0"
+appVersion: ">=2.3.0"
 currentVersion: "master"
 versions:
   - version: "master"
