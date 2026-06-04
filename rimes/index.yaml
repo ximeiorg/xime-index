@@ -11,4 +11,4 @@ schemas:
   - file: "./pinyin_simp.yaml"
     version: "0.8"
   - file: "./wubi98.yaml"
-    version: "0.4"
+    version: "1.0.0"
