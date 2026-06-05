@@ -55,6 +55,9 @@ jobs:
               with open(full) as sf:
                   s = yaml.safe_load(sf)
               assert 'id' in s, f'{full}: missing id'
+              # check that id matches filename
+              basename = os.path.splitext(os.path.basename(full))[0]
+              assert s['id'] == basename, f'{full}: id "{s["id"]}" does not match filename "{basename}"'
               assert 'name' in s, f'{full}: missing name'
               assert 'currentVersion' in s, f'{full}: missing currentVersion'
               assert 'versions' in s, f'{full}: missing versions'
@@ -89,6 +92,9 @@ jobs:
               with open(full) as pf:
                   p = yaml.safe_load(pf)
               assert 'id' in p, f'{full}: missing id'
+              # check that id matches filename
+              basename = os.path.splitext(os.path.basename(full))[0]
+              assert p['id'] == basename, f'{full}: id "{p["id"]}" does not match filename "{basename}"'
               assert 'name' in p, f'{full}: missing name'
               assert 'pluginType' in p, f'{full}: missing pluginType'
               assert 'currentVersion' in p, f'{full}: missing currentVersion'
