@@ -5,6 +5,7 @@ author: "王永民"
 description: "五笔字形 86 版，经典五笔输入方案,包括了拼音相关功能。"
 type: "built-in"
 tags: ["五笔", "拼音"]
+homepage: "https://github.com/kingzcheung/rime-wubi"
 appVersion: ">=2.3.0"
 currentVersion: "2.0.1"
 versions:

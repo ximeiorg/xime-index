@@ -16,4 +16,9 @@ schemas:
     version: "master"
   - file: "./rime-ice.yaml"
     version: "2026.06.03"
-
+  - file: "./luna_pinyin.yaml"
+    version: "master"
+  - file: "./symbols.yaml"
+    version: "master"
+  - file: "./essay.yaml"
+    version: "master"

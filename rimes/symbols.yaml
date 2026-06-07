@@ -1,0 +1,18 @@
+id: "symbols"
+name: "符号与标点（基础依赖库）"
+author: "rime"
+description: "Rime 标点与符号预设（symbols.yaml）。通常随上游 app 自带；此条目作为缺失时的兜底下发源，部分方案（如仓颉）的 punctuator 依赖它。"
+type: "remote"
+tags: ["符号", "标点", "依赖库"]
+homepage: "https://github.com/rime/rime-prelude"
+license: "GPL-3.0"
+dependencies: []
+appVersion: ">=2.3.0"
+currentVersion: "master"
+versions:
+  - version: "master"
+    date: "2026-06-06"
+    changelog: ""
+    downloadUrl: "https://github.com/rime/rime-prelude/archive/refs/heads/master.zip"
+    size: ""
+    sha256: ""

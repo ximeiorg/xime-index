@@ -4,6 +4,8 @@ author: "rime"
 description: "h,s,p,n,z 代表橫、豎、撇、捺、折"
 type: "remote"
 tags: ["笔画"]
+homepage: "https://github.com/rime/rime-stroke"
+dependencies: ["luna_pinyin"]
 appVersion: ">=1.0.0"
 currentVersion: "master"
 versions:

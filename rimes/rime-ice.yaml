@@ -3,7 +3,8 @@ name: "雾凇拼音"
 author: "iDvel"
 description: "雾凇拼音是一份开箱即用的简体中文 Rime 输入法配置，词库长期维护，基本功能齐全，使用完全离线，质量稳定可靠。"
 type: "remote"
-tags: ["拼音","双拼"]
+tags: ["拼音", "双拼"]
+homepage: "https://github.com/iDvel/rime-ice"
 appVersion: ">=2.3.0"
 currentVersion: "2026.06.03"
 versions:

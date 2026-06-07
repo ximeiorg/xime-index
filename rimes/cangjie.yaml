@@ -4,6 +4,8 @@ author: "rime"
 description: "倉頡五代，支持擴展區漢字、「快趣」詞組編碼"
 type: "remote"
 tags: ["倉頡"]
+homepage: "https://github.com/rime/rime-cangjie"
+dependencies: ["luna_pinyin", "symbols", "essay"]
 appVersion: ">=2.3.0"
 currentVersion: "master"
 versions:

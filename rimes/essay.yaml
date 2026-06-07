@@ -1,0 +1,18 @@
+id: "essay"
+name: "八股文（共享词频，essay.txt）"
+author: "rime"
+description: "Rime 共享词频词典 essay.txt（八股文）。仓颉、速成等启用 use_preset_vocabulary 的方案在构建时依赖它提供词组与词频。通常随上游 app 自带；此条目作为缺失时的兜底下发源。"
+type: "remote" # 建议在上游 app 内置此条目，此处作为缺失时的兜底下发源
+tags: ["词频", "essay", "依赖库"]
+homepage: "https://github.com/rime/rime-essay"
+license: "GPL-3.0"
+dependencies: []
+appVersion: ">=2.3.0"
+currentVersion: "master"
+versions:
+  - version: "master"
+    date: "2026-06-06"
+    changelog: ""
+    downloadUrl: "https://github.com/rime/rime-essay/archive/refs/heads/master.zip"
+    size: ""
+    sha256: ""
