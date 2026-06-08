@@ -1,0 +1,17 @@
+id: "zhengma"
+name: "郑码方案"
+author: "rime"
+description: "郑码方案，支持郑码、郑码拼音、郑码打简出繁"
+type: "remote"
+tags: ["郑码", "拼音", "简繁"]
+homepage: "https://github.com/chen32768/zhengma_for_rime"
+dependencies: []
+appVersion: ">=2.3.0"
+currentVersion: "master"
+versions:
+  - version: "master"
+    date: "2026-06-08"
+    changelog: ""
+    downloadUrl: "https://github.com/chen32768/zhengma_for_rime/archive/refs/heads/master.zip"
+    size: "899KB"
+    sha256: ""

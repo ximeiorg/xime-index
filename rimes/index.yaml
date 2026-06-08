@@ -22,3 +22,5 @@ schemas:
     version: "master"
   - file: "./essay.yaml"
     version: "master"
+  - file: "./zhengma.yaml"
+    version: "master"
