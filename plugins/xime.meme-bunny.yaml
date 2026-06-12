@@ -14,7 +14,8 @@ versions:
   - version: "2.0.0"
     date: "2026-03-01"
     changelog: "新增更多表情贴纸"
-    downloadUrl: "https://github.com/ximeiorg/Xime/releases/download/v2.3.0-beta5/meme-bunny-2.0.0-signed.apk"
-    size: "12.7 MB"
-    sha256: "283c8491d1878fef5fc4594a7ca19e225d90fe08786bed50db04e2452a84e499"
+    downloadUrl:
+      - url: "https://github.com/ximeiorg/Xime/releases/download/v2.3.0-beta5/meme-bunny-2.0.0-signed.apk"
+        sha256: "283c8491d1878fef5fc4594a7ca19e225d90fe08786bed50db04e2452a84e499"
+        size: "12.7 MB"
 

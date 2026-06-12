@@ -12,6 +12,7 @@ versions:
   - version: "master"
     date: "2026-06-04"
     changelog: ""
-    downloadUrl: "https://github.com/rime/rime-cangjie/archive/refs/heads/master.zip"
-    size: ""
-    sha256: ""
+    downloadUrl:
+      - url: "https://github.com/rime/rime-cangjie/archive/refs/heads/master.zip"
+        sha256: ""
+        size: ""

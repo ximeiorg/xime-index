@@ -13,6 +13,7 @@ versions:
   - version: "master"
     date: "2026-06-06"
     changelog: ""
-    downloadUrl: "https://github.com/rime/rime-luna-pinyin/archive/refs/heads/master.zip"
-    size: ""
-    sha256: ""
+    downloadUrl:
+      - url: "https://github.com/rime/rime-luna-pinyin/archive/refs/heads/master.zip"
+        sha256: ""
+        size: ""

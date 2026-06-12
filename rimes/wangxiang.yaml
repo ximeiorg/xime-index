@@ -1,0 +1,22 @@
+id: "rime-wanxiang"
+name: "万象拼音标准版"
+author: "amzxyz"
+description: "万象拼音——基于深度优化的词库和语法模型"
+type: "remote"
+tags: ["拼音", "双拼"]
+homepage: "https://github.com/amzxyz/rime-wanxiang"
+appVersion: ">=2.4.0"
+currentVersion: "2026.06.12"
+versions:
+  - version: "v15.14.2"
+    date: "2026-06-10"
+    changelog: |
+      - 词库更新
+      - Bug 修复
+    downloadUrl:
+      - url: "https://github.com/amzxyz/rime-wanxiang/releases/download/v15.14.2/rime-wanxiang-base.zip"
+        sha256: "22cd215da8243456fe402df154281661c47bb5fee90ff3ef82e63d0cdfbbb953"
+        size: "31.7 MB"
+      - url: "https://github.com/amzxyz/RIME-LMDG/releases/download/LTS/wanxiang-lts-zh-hans.gram"
+        sha256: ""
+        size: "401 MB"

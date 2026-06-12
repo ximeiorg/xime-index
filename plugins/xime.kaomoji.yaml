@@ -14,7 +14,8 @@ versions:
   - version: "2.0.0"
     date: "2026-03-01"
     changelog: "新增更多颜文字分类"
-    downloadUrl: "https://github.com/ximeiorg/Xime/releases/download/v2.3.0-beta5/kaomoji-2.0.0-signed.apk"
-    size: "2.08 MB"
-    sha256: "243f0c4f5454c775b6056ac7c3beff08e44a4f75f7216c468a399aa949c5cd99"
+    downloadUrl:
+      - url: "https://github.com/ximeiorg/Xime/releases/download/v2.3.0-beta5/kaomoji-2.0.0-signed.apk"
+        sha256: "243f0c4f5454c775b6056ac7c3beff08e44a4f75f7216c468a399aa949c5cd99"
+        size: "2.08 MB"
 

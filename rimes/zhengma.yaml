@@ -12,6 +12,7 @@ versions:
   - version: "master"
     date: "2026-06-08"
     changelog: ""
-    downloadUrl: "https://github.com/chen32768/zhengma_for_rime/archive/refs/heads/master.zip"
-    size: "899KB"
-    sha256: ""
+    downloadUrl:
+      - url: "https://github.com/chen32768/zhengma_for_rime/archive/refs/heads/master.zip"
+        sha256: ""
+        size: "899KB"

@@ -40,9 +40,10 @@ versions:                         # 版本历史
   - version: "1.0.0"
     date: "2026-06-01"           # 发布日期
     changelog: "初始发布"          # 更新说明
-    downloadUrl: "https://..."   # 下载地址
-    size: "1.5 MB"               # 文件大小（可选）
-    sha256: ""                    # SHA256 校验值（可选）
+    downloadUrl:                  # 下载地址
+      - url: "https://..."       # 单个文件时只写一条
+        sha256: ""               # SHA256 校验值（可选）
+        size: "1.5 MB"           # 文件大小（可选）
 ```
 
 ### 步骤 2：注册到子索引
@@ -78,9 +79,10 @@ versions:
   - version: "1.0.0"
     date: "2026-06-01"
     changelog: "初始发布"
-    downloadUrl: "https://..."   # 下载地址
-    size: ""
-    sha256: ""
+    downloadUrl:                  # 下载地址
+      - url: "https://..."       # 单个文件时只写一条
+        sha256: ""               # SHA256 校验值（可选）
+        size: ""                 # 文件大小（可选）
 ```
 
 ### 步骤 2：注册到子索引
@@ -107,6 +109,44 @@ plugins:
 |------|------|------|
 | 方案 | .zip / .tar.gz | 包含 .schema.yaml + .dict.yaml |
 | 插件 | .apk | 实现 EmojiPlugin 接口 |
+
+## 下载地址
+
+`downloadUrl` 统一使用对象列表格式，每个文件独立携带 `sha256` 和 `size`。
+
+**单个文件：**
+```yaml
+downloadUrl:
+  - url: "https://example.com/releases/v1.0.0/file.zip"
+    sha256: "abc123..."            # 可选
+    size: "10 MB"                  # 可选
+```
+
+**多个文件全部必装：**
+```yaml
+downloadUrl:
+  - url: "https://example.com/releases/v1.0.0/schema.zip"
+    sha256: "abc123..."
+    size: "10 MB"
+  - url: "https://example.com/releases/v1.0.0/model.gram"
+    sha256: "def456..."
+    size: "50 MB"
+```
+
+**多个文件让用户二选一（带 `name` 标签）：**
+```yaml
+downloadUrl:
+  - name: "基础版"
+    url: "https://example.com/releases/v1.0.0/base.zip"
+    sha256: "abc123..."
+    size: "10 MB"
+  - name: "完整版"
+    url: "https://example.com/releases/v1.0.0/full.zip"
+    sha256: "def456..."
+    size: "50 MB"
+```
+
+
 
 ## 注意事项
 
