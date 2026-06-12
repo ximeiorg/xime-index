@@ -24,3 +24,5 @@ schemas:
     version: "master"
   - file: "./zhengma.yaml"
     version: "master"
+  - file: "./wangxiang.yaml"
+    version: "2026.06.12"
