@@ -1,28 +1,249 @@
 # Xime 输入方案子索引
-# 维护方式：PR 修改此目录下的文件，CI 自动校验
+# ⚠️ 此文件由 scripts/generate_index.py 自动生成，请勿手动编辑
 index_version: 1
-updated_at: "2026-06-04"
-
+updated_at: '2026-06-13'
 schemas:
-  - file: "./wubi86.yaml"
-    version: "2.0.1"
-  - file: "./wubi98.yaml"
-    version: "1.0.0"
-  - file: "./cangjie.yaml"
-    version: "master"
-  - file: "./quick.yaml"
-    version: "master"
-  - file: "./stroke.yaml"
-    version: "master"
-  - file: "./rime-ice.yaml"
-    version: "2026.06.03"
-  - file: "./luna_pinyin.yaml"
-    version: "master"
-  - file: "./symbols.yaml"
-    version: "master"
-  - file: "./essay.yaml"
-    version: "master"
-  - file: "./zhengma.yaml"
-    version: "master"
-  - file: "./wangxiang.yaml"
-    version: "2026.06.12"
+- id: cangjie
+  name: 倉頡輸入法
+  author: rime
+  description: 倉頡五代，支持擴展區漢字、「快趣」詞組編碼
+  type: remote
+  tags:
+  - 倉頡
+  homepage: https://github.com/rime/rime-cangjie
+  dependencies:
+  - luna_pinyin
+  - symbols
+  - essay
+  appVersion: '>=2.3.0'
+  currentVersion: master
+  versions:
+  - version: master
+    date: '2026-06-04'
+    changelog: ''
+    downloadUrl:
+    - url: https://github.com/rime/rime-cangjie/archive/refs/heads/master.zip
+      sha256: ''
+      size: ''
+- id: essay
+  name: 八股文（共享词频，essay.txt）
+  author: rime
+  description: Rime 共享词频词典 essay.txt（八股文）。仓颉、速成等启用 use_preset_vocabulary 的方案在构建时依赖它提供词组与词频。通常随上游
+    app 自带；此条目作为缺失时的兜底下发源。
+  type: remote
+  tags:
+  - 词频
+  - essay
+  - 依赖库
+  homepage: https://github.com/rime/rime-essay
+  license: GPL-3.0
+  dependencies: []
+  appVersion: '>=2.3.0'
+  currentVersion: master
+  versions:
+  - version: master
+    date: '2026-06-06'
+    changelog: ''
+    downloadUrl:
+    - url: https://github.com/rime/rime-essay/archive/refs/heads/master.zip
+      sha256: ''
+      size: ''
+- id: luna_pinyin
+  name: 朙月拼音
+  author: rime
+  description: 朙月拼音方案
+  type: remote
+  tags:
+  - 拼音
+  - 反查
+  homepage: https://github.com/rime/rime-luna-pinyin
+  license: GPL-3.0
+  dependencies: []
+  appVersion: '>=2.3.0'
+  currentVersion: master
+  versions:
+  - version: master
+    date: '2026-06-06'
+    changelog: ''
+    downloadUrl:
+    - url: https://github.com/rime/rime-luna-pinyin/archive/refs/heads/master.zip
+      sha256: ''
+      size: ''
+- id: quick
+  name: 速成輸入法
+  author: rime
+  description: 速成取倉頡碼的首尾二碼,本方案支持詞句連書、自動調整詞頻、記憶新詞
+  type: remote
+  tags:
+  - 速成
+  homepage: https://github.com/rime/rime-quick
+  dependencies:
+  - luna_pinyin
+  - cangjie
+  - essay
+  appVersion: '>=2.3.0'
+  currentVersion: master
+  versions:
+  - version: master
+    date: '2026-06-04'
+    changelog: ''
+    downloadUrl:
+    - url: https://github.com/rime/rime-quick/archive/refs/heads/master.zip
+      sha256: ''
+      size: ''
+- id: rime-ice
+  name: 雾凇拼音
+  author: iDvel
+  description: 雾凇拼音是一份开箱即用的简体中文 Rime 输入法配置，词库长期维护，基本功能齐全，使用完全离线，质量稳定可靠。
+  type: remote
+  tags:
+  - 拼音
+  - 双拼
+  homepage: https://github.com/iDvel/rime-ice
+  appVersion: '>=2.3.0'
+  currentVersion: 2026.06.03
+  versions:
+  - version: 2026.06.03
+    date: '2026-06-04'
+    changelog: 增改词汇
+    downloadUrl:
+    - url: https://github.com/iDvel/rime-ice/releases/download/2026.06.03/full.zip
+      sha256: d41a5a4c30f66d0041632f26587856e7a48d87a4ec50fa23f6f32309be4f691d
+      size: ''
+- id: rime-wanxiang
+  name: 万象拼音标准版
+  author: amzxyz
+  description: 万象拼音——基于深度优化的词库和语法模型
+  type: remote
+  tags:
+  - 拼音
+  - 双拼
+  homepage: https://github.com/amzxyz/rime-wanxiang
+  appVersion: '>=2.4.0'
+  currentVersion: 2026.06.12
+  versions:
+  - version: v15.14.2
+    date: '2026-06-10'
+    changelog: '- 词库更新
+
+      - Bug 修复
+
+      '
+    downloadUrl:
+    - url: https://github.com/amzxyz/rime-wanxiang/releases/download/v15.14.2/rime-wanxiang-base.zip
+      sha256: 22cd215da8243456fe402df154281661c47bb5fee90ff3ef82e63d0cdfbbb953
+      size: 31.7 MB
+    - url: https://github.com/amzxyz/RIME-LMDG/releases/download/LTS/wanxiang-lts-zh-hans.gram
+      sha256: ''
+      size: 401 MB
+- id: stroke
+  name: 五筆畫
+  author: rime
+  description: h,s,p,n,z 代表橫、豎、撇、捺、折
+  type: remote
+  tags:
+  - 笔画
+  homepage: https://github.com/rime/rime-stroke
+  dependencies:
+  - luna_pinyin
+  appVersion: '>=1.0.0'
+  currentVersion: master
+  versions:
+  - version: master
+    date: '2026-06-04'
+    changelog: ''
+    downloadUrl:
+    - url: https://github.com/rime/rime-stroke/archive/refs/heads/master.zip
+      sha256: ''
+      size: ''
+- id: symbols
+  name: 符号与标点（基础依赖库）
+  author: rime
+  description: Rime 标点与符号预设（symbols.yaml）。通常随上游 app 自带；此条目作为缺失时的兜底下发源，部分方案（如仓颉）的 punctuator
+    依赖它。
+  type: remote
+  tags:
+  - 符号
+  - 标点
+  - 依赖库
+  homepage: https://github.com/rime/rime-prelude
+  license: GPL-3.0
+  dependencies: []
+  appVersion: '>=2.3.0'
+  currentVersion: master
+  versions:
+  - version: master
+    date: '2026-06-06'
+    changelog: ''
+    downloadUrl:
+    - url: https://github.com/rime/rime-prelude/archive/refs/heads/master.zip
+      sha256: ''
+      size: ''
+- id: wubi86
+  name: 五笔86
+  author: 王永民
+  description: 五笔字形 86 版，经典五笔输入方案,包括了拼音相关功能。
+  type: built-in
+  tags:
+  - 五笔
+  - 拼音
+  homepage: https://github.com/kingzcheung/rime-wubi
+  appVersion: '>=2.3.0'
+  currentVersion: 2.0.1
+  versions:
+  - version: 2.0.1
+    date: '2024-01-01'
+    changelog: ''
+    downloadUrl:
+    - url: https://github.com/kingzcheung/rime-wubi/archive/refs/tags/2.0.1.tar.gz
+      sha256: ''
+      size: ''
+  - version: 2.0.0
+    date: '2024-12-01'
+    changelog: ''
+    downloadUrl:
+    - url: https://github.com/kingzcheung/rime-wubi/archive/refs/tags/2.0.0.tar.gz
+      sha256: ''
+      size: ''
+- id: wubi98
+  name: 五笔98
+  author: rime
+  description: 五笔字形 98 版，支持繁体字
+  type: remote
+  tags:
+  - 五笔
+  - 形码
+  - 繁体
+  homepage: https://github.com/cz-archive/rime-wubi98
+  license: GPL-3.0
+  appVersion: '>=2.3.0'
+  currentVersion: 1.0.0
+  versions:
+  - version: 1.0.0
+    date: '2026-06-04'
+    changelog: ''
+    downloadUrl:
+    - url: https://github.com/cz-archive/rime-wubi98/archive/refs/tags/1.0.0.tar.gz
+      sha256: ''
+      size: ''
+- id: zhengma
+  name: 郑码方案
+  author: rime
+  description: 郑码方案，支持郑码、郑码拼音、郑码打简出繁
+  type: remote
+  tags:
+  - 郑码
+  - 拼音
+  - 简繁
+  homepage: https://github.com/chen32768/zhengma_for_rime
+  dependencies: []
+  appVersion: '>=2.3.0'
+  currentVersion: master
+  versions:
+  - version: master
+    date: '2026-06-08'
+    changelog: ''
+    downloadUrl:
+    - url: https://github.com/chen32768/zhengma_for_rime/archive/refs/heads/master.zip
+      sha256: ''
+      size: 899KB

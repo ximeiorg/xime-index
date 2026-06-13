@@ -6,12 +6,12 @@
 
 ```
 rimes/                    # 输入方案
-├── index.yaml            # 方案子索引（在此注册新方案）
+├── index.yaml            # 方案子索引（由 scripts/generate_index.py 自动生成，请勿手动编辑）
 ├── wubi86.yaml           # 每个方案一个独立文件
 └── ...
 
 plugins/                  # 插件
-├── index.yaml            # 插件子索引（在此注册新插件）
+├── index.yaml            # 插件子索引（由 scripts/generate_index.py 自动生成，请勿手动编辑）
 ├── xime.kaomoji.yaml     # 每个插件一个独立文件
 └── ...
 ```
@@ -46,15 +46,13 @@ versions:                         # 版本历史
         size: "1.5 MB"           # 文件大小（可选）
 ```
 
-### 步骤 2：注册到子索引
+### 步骤 2：生成索引
 
-在 `rimes/index.yaml` 中添加一行引用：
-
-```yaml
-schemas:
-  - file: "./my_schema.yaml"
-    version: "1.0.0"
+```bash
+python scripts/generate_index.py
 ```
+
+`rimes/index.yaml` 会自动更新，包含新方案的完整信息。
 
 ## 上架新插件
 
@@ -85,15 +83,13 @@ versions:
         size: ""                 # 文件大小（可选）
 ```
 
-### 步骤 2：注册到子索引
+### 步骤 2：生成索引
 
-在 `plugins/index.yaml` 中添加一行引用：
-
-```yaml
-plugins:
-  - file: "./my-plugin.yaml"
-    version: "1.0.0"
+```bash
+python scripts/generate_index.py
 ```
+
+`plugins/index.yaml` 会自动更新。
 
 ## 更新版本
 
@@ -101,7 +97,7 @@ plugins:
 
 1. 在对应 `.yaml` 文件的 `versions` 列表顶部新增一条版本记录
 2. 更新 `currentVersion` 为最新版本号
-3. 同步更新子索引中的 `version` 字段
+3. 运行 `python scripts/generate_index.py` 同步索引
 
 ## 打包要求
 
@@ -152,5 +148,5 @@ downloadUrl:
 
 - 下载地址推荐使用 GitHub Releases，确保长期有效
 - 方案若依赖其他方案，在 `dependencies` 中声明，安装时会自动处理
-- 子索引中的 `version` 必须与独立文件中的 `currentVersion` 一致，CI 会自动校验
+- 子索引由脚本自动生成，不要手动编辑 `rimes/index.yaml` 或 `plugins/index.yaml`
 - 每个版本独立填写 `downloadUrl`，建议指向具体 Release Tag 而非 `latest`
