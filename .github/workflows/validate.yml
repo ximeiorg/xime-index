@@ -6,12 +6,18 @@ on:
       - "index.yaml"
       - "rimes/**"
       - "plugins/**"
+      - "scripts/**"
+      - ".github/workflows/**"
+      - "pyproject.toml"
   push:
     branches: [main]
     paths:
       - "index.yaml"
       - "rimes/**"
       - "plugins/**"
+      - "scripts/**"
+      - ".github/workflows/**"
+      - "pyproject.toml"
 
 jobs:
   validate:
