@@ -60,9 +60,9 @@ jobs:
                           if url:
                               try:
                                   code = urllib.request.urlopen(url, timeout=10).getcode()
-                                  print(f'  OK  {entry["id"]} v{v["version"]} ({code})')
+                                  print(f'  OK  {entry[\"id\"]} v{v[\"version\"]} ({code})')
                               except Exception as e:
-                                  print(f'  FAIL {entry["id"]} v{v["version"]} → {e}')
+                                  print(f'  FAIL {entry[\"id\"]} v{v[\"version\"]} → {e}')
                                   failures += 1
 
           check_urls('rimes/index.yaml', 'schemas')
