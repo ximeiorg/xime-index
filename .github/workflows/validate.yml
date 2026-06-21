@@ -52,9 +52,9 @@ jobs:
         run: |
           python3 -c "
           import yaml, urllib.request, sys
-          failures = 0
 
           def check_urls(index_path, items_key):
+              failures = 0
               with open(index_path) as f:
                   data = yaml.safe_load(f)
               for entry in data[items_key]:
@@ -70,9 +70,10 @@ jobs:
                               except Exception as e:
                                   print('  FAIL {} v{} → {}'.format(entry['id'], v['version'], e))
                                   failures += 1
+              return failures
 
-          check_urls('rimes/index.yaml', 'schemas')
-          check_urls('plugins/index.yaml', 'plugins')
+          failures = check_urls('rimes/index.yaml', 'schemas')
+          failures += check_urls('plugins/index.yaml', 'plugins')
 
           if failures:
               sys.exit(1)
