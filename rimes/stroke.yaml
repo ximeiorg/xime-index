@@ -4,7 +4,7 @@ author: "rime"
 description: "适配笔画输入法布局"
 type: "remote"
 tags: ["笔画"]
-homepage: "https://github.com/ximeiorg/rime-strok"
+homepage: "https://github.com/ximeiorg/rime-stroke"
 dependencies: ["luna_pinyin"]
 appVersion: ">=1.0.0"
 currentVersion: "0.1.0"
