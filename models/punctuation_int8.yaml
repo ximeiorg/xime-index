@@ -19,8 +19,8 @@ versions:
       - name: punctuation_int8.onnx
         url: https://www.modelscope.cn/models/bikeand/srf-punctuation/resolve/master/punctuation_int8.onnx
         sha256: ""
-        size: ""
+        size: "2.24MB"
       - name: vocab.json
         url: https://www.modelscope.cn/models/bikeand/srf-punctuation/resolve/master/vocab.json
         sha256: ""
-        size: ""
+        size: "119.10KB"

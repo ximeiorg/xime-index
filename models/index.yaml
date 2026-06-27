@@ -24,11 +24,11 @@ models:
     - name: vocab.json
       url: https://www.modelscope.cn/models/bikeand/predictive-text-small/resolve/master/vocab.json
       sha256: ''
-      size: ''
+      size: 141.14KB
     - name: model_int8_dynamic.onnx
       url: https://www.modelscope.cn/models/bikeand/predictive-text-small/resolve/master/model_int8_dynamic.onnx
       sha256: ''
-      size: ''
+      size: 19.72MB
 - id: punctuation_int8
   name: 标点预测模型 int8
   description: 基于 Transformer 的中文标点预测模型，int8 量化
@@ -50,11 +50,11 @@ models:
     - name: punctuation_int8.onnx
       url: https://www.modelscope.cn/models/bikeand/srf-punctuation/resolve/master/punctuation_int8.onnx
       sha256: ''
-      size: ''
+      size: 2.24MB
     - name: vocab.json
       url: https://www.modelscope.cn/models/bikeand/srf-punctuation/resolve/master/vocab.json
       sha256: ''
-      size: ''
+      size: 119.10KB
 - id: zipformer-zh-int8
   name: 中文 Zipformer int8
   description: Zipformer 架构实时语音识别模型，int8 量化
