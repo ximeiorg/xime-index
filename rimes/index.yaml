@@ -1,7 +1,7 @@
 # Xime 输入方案子索引
 # ⚠️ 此文件由 scripts/generate_index.py 自动生成，请勿手动编辑
 index_version: 1
-updated_at: '2026-06-21'
+updated_at: '2026-06-27'
 schemas:
 - id: cangjie
   name: 倉頡輸入法
@@ -109,7 +109,7 @@ schemas:
     downloadUrl:
     - url: https://github.com/iDvel/rime-ice/releases/download/2026.06.03/full.zip
       sha256: d41a5a4c30f66d0041632f26587856e7a48d87a4ec50fa23f6f32309be4f691d
-      size: ''
+      size: 17 MB
 - id: rime-wanxiang
   name: 万象拼音标准版
   author: amzxyz
@@ -143,7 +143,7 @@ schemas:
   type: remote
   tags:
   - 笔画
-  homepage: https://github.com/ximeiorg/rime-strok
+  homepage: https://github.com/ximeiorg/rime-stroke
   dependencies:
   - luna_pinyin
   appVersion: '>=1.0.0'

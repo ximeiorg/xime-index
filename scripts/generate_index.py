@@ -34,6 +34,12 @@ PLUGIN_FIELDS = [
     "appVersion", "warning", "currentVersion", "versions",
 ]
 
+MODEL_FIELDS = [
+    "id", "name", "description", "category", "size",
+    "type", "tags", "appVersion", "warning",
+    "currentVersion", "versions",
+]
+
 # ─── 辅助函数 ────────────────────────────────────────────
 
 
@@ -89,6 +95,10 @@ HEADERS = {
     ),
     "plugins": (
         "# Xime 插件子索引\n"
+        "# ⚠️ 此文件由 scripts/generate_index.py 自动生成，请勿手动编辑\n"
+    ),
+    "models": (
+        "# Xime 模型子索引\n"
         "# ⚠️ 此文件由 scripts/generate_index.py 自动生成，请勿手动编辑\n"
     ),
 }
@@ -156,6 +166,40 @@ def validate_index(subdir, key):
     return True
 
 
+def validate_model_index(subdir, key):
+    """校验生成的模型索引数据完整性"""
+    index_path = os.path.join(ROOT, subdir, "index.yaml")
+    data = load_yaml(index_path)
+    assert data.get("index_version") == 1, f"{subdir}/index.yaml: index_version must be 1"
+    assert key in data, f"{subdir}/index.yaml: missing '{key}'"
+
+    items = data[key]
+    for entry in items:
+        assert "id" in entry, f"{subdir}: missing id in entry"
+        assert "name" in entry, f"{entry['id']}: missing name"
+        assert "category" in entry, f"{entry['id']}: missing category"
+        assert "currentVersion" in entry, f"{entry['id']}: missing currentVersion"
+        assert "versions" in entry, f"{entry['id']}: missing versions"
+
+        for v in entry["versions"]:
+            assert "version" in v, f"{entry['id']}: version entry missing 'version'"
+            assert "date" in v, f"{entry['id']} v{v['version']}: missing date"
+            assert "storageDir" in v, f"{entry['id']} v{v['version']}: missing storageDir"
+            assert "files" in v, f"{entry['id']} v{v['version']}: missing files"
+            assert isinstance(v["files"], list), f"{entry['id']} v{v['version']}: files must be a list"
+
+            for f in v["files"]:
+                assert "name" in f, f"{entry['id']} v{v['version']}: file entry missing 'name'"
+                # archive models don't need individual file URLs, non-archive models do
+                if "archive" not in v:
+                    assert "url" in f, f"{entry['id']} v{v['version']} file '{f.get('name')}': missing url"
+
+        print(f"  {entry['id']}: valid ({len(v['files'])} files{' (archive)' if 'archive' in v else ''})")
+
+    print(f"  {subdir}/index.yaml: {len(items)} entries, all valid")
+    return True
+
+
 # ─── 主入口 ──────────────────────────────────────────────
 
 
@@ -164,10 +208,12 @@ def main():
     check_only = "--check" in args
     validate_only = "--validate" in args
 
+    SUBDIRS = ("rimes", "plugins", "models")
+
     # 暂存当前内容（用于 check 模式）
     snapshots = {}
     if check_only:
-        for subdir in ("rimes", "plugins"):
+        for subdir in SUBDIRS:
             idx = os.path.join(ROOT, subdir, "index.yaml")
             if os.path.exists(idx):
                 with open(idx, encoding="utf-8") as f:
@@ -176,16 +222,18 @@ def main():
     # 生成
     generate_index("rimes", "schemas", SCHEMA_FIELDS)
     generate_index("plugins", "plugins", PLUGIN_FIELDS)
+    generate_index("models", "models", MODEL_FIELDS)
 
     # 校验（生成后自动校验）
     print("Validating generated index files...")
     validate_index("rimes", "schemas")
     validate_index("plugins", "plugins")
+    validate_model_index("models", "models")
 
     # check 模式：检测是否有变动
     if check_only:
         changed = []
-        for subdir in ("rimes", "plugins"):
+        for subdir in SUBDIRS:
             idx = os.path.join(ROOT, subdir, "index.yaml")
             with open(idx, encoding="utf-8") as f:
                 current = f.read()
@@ -206,6 +254,7 @@ def main():
     print("\n✅ 索引文件已生成:")
     print("   - rimes/index.yaml")
     print("   - plugins/index.yaml")
+    print("   - models/index.yaml")
 
 
 if __name__ == "__main__":

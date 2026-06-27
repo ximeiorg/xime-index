@@ -1,0 +1,26 @@
+id: punctuation_int8
+name: 标点预测模型 int8
+description: 基于 Transformer 的中文标点预测模型，int8 量化
+category: punctuation
+size: 2.2 MB
+type: remote
+tags:
+  - 标点
+  - 后处理
+  - ONNX
+appVersion: '>=2.3.0'
+currentVersion: v1.0
+versions:
+  - version: v1.0
+    date: '2026-06-01'
+    changelog: 初始版本
+    storageDir: punctuation_models
+    files:
+      - name: punctuation_int8.onnx
+        url: https://www.modelscope.cn/models/bikeand/srf-punctuation/resolve/master/punctuation_int8.onnx
+        sha256: ""
+        size: ""
+      - name: vocab.json
+        url: https://www.modelscope.cn/models/bikeand/srf-punctuation/resolve/master/vocab.json
+        sha256: ""
+        size: ""

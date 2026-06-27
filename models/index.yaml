@@ -1,0 +1,83 @@
+# Xime 模型子索引
+# ⚠️ 此文件由 scripts/generate_index.py 自动生成，请勿手动编辑
+index_version: 1
+updated_at: '2026-06-27'
+models:
+- id: predictive-text-small
+  name: 智能联想模型
+  description: 基于 ONNX 的 AI 联想词预测模型，int8 量化
+  category: prediction
+  size: 30+ MB
+  type: remote
+  tags:
+  - 联想
+  - AI
+  - ONNX
+  appVersion: '>=2.3.0'
+  currentVersion: v1.0
+  versions:
+  - version: v1.0
+    date: '2026-06-01'
+    changelog: 初始版本
+    storageDir: ''
+    files:
+    - name: vocab.json
+      url: https://www.modelscope.cn/models/bikeand/predictive-text-small/resolve/master/vocab.json
+      sha256: ''
+      size: ''
+    - name: model_int8_dynamic.onnx
+      url: https://www.modelscope.cn/models/bikeand/predictive-text-small/resolve/master/model_int8_dynamic.onnx
+      sha256: ''
+      size: ''
+- id: punctuation_int8
+  name: 标点预测模型 int8
+  description: 基于 Transformer 的中文标点预测模型，int8 量化
+  category: punctuation
+  size: 2.2 MB
+  type: remote
+  tags:
+  - 标点
+  - 后处理
+  - ONNX
+  appVersion: '>=2.3.0'
+  currentVersion: v1.0
+  versions:
+  - version: v1.0
+    date: '2026-06-01'
+    changelog: 初始版本
+    storageDir: punctuation_models
+    files:
+    - name: punctuation_int8.onnx
+      url: https://www.modelscope.cn/models/bikeand/srf-punctuation/resolve/master/punctuation_int8.onnx
+      sha256: ''
+      size: ''
+    - name: vocab.json
+      url: https://www.modelscope.cn/models/bikeand/srf-punctuation/resolve/master/vocab.json
+      sha256: ''
+      size: ''
+- id: zipformer-zh-int8
+  name: 中文 Zipformer int8
+  description: Zipformer 架构实时语音识别模型，int8 量化
+  category: asr
+  size: 36 MB
+  type: remote
+  tags:
+  - 语音
+  - sherpa-onnx
+  - ASR
+  appVersion: '>=2.3.0'
+  currentVersion: v1.0
+  versions:
+  - version: v1.0
+    date: '2026-06-01'
+    changelog: 初始版本
+    storageDir: asr_models/zipformer-zh-int8
+    archive:
+      url: https://www.modelscope.cn/models/bikeand/asr/resolve/master/sherpa-onnx-streaming-zipformer-zh-int8-2025-06-30.tar.bz2
+      sha256: ''
+      size: 36 MB
+    files:
+    - name: encoder.int8.onnx
+    - name: decoder.onnx
+    - name: joiner.int8.onnx
+    - name: tokens.txt

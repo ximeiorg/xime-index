@@ -11,6 +11,10 @@ schemas:
 plugins:
   from: "./plugins/index.yaml"
 
+# ─── 模型（详见 models/ 目录）───────────────────────────
+models:
+  from: "./models/index.yaml"
+
 # ─── 索引源 ───────────────────────────────────────────────
 sources:
   - id: "xime-official"

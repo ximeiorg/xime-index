@@ -14,6 +14,11 @@ plugins/                  # 插件
 ├── index.yaml            # 插件子索引（由 scripts/generate_index.py 自动生成，请勿手动编辑）
 ├── xime.kaomoji.yaml     # 每个插件一个独立文件
 └── ...
+
+models/                   # AI 模型
+├── index.yaml            # 模型子索引（由 scripts/generate_index.py 自动生成，请勿手动编辑）
+├── predictive-text-small.yaml  # 每个模型一个独立文件
+└── ...
 ```
 
 ## 上架新方案
@@ -91,9 +96,90 @@ python scripts/generate_index.py
 
 `plugins/index.yaml` 会自动更新。
 
+## 上架新模型
+
+### 步骤 1：创建模型文件
+
+在 `models/` 下新建 `<id>.yaml` 文件。
+
+**文件列表型模型**（每个文件独立下载）：
+
+```yaml
+# models/my-model.yaml
+id: "my-model"                      # 模型唯一 ID
+name: "我的模型"                     # 显示名称
+description: "模型说明"               # 简短描述
+category: "prediction"              # 分类：prediction / asr / punctuation / stroke / other
+size: "30 MB"                       # 模型大小描述
+type: "remote"
+tags: ["AI", "ONNX"]                # 搜索标签
+appVersion: ">=2.3.0"               # 兼容的 App 版本
+currentVersion: "v1.0"
+versions:
+  - version: "v1.0"
+    date: "2026-06-01"
+    changelog: "初始发布"
+    storageDir: ""                   # 存储相对路径（"" 表示 filesDir 根目录）
+    files:
+      - name: "model.onnx"          # 每个文件独立 URL
+        url: "https://..."
+        sha256: ""
+        size: ""
+      - name: "vocab.json"
+        url: "https://..."
+        sha256: ""
+        size: ""
+```
+
+**归档型模型**（通过 tar.bz2 整包下载）：
+
+```yaml
+# models/my-asr-model.yaml
+id: "my-asr-model"
+name: "语音识别模型"
+description: "基于 sherpa-onnx 的语音识别模型"
+category: "asr"
+size: "36 MB"
+type: "remote"
+tags: ["语音", "sherpa-onnx"]
+appVersion: ">=2.3.0"
+currentVersion: "v1.0"
+versions:
+  - version: "v1.0"
+    date: "2026-06-01"
+    changelog: "初始发布"
+    storageDir: "asr_models/my-asr-model"
+    archive:                         # 归档包信息
+      url: "https://..."
+      sha256: ""
+      size: "36 MB"
+    files:
+      - name: "encoder.onnx"        # 归档内的文件（用于校验）
+      - name: "decoder.onnx"
+      - name: "tokens.txt"
+```
+
+**`category` 可选值：**
+
+| 值 | 说明 |
+|------|------|
+| `prediction` | 智能联想词预测 |
+| `asr` | 语音识别 |
+| `punctuation` | 标点预测 |
+| `stroke` | 笔画序列 (预留) |
+| `other` | 其他 |
+
+### 步骤 2：生成索引
+
+```bash
+python scripts/generate_index.py
+```
+
+`models/index.yaml` 会自动更新。
+
 ## 更新版本
 
-已有方案/插件发布新版本时：
+已有方案/插件/模型发布新版本时：
 
 1. 在对应 `.yaml` 文件的 `versions` 列表顶部新增一条版本记录
 2. 更新 `currentVersion` 为最新版本号
@@ -148,5 +234,5 @@ downloadUrl:
 
 - 下载地址推荐使用 GitHub Releases，确保长期有效
 - 方案若依赖其他方案，在 `dependencies` 中声明，安装时会自动处理
-- 子索引由脚本自动生成，不要手动编辑 `rimes/index.yaml` 或 `plugins/index.yaml`
+- 子索引由脚本自动生成，不要手动编辑 `rimes/index.yaml`、`plugins/index.yaml` 或 `models/index.yaml`
 - 每个版本独立填写 `downloadUrl`，建议指向具体 Release Tag 而非 `latest`

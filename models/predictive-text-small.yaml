@@ -1,0 +1,26 @@
+id: predictive-text-small
+name: 智能联想模型
+description: 基于 ONNX 的 AI 联想词预测模型，int8 量化
+category: prediction
+size: 30+ MB
+type: remote
+tags:
+  - 联想
+  - AI
+  - ONNX
+appVersion: '>=2.3.0'
+currentVersion: v1.0
+versions:
+  - version: v1.0
+    date: '2026-06-01'
+    changelog: 初始版本
+    storageDir: ""
+    files:
+      - name: vocab.json
+        url: https://www.modelscope.cn/models/bikeand/predictive-text-small/resolve/master/vocab.json
+        sha256: ""
+        size: ""
+      - name: model_int8_dynamic.onnx
+        url: https://www.modelscope.cn/models/bikeand/predictive-text-small/resolve/master/model_int8_dynamic.onnx
+        sha256: ""
+        size: ""
