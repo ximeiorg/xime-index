@@ -7,7 +7,7 @@ type: remote
 tags:
   - 手写
   - ONNX
-appVersion: '>=2.3.0'
+appVersion: '>=2.5.0'
 currentVersion: v1.0
 versions:
   - version: v1.0
@@ -19,3 +19,7 @@ versions:
         url: https://www.modelscope.cn/models/bikeand/ochwpro/resolve/master/ochwpro.onnx
         sha256: ""
         size: "7.00MB"
+      - name: char_index.json
+        url: https://www.modelscope.cn/models/bikeand/ochwpro/resolve/master/char_index.json
+        sha256: ""
+        size: "51.32KB"
