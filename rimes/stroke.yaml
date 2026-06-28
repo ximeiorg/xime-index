@@ -6,7 +6,7 @@ type: "remote"
 tags: ["笔画"]
 homepage: "https://github.com/ximeiorg/rime-stroke"
 dependencies: ["luna_pinyin"]
-appVersion: ">=1.0.0"
+appVersion: ">=2.5.0"
 currentVersion: "0.1.0"
 versions:
   - version: "0.1.0"
