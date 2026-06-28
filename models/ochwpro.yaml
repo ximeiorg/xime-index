@@ -1,0 +1,21 @@
+id: ochwpro
+name: 手写模型
+description: 基于 ONNX 的手写文字识别模型
+category: handwriting
+size: 7.00 MB
+type: remote
+tags:
+  - 手写
+  - ONNX
+appVersion: '>=2.3.0'
+currentVersion: v1.0
+versions:
+  - version: v1.0
+    date: '2026-06-28'
+    changelog: 初始版本
+    storageDir: ""
+    files:
+      - name: ochwpro.onnx
+        url: https://www.modelscope.cn/models/bikeand/ochwpro/resolve/master/ochwpro.onnx
+        sha256: ""
+        size: "7.00MB"
