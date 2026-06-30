@@ -1,21 +1,21 @@
-# ─── 表情兔 ──────────────────────────────────────────────
-id: "xime.meme-bunny"
-name: "表情兔"
-author: "Xime"
-description: "可爱的表情包贴纸合集"
-type: "remote"
-tags: ["表情包", "贴纸"]
-pluginType: "emoji"
-homepage: "https://github.com/ximeiorg/Xime"
-license: "GPL-3.0"
-appVersion: ">=2.0.0"
-currentVersion: "2.0.0"
+id: xime.meme-bunny
+name: 表情兔
+author: Xime
+description: 可爱的表情包贴纸合集
+type: remote
+tags:
+- 表情包
+- 贴纸
+pluginType: emoji
+homepage: https://github.com/ximeiorg/Xime
+license: GPL-3.0
+appVersion: '>=2.0.0'
+currentVersion: 2.0.0
 versions:
-  - version: "2.0.0"
-    date: "2026-03-01"
-    changelog: "新增更多表情贴纸"
-    downloadUrl:
-      - url: "https://github.com/ximeiorg/Xime/releases/download/v2.3.0-beta5/meme-bunny-2.0.0-signed.apk"
-        sha256: "283c8491d1878fef5fc4594a7ca19e225d90fe08786bed50db04e2452a84e499"
-        size: "12.7 MB"
-
+- version: 2.0.0
+  date: '2026-03-01'
+  changelog: 新增更多表情贴纸
+  downloadUrl:
+  - url: https://github.com/ximeiorg/Xime/releases/download/v2.3.0-beta5/meme-bunny-2.0.0-signed.apk
+    sha256: 283c8491d1878fef5fc4594a7ca19e225d90fe08786bed50db04e2452a84e499
+    size: 12.7 MB

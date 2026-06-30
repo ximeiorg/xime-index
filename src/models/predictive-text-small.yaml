@@ -5,22 +5,24 @@ category: prediction
 size: 30+ MB
 type: remote
 tags:
-  - 联想
-  - AI
-  - ONNX
+- 联想
+- AI
+- ONNX
 appVersion: '>=2.3.0'
 currentVersion: v1.0
 versions:
-  - version: v1.0
-    date: '2026-06-01'
-    changelog: 初始版本
-    storageDir: ""
-    files:
-      - name: vocab.json
-        url: https://www.modelscope.cn/models/bikeand/predictive-text-small/resolve/master/vocab.json
-        sha256: ""
-        size: "141.14KB"
-      - name: model_int8_dynamic.onnx
-        url: https://www.modelscope.cn/models/bikeand/predictive-text-small/resolve/master/model_int8_dynamic.onnx
-        sha256: ""
-        size: "19.72MB"
+- version: v1.0
+  date: '2026-06-01'
+  changelog: 初始版本
+  storageDir: ''
+  files:
+  - name: vocab.json
+    url: https://www.modelscope.cn/models/bikeand/predictive-text-small/resolve/master/vocab.json
+    sha256: 3f7a6aa773afe6dacf75701f7861257d36a46a26ac70c0f8ee6dd4032cc3b9c2
+    size: 137.8 KB
+    sizeBytes: 141139
+  - name: model_int8_dynamic.onnx
+    url: https://www.modelscope.cn/models/bikeand/predictive-text-small/resolve/master/model_int8_dynamic.onnx
+    sha256: 85b9e8915bd22a5ac1312146df37d77ee3453b9c836c89e666977e7c118a4225
+    size: 18.8 MB
+    sizeBytes: 19720256

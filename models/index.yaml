@@ -1,0 +1,115 @@
+# Xime 模型子索引
+# ⚠️ 此文件由 scripts/ci-update.py 自动生成，请勿手动编辑
+index_version: 1
+updated_at: '2026-06-30'
+models:
+- id: ochwpro
+  name: 手写模型
+  description: 基于 ONNX 的手写文字识别模型
+  category: handwriting
+  size: 7.00 MB
+  type: remote
+  tags:
+  - 手写
+  - ONNX
+  appVersion: '>=2.5.0'
+  currentVersion: v1.0
+  versions:
+  - version: v1.0
+    date: '2026-06-28'
+    changelog: 初始版本
+    storageDir: ''
+    files:
+    - name: ochwpro.onnx
+      url: https://www.modelscope.cn/models/bikeand/ochwpro/resolve/master/ochwpro.onnx
+      sha256: eb04d62a314c7d7bac4e34d6ce0c24137474d30ff94b929115a621385420ce13
+      size: 6.7 MB
+      sizeBytes: 7001270
+    - name: char_index.json
+      url: https://www.modelscope.cn/models/bikeand/ochwpro/resolve/master/char_index.json
+      sha256: 171cf2ac23731428ac9dd28f64be82dece5f66a0ca3d674ffb3b567b51532176
+      size: 50.1 KB
+      sizeBytes: 51317
+- id: predictive-text-small
+  name: 智能联想模型
+  description: 基于 ONNX 的 AI 联想词预测模型，int8 量化
+  category: prediction
+  size: 30+ MB
+  type: remote
+  tags:
+  - 联想
+  - AI
+  - ONNX
+  appVersion: '>=2.3.0'
+  currentVersion: v1.0
+  versions:
+  - version: v1.0
+    date: '2026-06-01'
+    changelog: 初始版本
+    storageDir: ''
+    files:
+    - name: vocab.json
+      url: https://www.modelscope.cn/models/bikeand/predictive-text-small/resolve/master/vocab.json
+      sha256: 3f7a6aa773afe6dacf75701f7861257d36a46a26ac70c0f8ee6dd4032cc3b9c2
+      size: 137.8 KB
+      sizeBytes: 141139
+    - name: model_int8_dynamic.onnx
+      url: https://www.modelscope.cn/models/bikeand/predictive-text-small/resolve/master/model_int8_dynamic.onnx
+      sha256: 85b9e8915bd22a5ac1312146df37d77ee3453b9c836c89e666977e7c118a4225
+      size: 18.8 MB
+      sizeBytes: 19720256
+- id: punctuation_int8
+  name: 标点预测模型 int8
+  description: 基于 Transformer 的中文标点预测模型，int8 量化
+  category: punctuation
+  size: 2.2 MB
+  type: remote
+  tags:
+  - 标点
+  - 后处理
+  - ONNX
+  appVersion: '>=2.3.0'
+  currentVersion: v1.0
+  versions:
+  - version: v1.0
+    date: '2026-06-01'
+    changelog: 初始版本
+    storageDir: punctuation_models
+    files:
+    - name: punctuation_int8.onnx
+      url: https://www.modelscope.cn/models/bikeand/srf-punctuation/resolve/master/punctuation_int8.onnx
+      sha256: 650eb96762e2b6cfe12a3f1b44ddcab0a3f790e11a98afab3895f863d5eaec62
+      size: 2.1 MB
+      sizeBytes: 2243714
+    - name: vocab.json
+      url: https://www.modelscope.cn/models/bikeand/srf-punctuation/resolve/master/vocab.json
+      sha256: 76684d3d381bed15057f19e6b22972a00ec79e72fa4bfd5682afde4fdcc5a3a2
+      size: 116.3 KB
+      sizeBytes: 119104
+- id: zipformer-zh-int8
+  name: 中文 Zipformer int8
+  description: Zipformer 架构实时语音识别模型，int8 量化
+  category: asr
+  size: 36 MB
+  type: remote
+  tags:
+  - 语音
+  - sherpa-onnx
+  - ASR
+  appVersion: '>=2.3.0'
+  currentVersion: v1.0
+  versions:
+  - version: v1.0
+    date: '2026-06-01'
+    changelog: 初始版本
+    storageDir: asr_models/zipformer-zh-int8
+    archive:
+      url: https://www.modelscope.cn/models/bikeand/asr/resolve/master/sherpa-onnx-streaming-zipformer-zh-int8-2025-06-30.tar.bz2
+      sha256: 5a2832047ea1f97dd0dc595b816c230c4bafad65cfc0341fa57517cadc50afd0
+      size: 126.5 MB
+      sizeBytes: 132634597
+    files:
+    - name: encoder.int8.onnx
+    - name: decoder.onnx
+    - name: joiner.int8.onnx
+    - name: tokens.txt

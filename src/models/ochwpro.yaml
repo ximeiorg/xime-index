@@ -5,21 +5,23 @@ category: handwriting
 size: 7.00 MB
 type: remote
 tags:
-  - 手写
-  - ONNX
+- 手写
+- ONNX
 appVersion: '>=2.5.0'
 currentVersion: v1.0
 versions:
-  - version: v1.0
-    date: '2026-06-28'
-    changelog: 初始版本
-    storageDir: ""
-    files:
-      - name: ochwpro.onnx
-        url: https://www.modelscope.cn/models/bikeand/ochwpro/resolve/master/ochwpro.onnx
-        sha256: ""
-        size: "7.00MB"
-      - name: char_index.json
-        url: https://www.modelscope.cn/models/bikeand/ochwpro/resolve/master/char_index.json
-        sha256: ""
-        size: "51.32KB"
+- version: v1.0
+  date: '2026-06-28'
+  changelog: 初始版本
+  storageDir: ''
+  files:
+  - name: ochwpro.onnx
+    url: https://www.modelscope.cn/models/bikeand/ochwpro/resolve/master/ochwpro.onnx
+    sha256: eb04d62a314c7d7bac4e34d6ce0c24137474d30ff94b929115a621385420ce13
+    size: 6.7 MB
+    sizeBytes: 7001270
+  - name: char_index.json
+    url: https://www.modelscope.cn/models/bikeand/ochwpro/resolve/master/char_index.json
+    sha256: 171cf2ac23731428ac9dd28f64be82dece5f66a0ca3d674ffb3b567b51532176
+    size: 50.1 KB
+    sizeBytes: 51317

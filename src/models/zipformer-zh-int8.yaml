@@ -5,22 +5,23 @@ category: asr
 size: 36 MB
 type: remote
 tags:
-  - 语音
-  - sherpa-onnx
-  - ASR
+- 语音
+- sherpa-onnx
+- ASR
 appVersion: '>=2.3.0'
 currentVersion: v1.0
 versions:
-  - version: v1.0
-    date: '2026-06-01'
-    changelog: 初始版本
-    storageDir: asr_models/zipformer-zh-int8
-    archive:
-      url: https://www.modelscope.cn/models/bikeand/asr/resolve/master/sherpa-onnx-streaming-zipformer-zh-int8-2025-06-30.tar.bz2
-      sha256: ""
-      size: "36 MB"
-    files:
-      - name: encoder.int8.onnx
-      - name: decoder.onnx
-      - name: joiner.int8.onnx
-      - name: tokens.txt
+- version: v1.0
+  date: '2026-06-01'
+  changelog: 初始版本
+  storageDir: asr_models/zipformer-zh-int8
+  archive:
+    url: https://www.modelscope.cn/models/bikeand/asr/resolve/master/sherpa-onnx-streaming-zipformer-zh-int8-2025-06-30.tar.bz2
+    sha256: 5a2832047ea1f97dd0dc595b816c230c4bafad65cfc0341fa57517cadc50afd0
+    size: 126.5 MB
+    sizeBytes: 132634597
+  files:
+  - name: encoder.int8.onnx
+  - name: decoder.onnx
+  - name: joiner.int8.onnx
+  - name: tokens.txt

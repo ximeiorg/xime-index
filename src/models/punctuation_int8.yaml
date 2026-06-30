@@ -5,22 +5,24 @@ category: punctuation
 size: 2.2 MB
 type: remote
 tags:
-  - 标点
-  - 后处理
-  - ONNX
+- 标点
+- 后处理
+- ONNX
 appVersion: '>=2.3.0'
 currentVersion: v1.0
 versions:
-  - version: v1.0
-    date: '2026-06-01'
-    changelog: 初始版本
-    storageDir: punctuation_models
-    files:
-      - name: punctuation_int8.onnx
-        url: https://www.modelscope.cn/models/bikeand/srf-punctuation/resolve/master/punctuation_int8.onnx
-        sha256: ""
-        size: "2.24MB"
-      - name: vocab.json
-        url: https://www.modelscope.cn/models/bikeand/srf-punctuation/resolve/master/vocab.json
-        sha256: ""
-        size: "119.10KB"
+- version: v1.0
+  date: '2026-06-01'
+  changelog: 初始版本
+  storageDir: punctuation_models
+  files:
+  - name: punctuation_int8.onnx
+    url: https://www.modelscope.cn/models/bikeand/srf-punctuation/resolve/master/punctuation_int8.onnx
+    sha256: 650eb96762e2b6cfe12a3f1b44ddcab0a3f790e11a98afab3895f863d5eaec62
+    size: 2.1 MB
+    sizeBytes: 2243714
+  - name: vocab.json
+    url: https://www.modelscope.cn/models/bikeand/srf-punctuation/resolve/master/vocab.json
+    sha256: 76684d3d381bed15057f19e6b22972a00ec79e72fa4bfd5682afde4fdcc5a3a2
+    size: 116.3 KB
+    sizeBytes: 119104

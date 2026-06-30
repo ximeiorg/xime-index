@@ -1,21 +1,21 @@
-# ─── 颜文字 ──────────────────────────────────────────────
-id: "xime.kaomoji"
-name: "颜文字"
-author: "Xime"
-description: "丰富的颜文字表情集，(◕‿◕✿) 让输入更有趣"
-type: "remote"
-tags: ["颜文字", "表情"]
-pluginType: "emoji"
-homepage: "https://github.com/ximeiorg/Xime"
-license: "GPL-3.0"
-appVersion: ">=2.0.0"
-currentVersion: "2.0.0"
+id: xime.kaomoji
+name: 颜文字
+author: Xime
+description: 丰富的颜文字表情集，(◕‿◕✿) 让输入更有趣
+type: remote
+tags:
+- 颜文字
+- 表情
+pluginType: emoji
+homepage: https://github.com/ximeiorg/Xime
+license: GPL-3.0
+appVersion: '>=2.0.0'
+currentVersion: 2.0.0
 versions:
-  - version: "2.0.0"
-    date: "2026-03-01"
-    changelog: "新增更多颜文字分类"
-    downloadUrl:
-      - url: "https://github.com/ximeiorg/Xime/releases/download/v2.3.0-beta5/kaomoji-2.0.0-signed.apk"
-        sha256: "243f0c4f5454c775b6056ac7c3beff08e44a4f75f7216c468a399aa949c5cd99"
-        size: "2.08 MB"
-
+- version: 2.0.0
+  date: '2026-03-01'
+  changelog: 新增更多颜文字分类
+  downloadUrl:
+  - url: https://github.com/ximeiorg/Xime/releases/download/v2.3.0-beta5/kaomoji-2.0.0-signed.apk
+    sha256: 243f0c4f5454c775b6056ac7c3beff08e44a4f75f7216c468a399aa949c5cd99
+    size: 2.08 MB
