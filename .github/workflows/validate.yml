@@ -30,10 +30,10 @@ jobs:
       - name: Install uv
         run: pip install uv
 
-      # ─── 1. 生成 + 校验 + 检查未提交变更 ────────────
-      #     数据完整性校验也在这步完成
-      - name: Generate and validate merged index
-        run: uv run python scripts/generate_index.py --check
+      # ─── 1. 校验 sha256/size 完整性 ─────────────────
+      #     跳过 version 为 master/main 的分支引用
+      - name: Validate checksums completeness
+        run: uv run python scripts/ci-update.py --check
 
       # ─── 2. 校验主索引结构 ───────────────────────────
       - name: Validate main index.yaml

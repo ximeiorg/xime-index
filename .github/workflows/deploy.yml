@@ -1,0 +1,31 @@
+name: Deploy to Cloudflare Pages
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "index.yaml"
+      - "rimes/**"
+      - "plugins/**"
+      - "models/**"
+      - "scripts/**"
+      - ".github/workflows/**"
+      - "pyproject.toml"
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install uv
+        run: pip install uv
+
+      - name: Fill checksums and regenerate index
+        run: uv run python scripts/ci-update.py
+
+      - name: Deploy to Cloudflare Pages
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          command: pages deploy . --project-name=xime-index --branch=main

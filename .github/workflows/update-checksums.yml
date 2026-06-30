@@ -1,0 +1,36 @@
+name: Auto-fill checksums
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "src/rimes/*.yaml"
+      - "src/plugins/*.yaml"
+      - "src/models/*.yaml"
+  workflow_dispatch: # 也支持手动触发
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    # 避免 CI commit 触发无限循环
+    if: github.actor != 'xime-bot[bot]'
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install uv
+        run: pip install uv
+
+      - name: Fill missing sha256/size in source files
+        run: uv run python scripts/ci-update.py
+
+      - name: Commit changes back
+        run: |
+          git config user.name "xime-bot[bot]"
+          git config user.email "136334520+xime-bot[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "ci: auto-fill sha256/size for tagged releases [skip ci]"
+            git push
+          fi
