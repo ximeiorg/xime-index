@@ -83,7 +83,7 @@ def check():
 
 
 def update_source(subdir: str, fields: list, filler):
-    """处理单个子目录：从 src/ 读源码 → 补全 checksum → 写回 src/ → 输出 index.yaml"""
+    """处理单个子目录：从 src/ 读源码 → 补全 checksum → 输出 index.yaml（不修改 src/）"""
     from datetime import date
     today = date.today().isoformat()
 
@@ -101,12 +101,8 @@ def update_source(subdir: str, fields: list, filler):
             print(f"  ⚠ {basename}: id 不匹配，跳过")
             continue
 
-        print(f"\n📄 src/{subdir}/{basename}")
-        filled = filler(data)
-        # 写回源码文件
-        dump_yaml(fpath, filled)
-        print(f"  ✏ 已更新 src/{subdir}/{basename}")
-
+        print(f"  📄 src/{subdir}/{basename}")
+        filled = filler(data)  # 只补全内存数据，不写回 src/
         entry = {f: filled[f] for f in fields if f in filled and filled[f] is not None}
         entries.append(entry)
 

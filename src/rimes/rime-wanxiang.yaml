@@ -13,15 +13,13 @@ versions:
 - version: v15.14.2
   date: '2026-06-10'
   changelog: '- 词库更新
-
     - Bug 修复
-
     '
   downloadUrl:
   - url: https://github.com/amzxyz/rime-wanxiang/releases/download/v15.14.2/rime-wanxiang-base.zip
     sha256: 22cd215da8243456fe402df154281661c47bb5fee90ff3ef82e63d0cdfbbb953
     size: 31.7 MB
   - url: https://github.com/amzxyz/RIME-LMDG/releases/download/LTS/wanxiang-lts-zh-hans.gram
-    sha256: f513d838cd08146ef15f382f4a1d74d3821bb9489ebf69aff5d61c1727af2f98
-    size: 401.1 MB
-    sizeBytes: 420537388
+    sha256: b0db7c3d5d32f8983cab9970940dae3c7d2ea0a5245dea249fc5587d0eb0e0bd
+    size: 117.3 MB
+    sizeBytes: 123026414

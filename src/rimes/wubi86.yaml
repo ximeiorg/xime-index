@@ -11,7 +11,7 @@ appVersion: '>=2.3.0'
 currentVersion: 2.0.1
 versions:
 - version: 2.0.1
-  date: '2024-01-01'
+  date: '2026-06-01'
   changelog: ''
   downloadUrl:
   - url: https://github.com/kingzcheung/rime-wubi/archive/refs/tags/2.0.1.tar.gz
@@ -19,7 +19,7 @@ versions:
     size: 2.1 MB
     sizeBytes: 2181001
 - version: 2.0.0
-  date: '2024-12-01'
+  date: '2026-05-14'
   changelog: ''
   downloadUrl:
   - url: https://github.com/kingzcheung/rime-wubi/archive/refs/tags/2.0.0.tar.gz

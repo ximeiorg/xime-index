@@ -13,17 +13,11 @@ versions:
 - version: 2026.06.30
   date: '2026-06-30'
   changelog: '🐞 修正了此前一个版本的打包产物 full.zip 中，含有无关文件的问题
-
     🐞 修正了部分文件非 utf8 编码的问题
-
     🐞 修正了 vhelp 提示不正确的问题
-
     ⚠️ 为避免和简拼冲突，四个字母以下的单词不再能通过全小写输入其大写版本，请按原样大小写输入。e.g. hk --✗--> HK；HK --✓--> HK
-
     📚 中文、英文词库更新
-
     🆕 添加了 full_compiled.zip 作为可下载项目（librime 1.17.0 编译），此产物经过预编译，可大幅度减少初次部署时间
-
     '
   downloadUrl:
   - url: https://github.com/iDvel/rime-ice/releases/download/2026.06.30/full_compiled.zip
