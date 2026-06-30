@@ -149,3 +149,31 @@ def fill_files_checksums(data: dict) -> dict:
                 print(f"    ✓ sha256={sha256[:16]}...  size={size_h}  bytes={size_bytes}")
 
     return result
+
+
+def recalc_model_size(data: dict) -> dict:
+    """
+    重新计算模型级 size = 所有版本中所有文件 sizeBytes 的总和。
+    仅在 sizeBytes 齐全时生效。
+    """
+    import copy
+    result = copy.deepcopy(data)
+
+    total_bytes = 0
+    has_all = True
+    for v in result.get("versions", []):
+        for f in v.get("files", []):
+            sb = f.get("sizeBytes")
+            if sb is None:
+                has_all = False
+            else:
+                total_bytes += sb
+
+    if has_all and total_bytes > 0:
+        old = result.get("size")
+        new = human_size(total_bytes)
+        result["size"] = new
+        if old != new:
+            print(f"    📐 模型大小: {old} → {new}")
+
+    return result

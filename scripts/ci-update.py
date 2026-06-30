@@ -17,6 +17,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from lib import (
     ROOT, load_yaml, dump_yaml,
     fill_download_urls, fill_archive, fill_files_checksums,
+    recalc_model_size,
     should_skip_version,
 )
 
@@ -133,7 +134,7 @@ def update():
     print()
     update_source("plugins", PLUGIN_FIELDS, fill_download_urls)
     print()
-    update_source("models", MODEL_FIELDS, lambda d: fill_files_checksums(fill_archive(d)))
+    update_source("models", MODEL_FIELDS, lambda d: recalc_model_size(fill_files_checksums(fill_archive(d))))
 
     print(f"\n{'=' * 50}")
     print("✅ 所有源文件已更新")

@@ -2,7 +2,7 @@ id: predictive-text-small
 name: 智能联想模型
 description: 基于 ONNX 的 AI 联想词预测模型，int8 量化
 category: prediction
-size: 30+ MB
+size: 18.8 MB
 type: remote
 tags:
 - 联想
