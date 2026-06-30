@@ -8,7 +8,7 @@ tags:
 - 双拼
 homepage: https://github.com/amzxyz/rime-wanxiang
 appVersion: '>=2.4.0'
-currentVersion: 2026.06.12
+currentVersion: v15.14.2
 versions:
 - version: v15.14.2
   date: '2026-06-10'
