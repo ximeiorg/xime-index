@@ -139,8 +139,9 @@ schemas:
       sha256: 22cd215da8243456fe402df154281661c47bb5fee90ff3ef82e63d0cdfbbb953
       size: 31.7 MB
     - url: https://github.com/amzxyz/RIME-LMDG/releases/download/LTS/wanxiang-lts-zh-hans.gram
-      sha256: cb36426d369909ab2fb2bf8a101c1866e7af50e1a86159cbf0ea3fad5c852781
+      sha256: null
       size: 401 MB
+      sizeBytes: 123026414
 - id: stroke
   name: 笔画
   author: rime
