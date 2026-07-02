@@ -1,13 +1,13 @@
 # Xime 模型子索引
 # ⚠️ 此文件由 scripts/ci-update.py 自动生成，请勿手动编辑
 index_version: 1
-updated_at: '2026-06-30'
+updated_at: '2026-07-02'
 models:
 - id: ochwpro
   name: 手写模型
   description: 基于 ONNX 的手写文字识别模型
   category: handwriting
-  size: 7.00 MB
+  size: 6.7 MB
   type: remote
   tags:
   - 手写
@@ -34,7 +34,7 @@ models:
   name: 智能联想模型
   description: 基于 ONNX 的 AI 联想词预测模型，int8 量化
   category: prediction
-  size: 30+ MB
+  size: 18.9 MB
   type: remote
   tags:
   - 联想
@@ -62,7 +62,7 @@ models:
   name: 标点预测模型 int8
   description: 基于 Transformer 的中文标点预测模型，int8 量化
   category: punctuation
-  size: 2.2 MB
+  size: 2.3 MB
   type: remote
   tags:
   - 标点
@@ -90,7 +90,7 @@ models:
   name: 中文 Zipformer int8
   description: Zipformer 架构实时语音识别模型，int8 量化
   category: asr
-  size: 36 MB
+  size: 126.5 MB
   type: remote
   tags:
   - 语音
