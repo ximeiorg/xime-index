@@ -64,7 +64,10 @@ def check():
                 if should_skip_version(ver):
                     continue
                 for dl in v.get("downloadUrl", []):
-                    if dl.get("url") and (not dl.get("sha256") or not dl.get("size")):
+                    url = dl.get("url", "")
+                    if url and (not dl.get("sha256") or not dl.get("size")):
+                        if url.endswith(".gram"):
+                            continue  # .gram 文件不检查 sha256
                         print(f"  ⚠ src/{subdir}/{basename} ({eid} v{ver}): 缺 sha256/size")
                         any_needed = True
                 if "archive" in v:

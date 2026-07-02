@@ -84,6 +84,10 @@ def fill_download_urls(data: dict) -> dict:
             url = dl.get("url", "")
             if not url or (dl.get("sha256") and dl.get("size")):
                 continue
+            # 跳过 .gram 文件，不生成 sha256
+            if url.endswith(".gram"):
+                print(f"  ⏭ {url} (.gram 文件，跳过 sha256)")
+                continue
             print(f"  ↓ {url}")
             sha256, size_bytes, size_h = download_checksum(url)
             if sha256:

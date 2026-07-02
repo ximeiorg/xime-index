@@ -20,6 +20,6 @@ versions:
     sha256: 22cd215da8243456fe402df154281661c47bb5fee90ff3ef82e63d0cdfbbb953
     size: 31.7 MB
   - url: https://github.com/amzxyz/RIME-LMDG/releases/download/LTS/wanxiang-lts-zh-hans.gram
-    sha256: b0db7c3d5d32f8983cab9970940dae3c7d2ea0a5245dea249fc5587d0eb0e0bd
-    size: 117.3 MB
+    sha256: 
+    size: 401 MB
     sizeBytes: 123026414
