@@ -1,7 +1,7 @@
 # Xime 输入方案子索引
 # ⚠️ 此文件由 scripts/ci-update.py 自动生成，请勿手动编辑
 index_version: 1
-updated_at: '2026-07-02'
+updated_at: '2026-07-03'
 schemas:
 - id: cangjie
   name: 倉頡輸入法
@@ -139,7 +139,7 @@ schemas:
       sha256: 22cd215da8243456fe402df154281661c47bb5fee90ff3ef82e63d0cdfbbb953
       size: 31.7 MB
     - url: https://github.com/amzxyz/RIME-LMDG/releases/download/LTS/wanxiang-lts-zh-hans.gram
-      sha256: null
+      sha256: ''
       size: 401 MB
       sizeBytes: 123026414
 - id: stroke
