@@ -1,6 +1,6 @@
 id: zhengma
 name: 郑码方案
-author: rime
+author: chen32768
 description: 郑码方案，支持郑码、郑码拼音、郑码打简出繁
 type: remote
 tags:
