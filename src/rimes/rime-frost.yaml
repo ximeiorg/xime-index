@@ -1,0 +1,19 @@
+id: rime-frost
+name: 白霜拼音
+author: gaboolic
+description: 白霜拼音：蒹葭苍苍，白露为霜。白霜拼音使用高质量语料，进行分词，重新统计字频、词频，归一化，打造纯净、词频准确、智能的词库。
+type: remote
+tags:
+- 拼音
+- 双拼
+homepage: https://github.com/gaboolic/rime-frost
+appVersion: '>=2.3.0'
+currentVersion: 1.0.4
+versions:
+- version: 1.0.4
+  date: '2026-07-10'
+  changelog: ''
+  downloadUrl:
+  - url: https://github.com/gaboolic/rime-frost/releases/download/1.0.4/rime-frost-schemas.zip
+    sha256: 4f4998ae83f63d757c0a4ace192f69d48265bddfabe231642b73e3739ed0f2f5
+    size: 42 MB
