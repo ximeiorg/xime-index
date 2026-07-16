@@ -18,7 +18,7 @@ versions:
   archive:
     url: https://www.modelscope.cn/models/bikeand/asr/resolve/master/sherpa-onnx-streaming-zipformer-zh-int8-2025-06-30.tar.bz2
     sha256: 5a2832047ea1f97dd0dc595b816c230c4bafad65cfc0341fa57517cadc50afd0
-    size: 126.5 MB
+    size: 132.63MB
     sizeBytes: 132634597
   files:
   - name: encoder.int8.onnx
