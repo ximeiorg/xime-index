@@ -2,7 +2,7 @@ id: zipformer-zh-int8
 name: 中文 Zipformer int8
 description: Zipformer 架构实时语音识别模型，int8 量化
 category: asr
-size: 126.5 MB
+size: 132.63MB
 type: remote
 tags:
 - 语音
