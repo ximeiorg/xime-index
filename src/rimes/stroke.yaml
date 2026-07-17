@@ -1,7 +1,7 @@
 id: stroke
 name: 笔画
 author: rime
-description: 适配笔画输入法布局
+description: 适配笔画输入法布局,⚠️注意： 这只是一个示例demo，并不具备实用性！
 type: remote
 tags:
 - 笔画
