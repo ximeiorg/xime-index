@@ -150,6 +150,14 @@ plugins:
   appVersion: '>=2.6.0-beta7'
   currentVersion: 2.0.0
   versions:
+  - version: 2.1.0
+    date: '2026-09-05'
+    changelog: fix bugs, 适配新版本
+    downloadUrl:
+    - url: https://github.com/ximeiorg/xime-fluent-emoji/releases/download/v2.1.0/xime-fluent-emoji-2.1.0.xipk
+      sha256: 257ec2c7080dbc05d58331e4a6a79892688ce5bb1b4daba629175c584d3edbf4
+      size: 5.5 MB
+      sizeBytes: 5775189
   - version: 2.0.0
     date: '2026-08-16'
     changelog: 初始发布，Lua 插件化实现
