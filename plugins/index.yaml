@@ -91,12 +91,6 @@ plugins:
       size: 10.6 KB
       sha256: 757c1a943440de1bec5f01ac2f22d15bc920505f33f8b295c87d0a9c43c5abe1
       sizeBytes: 10859
-  - version: 1.0.0
-    date: '2026-08-07'
-    changelog: 初始发布，Lua 插件化实现
-    downloadUrl:
-    - url: https://github.com/ximeiorg/Xime/releases/download/v2.6.0/volc-asr-1.0.0.xipk
-      size: 10.5 KB
 - id: com.kingzcheung.xime.plugin.webdav_clipboard_sync
   name: WebDAV 剪贴板同步
   author: Xime
