@@ -110,6 +110,14 @@ def update_source(subdir: str, fields: list, filler):
         entry = {f: filled[f] for f in fields if f in filled and filled[f] is not None}
         entries.append(entry)
 
+    # type: built-in 优先排在前面，其余按 id 排序
+    entries.sort(
+        key=lambda e: (
+            e.get("type") != "built-in",
+            e.get("id", ""),
+        )
+    )
+
     # 输出 index.yaml 到根级目录（rimes/ plugins/ models/）
     HEADERS = {
         "rimes": "# Xime 输入方案子索引\n# ⚠️ 此文件由 scripts/ci-update.py 自动生成，请勿手动编辑\n",

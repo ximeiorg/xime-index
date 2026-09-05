@@ -85,6 +85,14 @@ def collect_entries(subdir, fields, src_subdir=None):
             if field in data and data[field] is not None:
                 entry[field] = data[field]
         entries.append(entry)
+
+    # type: built-in 优先排在前面，其余按 id 排序
+    entries.sort(
+        key=lambda e: (
+            e.get("type") != "built-in",
+            e.get("id", ""),
+        )
+    )
     return entries
 
 

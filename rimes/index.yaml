@@ -1,8 +1,44 @@
 # Xime 输入方案子索引
 # ⚠️ 此文件由 scripts/ci-update.py 自动生成，请勿手动编辑
 index_version: 1
-updated_at: '2026-08-12'
+updated_at: '2026-09-05'
 schemas:
+- id: builtin
+  name: 默认方案
+  author: 王永民
+  description: 五笔字形 86 版，经典五笔输入方案,包括了拼音相关功能。
+  type: built-in
+  tags:
+  - 五笔
+  - 拼音
+  homepage: https://github.com/kingzcheung/rime-wubi
+  appVersion: '>=2.6.0'
+  currentVersion: 2.1.2
+  versions:
+  - version: 2.1.2
+    date: '2026-08-01'
+    changelog: 'feat(t9): 拼音九键方案适配 librime-t9 插件'
+    downloadUrl:
+    - url: https://github.com/kingzcheung/rime-wubi/archive/refs/tags/2.1.2.tar.gz
+      size: 2.4 MB
+      sizeBytes: 2506623
+      sha256: 2a95f95e95a906b7fb2a20af752953dd3df73003775303d2e2fc7c641c56bec3
+  - version: 2.0.1
+    date: '2026-06-01'
+    changelog: ''
+    downloadUrl:
+    - url: https://github.com/kingzcheung/rime-wubi/archive/refs/tags/2.0.1.tar.gz
+      sha256: 2124a5168435293ae8cc9008d5322b844698e0fcb4e290397eb700d41ffd7469
+      size: 2.1 MB
+      sizeBytes: 2181001
+  - version: 2.0.0
+    date: '2026-05-14'
+    changelog: ''
+    downloadUrl:
+    - url: https://github.com/kingzcheung/rime-wubi/archive/refs/tags/2.0.0.tar.gz
+      sha256: 92c292339536434920aefe3728fa4666b347337e26e0aa47f0dab0d1cd5c5cc7
+      size: 2.1 MB
+      sizeBytes: 2165924
 - id: cangjie
   name: 倉頡輸入法
   author: rime
@@ -159,34 +195,6 @@ schemas:
       sha256: 8f4cf584708e22db1c5888c4ed14cf28f90e465939fd4991904c179e76f1baf0
       size: 49.3 KB
       sizeBytes: 50474
-- id: wubi86
-  name: 五笔86
-  author: 王永民
-  description: 五笔字形 86 版，经典五笔输入方案,包括了拼音相关功能。
-  type: built-in
-  tags:
-  - 五笔
-  - 拼音
-  homepage: https://github.com/kingzcheung/rime-wubi
-  appVersion: '>=2.3.0'
-  currentVersion: 2.0.1
-  versions:
-  - version: 2.0.1
-    date: '2026-06-01'
-    changelog: ''
-    downloadUrl:
-    - url: https://github.com/kingzcheung/rime-wubi/archive/refs/tags/2.0.1.tar.gz
-      sha256: 2124a5168435293ae8cc9008d5322b844698e0fcb4e290397eb700d41ffd7469
-      size: 2.1 MB
-      sizeBytes: 2181001
-  - version: 2.0.0
-    date: '2026-05-14'
-    changelog: ''
-    downloadUrl:
-    - url: https://github.com/kingzcheung/rime-wubi/archive/refs/tags/2.0.0.tar.gz
-      sha256: 92c292339536434920aefe3728fa4666b347337e26e0aa47f0dab0d1cd5c5cc7
-      size: 2.1 MB
-      sizeBytes: 2165924
 - id: wubi98
   name: 五笔98
   author: rime
@@ -209,6 +217,27 @@ schemas:
       sha256: 7d105524b81373c7fef0cbfd197fa3c236bcb4264b1935c5e384bacb10fece53
       size: 902.9 KB
       sizeBytes: 924526
+- id: wubixsj
+  name: 新世纪五笔
+  author: 空山明月（Xime 适配：aizigao）
+  description: 新世纪五笔，包含纯五笔与五笔拼音混输方案，支持拼音反查与候选字根注释。
+  type: remote
+  tags:
+  - 五笔
+  - 形码
+  - 拼音
+  homepage: https://github.com/aizigao/Xime_wubi_xinshiji
+  appVersion: '>=2.6.0'
+  currentVersion: 2.2.0
+  versions:
+  - version: 2.2.0
+    date: '2026-09-03'
+    changelog: 初始发布 Xime 兼容的新世纪五笔方案，包含纯五笔、五笔拼音混输与自定义配置。
+    downloadUrl:
+    - url: https://github.com/aizigao/Xime_wubi_xinshiji/releases/download/v2.2.0/wubixsj-2.2.0.zip
+      sha256: 865ddbb9c0c7f7d7a9ace688aedd2a8844e37b8eb63529b5edef5625a7f470d2
+      size: 1.8 MB
+      sizeBytes: 1922913
 - id: xqzm
   name: 风入松郑码方案
   author: 风入松

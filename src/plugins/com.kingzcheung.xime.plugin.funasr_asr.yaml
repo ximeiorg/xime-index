@@ -16,5 +16,5 @@ versions:
   date: '2026-08-07'
   changelog: 初始发布，Lua 插件化实现
   downloadUrl:
-  - url: https://github.com/ximeiorg/Xime/releases/download/v2.6.0-beta5/funasr-asr-1.1.0.xipk
+  - url: https://github.com/ximeiorg/Xime/releases/download/v2.6.0/funasr-asr-1.1.0.xipk
     size: 10.1 KB

@@ -1,7 +1,7 @@
 # Xime 插件子索引
 # ⚠️ 此文件由 scripts/ci-update.py 自动生成，请勿手动编辑
 index_version: 1
-updated_at: '2026-08-12'
+updated_at: '2026-09-05'
 plugins:
 - id: com.kingzcheung.xime.plugin.funasr_asr
   name: 阿里百炼 FunAsr
@@ -21,9 +21,9 @@ plugins:
     date: '2026-08-07'
     changelog: 初始发布，Lua 插件化实现
     downloadUrl:
-    - url: https://github.com/ximeiorg/Xime/releases/download/v2.6.0-beta5/funasr-asr-1.1.0.xipk
+    - url: https://github.com/ximeiorg/Xime/releases/download/v2.6.0/funasr-asr-1.1.0.xipk
       size: 10.2 KB
-      sha256: b8109d1065b5f0f886290f2eb17014297711af1273499ee2a5c03d38fa3caf4a
+      sha256: 6fb51e89a9afab193bf8e9408f710044bae8a2618ef17263cddbd2689f06800b
       sizeBytes: 10437
 - id: com.kingzcheung.xime.plugin.kaomoji
   name: 颜文字表情包
@@ -43,9 +43,9 @@ plugins:
     date: '2026-08-07'
     changelog: 初始发布，Lua 插件化实现
     downloadUrl:
-    - url: https://github.com/ximeiorg/Xime/releases/download/v2.6.0-beta5/kaomoji-2.1.0.xipk
+    - url: https://github.com/ximeiorg/Xime/releases/download/v2.6.0/kaomoji-2.1.0.xipk
       size: 3.2 KB
-      sha256: 0c57f43e71ce05449cd69ef7959d03d309034c9234fcd02225fbb7e320bc70da
+      sha256: aaded5a9ca5511f14d60c26363ef33e11504578c9dd780d8bf30cb89df3909fc
       sizeBytes: 3297
 - id: com.kingzcheung.xime.plugin.meme_bunny
   name: 恶搞兔表情包
@@ -65,9 +65,9 @@ plugins:
     date: '2026-08-07'
     changelog: 初始发布，Lua 插件化实现
     downloadUrl:
-    - url: https://github.com/ximeiorg/Xime/releases/download/v2.6.0-beta5/meme-bunny-2.1.0.xipk
+    - url: https://github.com/ximeiorg/Xime/releases/download/v2.6.0/meme-bunny-2.1.0.xipk
       size: 65.0 KB
-      sha256: f4e3173533d173b76819145c821fd617e3ca3551a546863fd20d86291e9aa359
+      sha256: 336d10862464a50626bd4d9616f2225289b24d07c780785838c0748e45f7af1b
       sizeBytes: 66567
 - id: com.kingzcheung.xime.plugin.volc_asr
   name: 火山引擎流式语音识别
@@ -87,18 +87,16 @@ plugins:
     date: '2026-08-12'
     changelog: 优化了实现，修复部分 bug
     downloadUrl:
-    - url: https://github.com/ximeiorg/Xime/releases/download/v2.6.0-beta5/volc-asr-1.0.1.xipk
+    - url: https://github.com/ximeiorg/Xime/releases/download/v2.6.0/volc-asr-1.0.1.xipk
       size: 10.6 KB
-      sha256: bc5df6bc159ab4f95f229b0448c21ceb42e95ef017a7695952a0aa8711501ed7
+      sha256: 757c1a943440de1bec5f01ac2f22d15bc920505f33f8b295c87d0a9c43c5abe1
       sizeBytes: 10859
   - version: 1.0.0
     date: '2026-08-07'
     changelog: 初始发布，Lua 插件化实现
     downloadUrl:
-    - url: https://github.com/ximeiorg/Xime/releases/download/v2.6.0-beta4/volc-asr-1.0.0.xipk
+    - url: https://github.com/ximeiorg/Xime/releases/download/v2.6.0/volc-asr-1.0.0.xipk
       size: 10.5 KB
-      sha256: 82acb53c780580dcd7e9b3d481bdb5a93c8253857d5e0b1c98760ff643e5c48a
-      sizeBytes: 10757
 - id: com.kingzcheung.xime.plugin.webdav_clipboard_sync
   name: WebDAV 剪贴板同步
   author: Xime
@@ -117,9 +115,9 @@ plugins:
     date: '2026-08-12'
     changelog: 初始发布，Lua 插件化实现
     downloadUrl:
-    - url: https://github.com/ximeiorg/Xime/releases/download/v2.6.0-beta5/webdav-clipboard-sync-0.1.0.xipk
+    - url: https://github.com/ximeiorg/Xime/releases/download/v2.6.0/webdav-clipboard-sync-0.1.0.xipk
       size: 4.5 KB
-      sha256: 8ffae09bd99924f5f55b9b8339c2900ba7c7d997836327697824ee0a970786c5
+      sha256: 81cc872ffd0f1c6803b6617bd50e0a857de17eb538761225344b568cedbf8046
       sizeBytes: 4625
 - id: com.kingzcheung.xime.plugin.ximed_sync
   name: ximed 剪贴板同步
@@ -139,7 +137,30 @@ plugins:
     date: '2026-08-12'
     changelog: 初始发布，Lua 插件化实现
     downloadUrl:
-    - url: https://github.com/ximeiorg/Xime/releases/download/v2.6.0-beta5/ximed-clipboard-sync-0.1.0.xipk
+    - url: https://github.com/ximeiorg/Xime/releases/download/v2.6.0/ximed-clipboard-sync-0.1.0.xipk
       size: 3.0 KB
-      sha256: b3cc88fac1c33c20dd18ce2268ce52d470cc3fdd70ea730d51f2f64f31d92a69
+      sha256: 89a3d17e3d7812ef2b16112b06d1ed82695518139842c4c8c8db389bf5f22ba3
       sizeBytes: 3079
+- id: com.kingzcheung.xime_fluent_emoji
+  name: Fluent Emoji 3D
+  author: Xime
+  description: Microsoft Fluent UI 3D 风格表情（222 个精选），涵盖笑脸、人物、动物、食物、旅行、活动、物品、符号、旗帜 9
+    大分类
+  type: remote
+  tags:
+  - 表情
+  - 3D
+  pluginType: emoji
+  homepage: https://github.com/ximeiorg/xime-fluent-emoji
+  license: MIT
+  appVersion: '>=2.6.0-beta7'
+  currentVersion: 2.0.0
+  versions:
+  - version: 2.0.0
+    date: '2026-08-16'
+    changelog: 初始发布，Lua 插件化实现
+    downloadUrl:
+    - url: https://github.com/ximeiorg/xime-fluent-emoji/releases/download/v2.0.0/xime-fluent-emoji-2.0.0.xipk
+      sha256: c3dea0d314b481df5565fa7ce95255d8d9036a0172b92d48561bf51dda35e3a5
+      size: 7.2 MB
+      sizeBytes: 7582935

@@ -1,5 +1,5 @@
-id: wubi86
-name: 五笔86
+id: builtin
+name: 默认方案
 author: 王永民
 description: 五笔字形 86 版，经典五笔输入方案,包括了拼音相关功能。
 type: built-in
@@ -7,9 +7,16 @@ tags:
 - 五笔
 - 拼音
 homepage: https://github.com/kingzcheung/rime-wubi
-appVersion: '>=2.3.0'
-currentVersion: 2.0.1
+appVersion: '>=2.6.0'
+currentVersion: 2.1.2
 versions:
+- version: 2.1.2
+  date: '2026-08-01'
+  changelog: 'feat(t9): 拼音九键方案适配 librime-t9 插件'
+  downloadUrl:
+  - url: https://github.com/kingzcheung/rime-wubi/archive/refs/tags/2.1.2.tar.gz
+    size: 2.1 MB
+    sizeBytes: 2181001
 - version: 2.0.1
   date: '2026-06-01'
   changelog: ''

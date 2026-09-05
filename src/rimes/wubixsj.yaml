@@ -1,0 +1,21 @@
+id: wubixsj
+name: 新世纪五笔
+author: 空山明月（Xime 适配：aizigao）
+description: 新世纪五笔，包含纯五笔与五笔拼音混输方案，支持拼音反查与候选字根注释。
+type: remote
+tags:
+- 五笔
+- 形码
+- 拼音
+homepage: https://github.com/aizigao/Xime_wubi_xinshiji
+appVersion: '>=2.6.0'
+currentVersion: 2.2.0
+versions:
+- version: 2.2.0
+  date: '2026-09-03'
+  changelog: 初始发布 Xime 兼容的新世纪五笔方案，包含纯五笔、五笔拼音混输与自定义配置。
+  downloadUrl:
+  - url: https://github.com/aizigao/Xime_wubi_xinshiji/releases/download/v2.2.0/wubixsj-2.2.0.zip
+    sha256: 865ddbb9c0c7f7d7a9ace688aedd2a8844e37b8eb63529b5edef5625a7f470d2
+    size: 1.8 MB
+    sizeBytes: 1922913

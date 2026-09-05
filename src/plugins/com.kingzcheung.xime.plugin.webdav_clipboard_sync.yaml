@@ -16,5 +16,5 @@ versions:
   date: '2026-08-12'
   changelog: 初始发布，Lua 插件化实现
   downloadUrl:
-  - url: https://github.com/ximeiorg/Xime/releases/download/v2.6.0-beta5/webdav-clipboard-sync-0.1.0.xipk
+  - url: https://github.com/ximeiorg/Xime/releases/download/v2.6.0/webdav-clipboard-sync-0.1.0.xipk
     size: 4.52 KB
