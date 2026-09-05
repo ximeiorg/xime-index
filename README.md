@@ -30,11 +30,11 @@ Xime 输入法的插件与方案市场索引。
 
 | ID | 名称 | 作者 | 分类 | 大小 | 最低 App 版本 |
 |---|---|---|---|---|---|
-| `ochwpro` | 手写模型 | bikeand | handwriting | 6.7 MB | >=2.5.0 |
-| `predictive-text-base` | 智能联想模型 base 版本 | bikeand | prediction | 34.8 MB | >=2.6.0 |
-| `predictive-text-small` | 智能联想模型 small 版本 | bikeand | prediction | 18.9 MB | >=2.3.0 |
-| `punctuation_int8` | 标点预测模型 int8 | bikeand | punctuation | 2.3 MB | >=2.3.0 |
-| `zipformer-zh-int8` | 中文 Zipformer int8 | bikeand | asr | 132.6 MB | <2.6.0 |
+| `ochwpro` | 手写模型 | bikeand (Kor1 ) | handwriting | 6.7 MB | >=2.5.0 |
+| `predictive-text-base` | 智能联想模型 base 版本 | bikeand (Kor1 ) | prediction | 34.8 MB | >=2.6.0 |
+| `predictive-text-small` | 智能联想模型 small 版本 | bikeand (Kor1 ) | prediction | 18.9 MB | >=2.3.0 |
+| `punctuation_int8` | 标点预测模型 int8 | bikeand (Kor1 ) | punctuation | 2.3 MB | >=2.3.0 |
+| `zipformer-zh-int8` | 中文 Zipformer int8 | bikeand (Kor1 ) | asr | 132.6 MB | <2.6.0 |
 
 ### 插件 (Plugins)
 
