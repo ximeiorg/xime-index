@@ -159,17 +159,18 @@ schemas:
   tags:
   - 拼音
   - 双拼
+  - 声调
   homepage: https://github.com/amzxyz/rime-wanxiang
   appVersion: '>=2.4.0'
-  currentVersion: v15.14.2
+  currentVersion: v17.9.6
   versions:
-  - version: v15.14.2
-    date: '2026-06-10'
-    changelog: '- 词库更新 - Bug 修复 '
+  - version: v17.9.6
+    date: '2026-09-03'
+    changelog: '- 全面重构Lua，细化优化多处细节 '
     downloadUrl:
-    - url: https://github.com/amzxyz/rime-wanxiang/releases/download/v15.14.2/rime-wanxiang-base.zip
-      sha256: 22cd215da8243456fe402df154281661c47bb5fee90ff3ef82e63d0cdfbbb953
-      size: 31.7 MB
+    - url: https://github.com/amzxyz/rime-wanxiang/releases/download/v17.9.6/rime-wanxiang-base.zip
+      sha256: d07be3fb1f7011843b2c316c8476a4ad5ab4f58a5a9a14e0a15157cc29320e93
+      size: 33.6 MB
     - url: https://github.com/amzxyz/RIME-LMDG/releases/download/LTS/wanxiang-lts-zh-hans.gram
       sha256: ''
       size: 401 MB
