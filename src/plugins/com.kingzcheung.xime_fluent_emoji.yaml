@@ -10,7 +10,7 @@ pluginType: emoji
 homepage: https://github.com/ximeiorg/xime-fluent-emoji
 license: MIT
 appVersion: '>=2.6.0-beta7'
-currentVersion: 2.0.0
+currentVersion: 2.1.0
 versions:
 - version: 2.1.0
   date: '2026-09-05'
