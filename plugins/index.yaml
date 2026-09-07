@@ -1,7 +1,7 @@
 # Xime 插件子索引
 # ⚠️ 此文件由 scripts/ci-update.py 自动生成，请勿手动编辑
 index_version: 1
-updated_at: '2026-09-05'
+updated_at: '2026-09-07'
 plugins:
 - id: com.kingzcheung.xime.plugin.funasr_asr
   name: 阿里百炼 FunAsr
@@ -148,7 +148,7 @@ plugins:
   homepage: https://github.com/ximeiorg/xime-fluent-emoji
   license: MIT
   appVersion: '>=2.6.0-beta7'
-  currentVersion: 2.0.0
+  currentVersion: 2.1.0
   versions:
   - version: 2.1.0
     date: '2026-09-05'
