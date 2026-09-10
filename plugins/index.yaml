@@ -1,7 +1,7 @@
 # Xime 插件子索引
 # ⚠️ 此文件由 scripts/ci-update.py 自动生成，请勿手动编辑
 index_version: 1
-updated_at: '2026-09-09'
+updated_at: '2026-09-10'
 plugins:
 - id: com.kingzcheung.xime.plugin.funasr_asr
   name: 阿里百炼 FunAsr
@@ -86,9 +86,9 @@ plugins:
     date: '2026-09-09'
     changelog: 初始版本
     downloadUrl:
-    - url: https://github.com/ximeiorg/Xime/releases/download/v2.8.0-beta5/typing-stats-0.2.0.xipk
+    - url: https://github.com/ximeiorg/Xime/releases/download/v2.8.0/typing-stats-0.2.0.xipk
       size: 4.0 KB
-      sha256: cd6ec96d6278307f0aa776c650a0a1ecb845d9c84deb7961755179b4d5f3b692
+      sha256: 084592772c5ab4aa6da944774747eaa057a5734ef599c36ad71732de8e984613
       sizeBytes: 4059
 - id: com.kingzcheung.xime.plugin.volc_asr
   name: 火山引擎流式语音识别
