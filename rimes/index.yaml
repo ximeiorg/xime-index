@@ -227,9 +227,17 @@ schemas:
   - 形码
   - 拼音
   homepage: https://github.com/aizigao/Xime_wubi_xinshiji
-  appVersion: '>=2.6.0'
-  currentVersion: 2.2.0
+  appVersion: '>=2.8.0'
+  currentVersion: 2.3.1
   versions:
+  - version: 2.3.1
+    date: '2026-09-05'
+    changelog: 新增下滑全选、复制、粘贴操作, 展示字根到候选字（需要2.8.0）。
+    downloadUrl:
+    - url: https://github.com/aizigao/Xime_wubi_xinshiji/releases/download/v2.3.1/wubixsj-2.3.1.zip
+      sha256: c25422bcebae575b699f60bc18959503227e74b84a1c6f9c61a9b3d54f9dc5d1
+      size: 1.9 MB
+      sizeBytes: 1959721
   - version: 2.2.0
     date: '2026-09-03'
     changelog: 初始发布 Xime 兼容的新世纪五笔方案，包含纯五笔、五笔拼音混输与自定义配置。
