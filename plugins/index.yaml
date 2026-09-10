@@ -76,7 +76,7 @@ plugins:
   type: remote
   tags:
   - Tool
-  pluginType: speech
+  pluginType: tool
   homepage: https://github.com/ximeiorg/Xime
   license: GPL-3.0
   appVersion: '>=2.8.0'
