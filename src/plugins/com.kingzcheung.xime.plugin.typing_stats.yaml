@@ -5,7 +5,7 @@ description: 统计打字量（今日/累计字数、提交次数）。基于宿
 type: remote
 tags:
 - Tool
-pluginType: speech
+pluginType: tool
 homepage: https://github.com/ximeiorg/Xime
 license: GPL-3.0
 appVersion: '>=2.8.0'
