@@ -15,6 +15,6 @@ versions:
   date: '2026-09-09'
   changelog: 初始版本
   downloadUrl:
-  - url: https://github.com/ximeiorg/Xime/releases/download/v2.8.0-beta5/typing-stats-0.2.0.xipk
+  - url: https://github.com/ximeiorg/Xime/releases/download/v2.8.0/typing-stats-0.2.0.xipk
     size: 3.96 KB
 
