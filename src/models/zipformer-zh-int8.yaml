@@ -10,7 +10,7 @@ tags:
 - sherpa-onnx
 - ASR
 homepage: https://www.modelscope.cn/models/bikeand/asr
-appVersion: '<2.6.0'
+appVersion: '>=2.3.0'
 currentVersion: v1.0
 versions:
 - version: v1.0
