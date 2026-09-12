@@ -1,7 +1,7 @@
 id: zipformer-zh-int8
 name: 中文 Zipformer int8
 author: kaldi
-description: 本地语音识别模型，自2.6.0 版本起废弃。
+description: 本地语音识别模型。
 category: asr
 size: 132.63MB
 type: remote
