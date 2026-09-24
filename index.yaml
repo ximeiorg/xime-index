@@ -15,6 +15,10 @@ plugins:
 models:
   from: "./models/index.yaml"
 
+# ─── 键盘布局（详见 layouts/ 目录）───────────────────────
+layouts:
+  from: "./layouts/index.yaml"
+
 # ─── 索引源 ───────────────────────────────────────────────
 sources:
   - id: "xime-official"

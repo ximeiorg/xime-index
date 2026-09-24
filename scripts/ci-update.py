@@ -44,6 +44,11 @@ MODEL_FIELDS = [
     "type", "tags", "homepage", "license", "appVersion", "warning",
     "currentVersion", "versions",
 ]
+LAYOUT_FIELDS = [
+    "id", "name", "author", "description", "tags",
+    "repo", "homepage", "license", "appVersion", "requiresSchemes",
+    "screenshots", "warning", "currentVersion", "versions",
+]
 
 
 # ─── 检查是否有缺失 ──────────────────────────────────────
@@ -51,7 +56,7 @@ MODEL_FIELDS = [
 
 def check():
     any_needed = False
-    for subdir in ("rimes", "plugins", "models"):
+    for subdir in ("rimes", "plugins", "models", "layouts"):
         src_dir = os.path.join(SRC_DIR, subdir)
         for fpath in sorted(glob.glob(os.path.join(src_dir, "*.yaml"))):
             basename = os.path.basename(fpath)
@@ -123,8 +128,9 @@ def update_source(subdir: str, fields: list, filler):
         "rimes": "# Xime 输入方案子索引\n# ⚠️ 此文件由 scripts/ci-update.py 自动生成，请勿手动编辑\n",
         "plugins": "# Xime 插件子索引\n# ⚠️ 此文件由 scripts/ci-update.py 自动生成，请勿手动编辑\n",
         "models": "# Xime 模型子索引\n# ⚠️ 此文件由 scripts/ci-update.py 自动生成，请勿手动编辑\n",
+        "layouts": "# Xime 键盘布局子索引\n# ⚠️ 此文件由 scripts/ci-update.py 自动生成，请勿手动编辑\n",
     }
-    key_map = {"rimes": "schemas", "plugins": "plugins", "models": "models"}
+    key_map = {"rimes": "schemas", "plugins": "plugins", "models": "models", "layouts": "layouts"}
     key = key_map[subdir]
 
     os.makedirs(out_dir, exist_ok=True)
@@ -146,6 +152,8 @@ def update():
     update_source("plugins", PLUGIN_FIELDS, fill_download_urls)
     print()
     update_source("models", MODEL_FIELDS, lambda d: recalc_model_size(fill_files_checksums(fill_archive(d))))
+    print()
+    update_source("layouts", LAYOUT_FIELDS, fill_download_urls)
 
     print(f"\n{'=' * 50}")
     print("✅ 所有源文件已更新")

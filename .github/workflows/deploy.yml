@@ -8,6 +8,7 @@ on:
       - "rimes/**"
       - "plugins/**"
       - "models/**"
+      - "layouts/**"
       - "scripts/**"
       - ".github/workflows/**"
       - "pyproject.toml"

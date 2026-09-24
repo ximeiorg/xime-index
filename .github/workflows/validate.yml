@@ -7,6 +7,7 @@ on:
       - "rimes/**"
       - "plugins/**"
       - "models/**"
+      - "layouts/**"
       - "scripts/**"
       - ".github/workflows/**"
       - "pyproject.toml"
@@ -17,6 +18,7 @@ on:
       - "rimes/**"
       - "plugins/**"
       - "models/**"
+      - "layouts/**"
       - "scripts/**"
       - ".github/workflows/**"
       - "pyproject.toml"
@@ -56,6 +58,7 @@ jobs:
           validate('rimes/index.yaml', 'schemas')
           validate('plugins/index.yaml', 'plugins')
           validate('models/index.yaml', 'models')
+          validate('layouts/index.yaml', 'layouts')
           print('✅ All index files valid')
           "
 
@@ -70,6 +73,7 @@ jobs:
           assert 'schemas' in data and 'from' in data['schemas'], 'missing schemas.from'
           assert 'plugins' in data and 'from' in data['plugins'], 'missing plugins.from'
           assert 'models' in data and 'from' in data['models'], 'missing models.from'
+          assert 'layouts' in data and 'from' in data['layouts'], 'missing layouts.from'
           assert 'sources' in data, 'missing sources'
           print('OK: main index.yaml is valid')
           "
@@ -123,6 +127,7 @@ jobs:
           failures = check_urls('rimes/index.yaml', 'schemas')
           failures += check_urls('plugins/index.yaml', 'plugins')
           failures += check_urls('models/index.yaml', 'models', is_model=True)
+          failures += check_urls('layouts/index.yaml', 'layouts')
 
           if failures:
               sys.exit(1)

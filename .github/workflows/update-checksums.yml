@@ -7,6 +7,7 @@ on:
       - "src/rimes/*.yaml"
       - "src/plugins/*.yaml"
       - "src/models/*.yaml"
+      - "src/layouts/*.yaml"
       - ".github/workflows/update-checksums.yml"
   workflow_dispatch: # 也支持手动触发
 

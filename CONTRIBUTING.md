@@ -181,6 +181,47 @@ python scripts/generate_index.py
 
 `models/index.yaml` 会自动更新。
 
+## 上架新布局
+
+布局（键盘配置）与方案/插件不同：**内容托管在作者自己的仓库**，本索引只保存引用。
+完整规范见 [LAYOUT_SPEC.md](LAYOUT_SPEC.md)。
+
+### 步骤 1：创建布局源文件
+
+在 `src/layouts/` 下新建 `<id>.yaml` 文件：
+
+```yaml
+# src/layouts/my_layout.yaml
+id: my_layout
+name: 我的布局
+author: yourname
+description: 一段简短说明
+tags: [布局]                      # 布局 | 配色 | 快捷键 | 输入法适配
+repo: https://github.com/you/my-layout   # 作者仓库（内容来源）
+license: MIT
+appVersion: ">=3.0.0"
+requiresSchemes: []               # 依赖的输入方案 id，如 [cangjie]
+screenshots:                      # 1~5 张，仅详情页展示
+  - https://.../01.png
+currentVersion: "1.0.0"
+versions:
+  - version: "1.0.0"
+    date: "2026-09-24"
+    changelog: 初始发布
+    downloadUrl:
+      - url: https://.../xime.custom.yaml   # 纯文本；或用 zip 包（含 themes/fonts）
+        sha256: ""
+        size: ""
+```
+
+### 步骤 2：生成索引
+
+```bash
+python scripts/ci-update.py
+```
+
+`layouts/index.yaml` 会自动更新并补全 `sha256`/`size`。
+
 ## 更新版本
 
 已有方案/插件/模型发布新版本时：
@@ -195,6 +236,7 @@ python scripts/generate_index.py
 |------|------|------|
 | 方案 | .zip / .tar.gz | 包含 .schema.yaml + .dict.yaml |
 | 插件 | .apk | 实现 EmojiPlugin 接口 |
+| 布局 | xime.custom.yaml 或 .zip | 纯文本直接给 yaml；含 themes/fonts 资源时打 zip（根级 xime.custom.yaml） |
 
 ## 下载地址
 

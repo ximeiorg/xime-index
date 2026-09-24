@@ -1,6 +1,6 @@
 # Xime Index
 
-Xime 输入法的插件与方案市场索引。
+Xime 输入法的插件、方案、模型与键盘布局市场索引。
 
 ## 目录结构
 
@@ -9,18 +9,22 @@ Xime 输入法的插件与方案市场索引。
 ├── src/                       # 源文件（每个条目一个 YAML）
 │   ├── rimes/                 #   输入方案源文件
 │   ├── plugins/               #   插件源文件
-│   └── models/                #   模型源文件
+│   ├── models/                #   模型源文件
+│   └── layouts/               #   键盘布局源文件（内容托管在作者仓库，仅存引用）
 ├── rimes/                     # 方案子索引（自动生成）
 │   └── index.yaml
 ├── plugins/                   # 插件子索引（自动生成）
 │   └── index.yaml
 ├── models/                    # 模型子索引（自动生成）
 │   └── index.yaml
+├── layouts/                   # 键盘布局子索引（自动生成）
+│   └── index.yaml
 ├── scripts/
 │   ├── ci-update.py           #   CI 自动补全 sha256/size
 │   ├── lib.py                 #   共享工具库
 │   └── generate_index.py      #   旧版生成器（保留）
 ├── CONTRIBUTING.md            # 上架指南
+├── LAYOUT_SPEC.md             # 键盘布局上架规范
 └── .github/workflows/         # CI 校验
 ```
 
@@ -65,6 +69,15 @@ Xime 输入法的插件与方案市场索引。
 
 CI 自动为每个下载链接补全 `sha256`、`size`（人类可读）和 `sizeBytes`（精确字节数），
 方便 App 展示文件大小和计算下载进度。`version` 为 `master`/`main` 的分支引用会被跳过（内容不固定）。
+
+## 键盘布局 (Layouts)
+
+布局是「一套 `xime.custom.yaml` 键盘配置」，本索引只保存**引用**，
+包与资源托管在作者自有仓库。详见 [LAYOUT_SPEC.md](LAYOUT_SPEC.md)。
+
+| ID | 名称 | 作者 | 标签 | 最低 App 版本 |
+|---|---|---|---|---|
+| `number_rows` | 数字行 | kingzcheung | 布局 | >=3.0.0 |
 
 ## 本地更新
 
