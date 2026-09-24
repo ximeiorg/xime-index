@@ -14,13 +14,13 @@ layouts:
   appVersion: '>=3.0.0'
   requiresSchemes: []
   screenshots:
-  - https://raw.githubusercontent.com/cz-archive/number_rows/3ee546e083acd2e93149ed9d71388a4b3f2dd8cc/images/number_rows.jpg
+  - https://cdn.jsdelivr.net/gh/cz-archive/number_rows@master/images/number_rows.jpg
   currentVersion: 1.0.0
   versions:
   - version: 1.0.0
     date: '2026-09-24'
     changelog: 首个版本：标准 4 行布局 + 顶部数字行（中英各 5 行）。
     downloadUrl:
-    - url: https://raw.githubusercontent.com/cz-archive/number_rows/3ee546e083acd2e93149ed9d71388a4b3f2dd8cc/xime.custom.yaml
+    - url: https://cdn.jsdelivr.net/gh/cz-archive/number_rows@master/xime.custom.yaml
       sha256: 88d6e994f193a74ae8be95e134f46cbccbb39d970aed68e6e720dff560b0e271
       size: 2.5 KB
