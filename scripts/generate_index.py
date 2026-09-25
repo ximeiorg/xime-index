@@ -270,6 +270,13 @@ def validate_layout_index(subdir, key):
 
 
 def main():
+    print("⚠ scripts/generate_index.py 已弃用，未做任何改动。")
+    print("  原因：源目录已按 src/plugins/v1、src/plugins/v2 归档；本脚本不会补全 sha256/size。")
+    print("  请改用：python scripts/ci-update.py")
+    sys.exit(1)
+
+
+def _legacy_main():
     args = set(sys.argv[1:])
     check_only = "--check" in args
     validate_only = "--validate" in args

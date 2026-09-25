@@ -25,7 +25,7 @@ Xime 输入法的插件、方案、模型与键盘布局市场索引。
 ├── scripts/
 │   ├── ci-update.py           #   CI 自动补全 sha256/size
 │   ├── lib.py                 #   共享工具库
-│   └── generate_index.py      #   旧版生成器（保留）
+│   └── generate_index.py      #   旧版生成器（已弃用，请用 ci-update.py）
 ├── CONTRIBUTING.md            # 上架指南
 ├── LAYOUT_SPEC.md             # 键盘布局上架规范
 └── .github/workflows/         # CI 校验
