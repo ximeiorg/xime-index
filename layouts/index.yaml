@@ -1,7 +1,7 @@
 # Xime 键盘布局子索引
 # ⚠️ 此文件由 scripts/ci-update.py 自动生成，请勿手动编辑
 index_version: 1
-updated_at: '2026-09-24'
+updated_at: '2026-09-25'
 layouts:
 - id: number_rows
   name: 数字行
@@ -35,14 +35,14 @@ layouts:
   appVersion: '>=3.0.0'
   requiresSchemes: []
   screenshots:
-  - https://cdn.jsdelivr.net/gh/cz-archive/number_rows@master/images/number_rows.jpg
-  currentVersion: 1.0.0
+  - https://cdn.jsdelivr.net/gh/cz-archive/wubi_compact@1.0.1/images/0.jpg
+  currentVersion: 1.0.1
   versions:
-  - version: 1.0.0
-    date: '2026-09-24'
+  - version: 1.0.1
+    date: '2026-09-25'
     changelog: 首个版本：标准 4 行布局 + 顶部数字行（中英各 5 行）。
     downloadUrl:
-    - url: https://cdn.jsdelivr.net/gh/cz-archive/wubi_compact@master/xime.custom.yaml
+    - url: https://cdn.jsdelivr.net/gh/cz-archive/wubi_compact@1.0.1/xime.custom.yaml
       size: 10.4 KB
       sha256: 30684dc7767d5a654031f3c38dfb7b3973a70140e2fd1012468c59b18dbe10a9
       sizeBytes: 10685
