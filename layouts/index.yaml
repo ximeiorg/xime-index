@@ -3,12 +3,36 @@
 index_version: 1
 updated_at: '2026-09-25'
 layouts:
+- id: msdouble
+  name: 双拼布局（微软双拼）
+  author: kingzcheung
+  description: 专属于微软双拼版本。
+  tags:
+  - 布局
+  - 全键盘
+  repo: https://github.com/cz-archive/msdouble
+  license: GPL-3.0
+  appVersion: '>=3.0.0'
+  requiresSchemes: []
+  screenshots:
+  - https://cdn.jsdelivr.net/gh/cz-archive/msdouble@1.0.0/images/0.jpg
+  currentVersion: 1.0.0
+  versions:
+  - version: 1.0.0
+    date: '2026-09-25'
+    changelog: 首个版本。
+    downloadUrl:
+    - url: https://cdn.jsdelivr.net/gh/cz-archive/msdouble@1.0.0/xime.custom.yaml
+      size: 13.6 KB
+      sha256: 546818990de4e6ed93a4b7f3ea7534141d317b9f89b47d59ddd5d5a54142fb33
+      sizeBytes: 13974
 - id: number_rows
   name: 数字行
   author: kingzcheung
   description: 在标准全键盘上方新增一行数字，中文键盘长按出符号、英文键盘直接上屏。
   tags:
   - 布局
+  - 全键盘
   repo: https://github.com/cz-archive/number_rows
   license: GPL-3.0
   appVersion: '>=3.0.0'
@@ -30,6 +54,7 @@ layouts:
   description: 五笔86紧凑布局，显示五笔86版本的字根在按键上。
   tags:
   - 布局
+  - 全键盘
   repo: https://github.com/cz-archive/wubi_compact
   license: GPL-3.0
   appVersion: '>=3.0.0'
