@@ -22,8 +22,8 @@ from lib import (
 )
 
 # ─── 源码目录 vs 输出目录 ────────────────────────────────
-# 源码: src/rimes/*.yaml, src/plugins/*.yaml, src/models/*.yaml
-# 输出: rimes/index.yaml, plugins/index.yaml, models/index.yaml
+# 源码: src/rimes/*.yaml, src/plugins/v1/*.yaml, src/plugins/v2/*.yaml, src/models/*.yaml, src/layouts/*.yaml
+# 输出: rimes/index.yaml, plugins/index.yaml, plugins/v2/index.yaml, models/index.yaml, layouts/index.yaml
 SRC_DIR = os.path.join(ROOT, "src")
 SKIP_FILES = {"index.yaml"}
 
