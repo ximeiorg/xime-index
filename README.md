@@ -25,7 +25,9 @@ Xime 输入法的插件、方案、模型与键盘布局市场索引。
 ├── scripts/
 │   ├── ci-update.py           #   CI 自动补全 sha256/size
 │   ├── lib.py                 #   共享工具库
+│   ├── build_dist.py          #   组装 Cloudflare Pages 发布目录 dist/
 │   └── generate_index.py      #   旧版生成器（已弃用，请用 ci-update.py）
+├── dist/                      # Pages 发布产物（build_dist.py 生成，不入库）
 ├── CONTRIBUTING.md            # 上架指南
 ├── LAYOUT_SPEC.md             # 键盘布局上架规范
 └── .github/workflows/         # CI 校验
@@ -114,9 +116,16 @@ python scripts/ci-update.py
 
 # 仅检查是否有缺失
 python scripts/ci-update.py --check
+
+# 本地预览 Pages 发布内容（生成 dist/）
+python scripts/build_dist.py
 ```
 
-推送到 `main` 分支时 CI 会自动构建并部署，无需手动操作。
+推送到 `main` 分支时 CI 会自动生成索引、组装 `dist/` 并部署到 Cloudflare Pages，无需手动操作。
+
+> **首次启用 Pages** 需在 Cloudflare 创建项目 `xime-index`：
+> `npx wrangler@3.90.0 pages project create xime-index --production-branch=main`。
+> 然后把对外域名（如 `index.ximei.me`）绑定到该 Pages 项目；若该域名此前绑定在 Worker 上，需先解除 Worker 的路由，避免冲突。
 
 详见 [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml)。
 
