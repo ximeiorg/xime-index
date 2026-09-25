@@ -14,7 +14,7 @@ screenshots:
 currentVersion: "1.0.1"
 versions:
   - version: "1.0.1"
-    date: "2026-09-25
+    date: "2026-09-25"
     changelog: 首个版本：标准 4 行布局 + 顶部数字行（中英各 5 行）。
     # 纯文本布局（无 themes/fonts 资源）→ 单文件形态，直接引用 xime.custom.yaml。
     # URL 必须不可变：这里固定到 commit（不打 tag / 不用分支名）。

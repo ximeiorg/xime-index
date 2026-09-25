@@ -8,13 +8,16 @@ Xime 输入法的插件、方案、模型与键盘布局市场索引。
 ├── index.yaml                 # 市场主索引（引用子索引）
 ├── src/                       # 源文件（每个条目一个 YAML）
 │   ├── rimes/                 #   输入方案源文件
-│   ├── plugins/               #   插件源文件
+│   ├── plugins/v1/            #   旧版插件源文件归档（Lua/DEX）
+│   ├── plugins/v2/            #   v2 插件源文件（JS/QuickJS，宿主 >=3.0.0）
 │   ├── models/                #   模型源文件
 │   └── layouts/               #   键盘布局源文件（内容托管在作者仓库，仅存引用）
 ├── rimes/                     # 方案子索引（自动生成）
 │   └── index.yaml
 ├── plugins/                   # 插件子索引（自动生成）
-│   └── index.yaml
+│   ├── index.yaml             #   旧版插件（Lua/DEX，兼容旧版 App；源在 src/plugins/v1/）
+│   └── v2/
+│       └── index.yaml         #   v2 插件（JS/QuickJS，宿主 >=3.0.0；源在 src/plugins/v2/）
 ├── models/                    # 模型子索引（自动生成）
 │   └── index.yaml
 ├── layouts/                   # 键盘布局子索引（自动生成）
@@ -40,7 +43,7 @@ Xime 输入法的插件、方案、模型与键盘布局市场索引。
 | `punctuation_int8` | 标点预测模型 int8 | bikeand (Kor1 ) | punctuation | 2.3 MB | >=2.3.0 |
 | `zipformer-zh-int8` | 中文 Zipformer int8 | bikeand (Kor1 ) | asr | 132.6 MB | <2.6.0 |
 
-### 插件 (Plugins)
+### 插件 (Plugins，旧版 Lua/DEX)
 
 | ID | 名称 | 作者 | 类型 | 大小 | 最低 App 版本 |
 |---|---|---|---|---|---|
@@ -50,6 +53,30 @@ Xime 输入法的插件、方案、模型与键盘布局市场索引。
 | `com.kingzcheung.xime.plugin.volc_asr` | 火山引擎流式语音识别 | Xime | speech | 10.6 KB | >=2.6.0 |
 | `com.kingzcheung.xime.plugin.webdav_clipboard_sync` | WebDAV 剪贴板同步 | Xime | clipboard_sync | 4.52 KB | >=2.6.0 |
 | `com.kingzcheung.xime.plugin.ximed_sync` | ximed 剪贴板同步 | Xime | clipboard_sync | 3.01 KB | >=2.6.0 |
+
+### 插件 v2 (Plugins v2，JS/QuickJS，宿主 >=3.0.0)
+
+新版插件系统（TypeScript/QuickJS，`.xipk` 内含 `manifest.json` + 编译产物 `main.js`）使用独立索引
+`plugins/v2/index.yaml`（`index_version: 2`），源文件放在 `src/plugins/v2/`；旧版插件的源文件归档在
+`src/plugins/v1/`，发布到旧版稳定 URL `plugins/index.yaml`。索引条目在旧扁平结构上追加了新插件系统的元数据
+（`icon` / `activation` / `minHostVersion` / `platforms` / `capabilities` / `network`），
+旧版 App 继续读取 `plugins/index.yaml`，互不影响。
+
+| ID | 名称 | 类型 | 大小 | 最低 App 版本 |
+|---|---|---|---|---|
+| `com.kingzcheung.xime.plugin.ai_reply` | AI 智能回复 | tool | 3.4 KB | >=3.0.0 |
+| `com.kingzcheung.xime.plugin.ai_write` | AI 帮写 | tool | 2.6 KB | >=3.0.0 |
+| `com.kingzcheung.xime.plugin.funasr_asr` | 阿里百炼 FunAsr | speech | 9.3 KB | >=3.0.0 |
+| `com.kingzcheung.xime.plugin.kaomoji` | 颜文字表情包 | emoji | 3.0 KB | >=3.0.0 |
+| `com.kingzcheung.xime.plugin.meme_bunny` | 恶搞兔表情包 | emoji | 65.0 KB | >=3.0.0 |
+| `com.kingzcheung.xime.plugin.quick_phrase` | 常用语 | tool | 1.5 KB | >=3.0.0 |
+| `com.kingzcheung.xime.plugin.qwen_translate` | 千问翻译 | tool | 2.6 KB | >=3.0.0 |
+| `com.kingzcheung.xime.plugin.tencent_asr` | 腾讯云实时语音识别 | speech | 11.6 KB | >=3.0.0 |
+| `com.kingzcheung.xime.plugin.typing_stats` | 输入统计 | tool | 2.5 KB | >=3.0.0 |
+| `com.kingzcheung.xime.plugin.volc_asr` | 火山引擎流式语音识别 | speech | 8.8 KB | >=3.0.0 |
+| `com.kingzcheung.xime.plugin.webdav_backup` | WebDAV 云备份 | backup | 3.7 KB | >=3.0.0 |
+| `com.kingzcheung.xime.plugin.webdav_clipboard_sync` | WebDAV 剪贴板同步 | clipboard_sync | 3.1 KB | >=3.0.0 |
+| `com.kingzcheung.xime.plugin.ximed_sync` | ximed 剪贴板同步 | clipboard_sync | 2.2 KB | >=3.0.0 |
 
 ### 输入方案 (Rimes)
 

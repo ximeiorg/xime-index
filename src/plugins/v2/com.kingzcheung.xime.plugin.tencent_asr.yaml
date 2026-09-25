@@ -1,0 +1,34 @@
+id: com.kingzcheung.xime.plugin.tencent_asr
+name: 腾讯云实时语音识别
+author: Xime
+description: "腾讯云实时语音识别 V2（WebSocket），支持中英粤及 30 种方言、说话人分离。需在腾讯云控制台开通语音识别服务，并获取 AppID / SecretId / SecretKey。"
+type: remote
+tags:
+- 语音
+- ASR
+pluginType: speech
+icon: "🎙️"
+activation: single
+minHostVersion: '3.0.0'
+platforms:
+- android
+capabilities:
+  speech:
+    inputMode: streaming
+    supportsPartialResults: true
+network:
+  hosts:
+  - asr.cloud.tencent.com
+homepage: https://github.com/ximeiorg/Xime
+license: GPL-3.0
+appVersion: '>=3.0.0'
+currentVersion: 2.0.0
+versions:
+- version: 2.0.0
+  date: '2026-09-24'
+  changelog: v3 重构：TypeScript/QuickJS 插件，需宿主 v3.0.0+
+  downloadUrl:
+  - url: https://github.com/ximeiorg/Xime/releases/download/v3.0.0-beta1/tencent-asr-2.0.0.xipk
+    size: 11.6 KB
+    sha256: 161954e7bf07bf0befe20f2c797b116410bbb51227d215189f6cfaf7625ed5fe
+    sizeBytes: 11859
