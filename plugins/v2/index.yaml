@@ -1,7 +1,7 @@
 # Xime v2 插件子索引（JS/QuickJS 插件，宿主 >=3.0.0）
 # ⚠️ 此文件由 scripts/ci-update.py 自动生成，请勿手动编辑
 index_version: 2
-updated_at: '2026-09-25'
+updated_at: '2026-09-26'
 plugins:
 - id: com.kingzcheung.xime.plugin.ai_reply
   name: AI 智能回复
@@ -233,41 +233,6 @@ plugins:
       size: 2.6 KB
       sha256: 7dbf11f14e37414a4b39cee4dcdb73b4aeb6808275df91c50f148b37cecd3797
       sizeBytes: 2637
-- id: com.kingzcheung.xime.plugin.tencent_asr
-  name: 腾讯云实时语音识别
-  author: Xime
-  description: 腾讯云实时语音识别 V2（WebSocket），支持中英粤及 30 种方言、说话人分离。需在腾讯云控制台开通语音识别服务，并获取 AppID
-    / SecretId / SecretKey。
-  type: remote
-  tags:
-  - 语音
-  - ASR
-  pluginType: speech
-  icon: 🎙️
-  activation: single
-  minHostVersion: 3.0.0
-  platforms:
-  - android
-  capabilities:
-    speech:
-      inputMode: streaming
-      supportsPartialResults: true
-  network:
-    hosts:
-    - asr.cloud.tencent.com
-  homepage: https://github.com/ximeiorg/Xime
-  license: GPL-3.0
-  appVersion: '>=3.0.0'
-  currentVersion: 2.0.0
-  versions:
-  - version: 2.0.0
-    date: '2026-09-24'
-    changelog: v3 重构：TypeScript/QuickJS 插件，需宿主 v3.0.0+
-    downloadUrl:
-    - url: https://github.com/ximeiorg/Xime/releases/download/v3.0.0-beta1/tencent-asr-2.0.0.xipk
-      size: 11.6 KB
-      sha256: 161954e7bf07bf0befe20f2c797b116410bbb51227d215189f6cfaf7625ed5fe
-      sizeBytes: 11859
 - id: com.kingzcheung.xime.plugin.typing_stats
   name: 输入统计
   author: Xime
@@ -403,37 +368,3 @@ plugins:
       size: 3.1 KB
       sha256: 8c4578dd64b30c8bd81cb2855e47429fd826ff55e360cc3686f51b425534b884
       sizeBytes: 3169
-- id: com.kingzcheung.xime.plugin.ximed_sync
-  name: ximed 剪贴板同步
-  author: Xime
-  description: 对接 ximed HTTP 接口的双向剪贴板同步（文本），需要安装 ximed 服务器端和 ximed 客户端（https://github.com/kingzcheung/ximed）
-  type: remote
-  tags:
-  - 剪贴板
-  - 同步
-  pluginType: clipboard_sync
-  icon: 🔗
-  activation: single
-  minHostVersion: 3.0.0
-  platforms:
-  - android
-  capabilities:
-    clipboard_sync:
-      protocols:
-      - ximed
-  network:
-    hosts: []
-    allowCustomHosts: true
-  homepage: https://github.com/kingzcheung/ximed
-  license: GPL-3.0
-  appVersion: '>=3.0.0'
-  currentVersion: 1.0.0
-  versions:
-  - version: 1.0.0
-    date: '2026-09-24'
-    changelog: v3 重构：TypeScript/QuickJS 插件，需宿主 v3.0.0+
-    downloadUrl:
-    - url: https://github.com/ximeiorg/Xime/releases/download/v3.0.0-beta1/ximed-clipboard-sync-1.0.0.xipk
-      size: 2.2 KB
-      sha256: 648fc4d5f6ded98cef17b1bed4024e2591c6c7a4cd26948659b60641539e5d87
-      sizeBytes: 2210
