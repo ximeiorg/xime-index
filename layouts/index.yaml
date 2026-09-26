@@ -3,6 +3,29 @@
 index_version: 1
 updated_at: '2026-09-25'
 layouts:
+- id: flypy
+  name: 小鹤双拼带韵母
+  author: kingzcheung
+  description: 专属于小鹤双拼版本。
+  tags:
+  - 布局
+  - 全键盘
+  repo: https://github.com/cz-archive/flypy
+  license: GPL-3.0
+  appVersion: '>=3.0.0'
+  requiresSchemes: []
+  screenshots:
+  - https://cdn.jsdelivr.net/gh/cz-archive/flypy@1.0.0/images/0.jpg
+  currentVersion: 1.0.0
+  versions:
+  - version: 1.0.0
+    date: '2026-09-25'
+    changelog: 首个版本。
+    downloadUrl:
+    - url: https://cdn.jsdelivr.net/gh/cz-archive/flypy@1.0.0/xime.custom.yaml
+      size: 10.8 KB
+      sha256: 3c54792cf406de0f08df343e22db8555d793b9028e9369299ed125505edaa298
+      sizeBytes: 11106
 - id: msdouble
   name: 双拼布局（微软双拼）
   author: kingzcheung
