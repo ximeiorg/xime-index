@@ -24,6 +24,16 @@ license: GPL-3.0
 appVersion: '>=3.0.0'
 currentVersion: 1.0.0
 versions:
+- version: 1.1.0
+  date: '2026-09-29'
+  changelog: | 
+    1. 添加图片剪贴板功能支持 
+    2. 支持插件配置剪贴板同步拉取间隔 
+  downloadUrl:
+  - url: https://github.com/ximeiorg/Xime/releases/download/v3.0.0-beta5/webdav-clipboard-sync-1.1.0.xipk
+    size: 4.07 KB
+    sha256: c5eeb5b7a8c9d16d42b3a985f6d74154dd8b86be0753d19861d300e2b43096b6
+    sizeBytes: 3169
 - version: 1.0.0
   date: '2026-09-24'
   changelog: v3 重构：TypeScript/QuickJS 插件，需宿主 v3.0.0+
