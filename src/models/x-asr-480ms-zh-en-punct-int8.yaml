@@ -12,7 +12,7 @@ tags:
 - 离线
 homepage: https://www.modelscope.cn/models/adaada88/sherpa-onnx-x-asr-480ms-streaming-zipformer-transducer-zh-en-punct-int8
 license: Apache-2.0
-appVersion: '>=3.0.0'
+appVersion: '>=3.0.0-beta6'
 currentVersion: v1.0
 versions:
 - version: v1.0
