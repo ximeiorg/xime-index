@@ -1,7 +1,7 @@
 # Xime 键盘布局子索引
 # ⚠️ 此文件由 scripts/ci-update.py 自动生成，请勿手动编辑
 index_version: 1
-updated_at: '2026-09-30'
+updated_at: '2026-10-01'
 layouts:
 - id: flypy
   name: 小鹤双拼带韵母
@@ -16,8 +16,16 @@ layouts:
   requiresSchemes: []
   screenshots:
   - https://cdn.jsdelivr.net/gh/cz-archive/flypy@1.0.0/images/0.jpg
-  currentVersion: 1.0.0
+  currentVersion: 1.0.1
   versions:
+  - version: 1.0.1
+    date: '2026-10-01'
+    changelog: fix bugs。
+    downloadUrl:
+    - url: https://cdn.jsdelivr.net/gh/cz-archive/flypy@1.0.1/xime.custom.yaml
+      size: 11.9 KB
+      sha256: 374436059654282d191cbaef10eeb2a33fc00d8566e268556a6434cb9429a7c4
+      sizeBytes: 12145
   - version: 1.0.0
     date: '2026-09-25'
     changelog: 首个版本。
