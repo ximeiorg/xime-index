@@ -22,9 +22,9 @@ network:
 homepage: https://github.com/ximeiorg/Xime
 license: GPL-3.0
 appVersion: '>=3.0.0'
-currentVersion: 3.0.0
+currentVersion: 3.0.1
 versions:
-- version: 3.0.0
+- version: 3.0.1
   date: '2026-10-04'
   changelog:  fix(asr)：修复ASR插件在连接建立期间的音频发送顺序问题
   downloadUrl:
