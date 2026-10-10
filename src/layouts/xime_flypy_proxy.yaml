@@ -1,0 +1,27 @@
+id: xime_flypy_proxy
+name: 小鹤双拼多功能配置
+author: tiengming
+description: 专为小鹤双拼优化的键盘布局，支持加速下载扩展商店资源，提供中英文 26 键，下滑显示韵母/声母提示，上滑显示常用中文标点与符号，内置多款精美主题，适配 Xime 3.0。
+tags:
+  - 加速商店资源
+  - 全功能键盘
+  - 多主题
+repo: https://github.com/tiengming/xime_flypy_proxy
+license: GPL-3.0
+appVersion: ">=3.0.0"
+requiresSchemes: []
+# 截图：仅详情页展示（1~5 张）
+screenshots:
+  - https://cdn.jsdelivr.net/gh/tiengming/xime_flypy_proxy@1.0.0/images/img1.jpg
+  - https://cdn.jsdelivr.net/gh/tiengming/xime_flypy_proxy@1.0.0/images/img2.jpg
+  - https://cdn.jsdelivr.net/gh/tiengming/xime_flypy_proxy@1.0.0/images/img3.jpg
+  - https://cdn.jsdelivr.net/gh/tiengming/xime_flypy_proxy@1.0.0/images/img4.jpg
+  - https://cdn.jsdelivr.net/gh/tiengming/xime_flypy_proxy@1.0.0/images/img5.jpg
+currentVersion: "1.0.0"
+versions:
+  - version: "1.0.0"
+    date: "2026-10-01"
+    changelog: 个人长期使用版本。
+    downloadUrl:
+      - url: https://cdn.jsdelivr.net/gh/tiengming/xime_flypy_proxy@1.0.0/xime.custom.yaml
+        size: "16.6 KB"
