@@ -1,7 +1,7 @@
 # Xime 键盘布局子索引
 # ⚠️ 此文件由 scripts/ci-update.py 自动生成，请勿手动编辑
 index_version: 1
-updated_at: '2026-10-21'
+updated_at: '2026-10-19'
 layouts:
 - id: comma_period
   name: 逗号句号分开布局
@@ -251,27 +251,3 @@ layouts:
     - url: https://github.com/tiengming/xime_flypy_proxy/releases/download/xime_index_net-v1.0.1/xime.custom.yaml
       sha256: 5d5b766d4223c868c2f52d7a63b40f6115f80136dce45c48ac6f7ab8fb859e81
       size: 351 B
-- id: xime_layout_romaji
-  name: 日语罗马音键盘
-  author: MoruTeaven
-  description: 标准 QWERTY 26 个字母键 + 1 个长音键（-），献给日语罗马音输入。键面不放假名助记，上滑出数字与日文常用标点。
-  tags:
-  - 布局
-  - 全键盘
-  - 输入法适配
-  repo: https://github.com/MoruTeaven/xime-layout-romaji
-  homepage: https://github.com/MoruTeaven/xime-layout-romaji
-  license: Apache-2.0
-  appVersion: '>=3.0.0'
-  requiresSchemes: []
-  screenshots:
-  - https://cdn.jsdelivr.net/gh/MoruTeaven/xime-layout-romaji@1.0.0/images/keyboard.png
-  currentVersion: 1.0.0
-  versions:
-  - version: 1.0.0
-    date: '2026-10-21'
-    changelog: 首个版本：标准 QWERTY 26 键 + 第二行长音键，上滑数字与日文常用标点。
-    downloadUrl:
-    - url: https://github.com/MoruTeaven/xime-layout-romaji/releases/download/1.0.0/xime.custom.yaml
-      sha256: 262ff763e1604e1a5175cf3dcbc524ed6e3a7d346422111b2f170ffb009a8b0b
-      size: 8.6 KB
