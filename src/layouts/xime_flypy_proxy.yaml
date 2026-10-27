@@ -16,8 +16,15 @@ screenshots:
   - https://cdn.jsdelivr.net/gh/tiengming/xime_flypy_proxy@xime_flypy_proxy-v1.0.1/images/img3.jpg
   - https://cdn.jsdelivr.net/gh/tiengming/xime_flypy_proxy@xime_flypy_proxy-v1.0.1/images/img4.jpg
   - https://cdn.jsdelivr.net/gh/tiengming/xime_flypy_proxy@xime_flypy_proxy-v1.0.1/images/img5.jpg
-currentVersion: "1.0.1"
+currentVersion: "1.0.2"
 versions:
+  - version: "1.0.2"
+    date: "2026-10-27"
+    changelog: 修复五套配色的亮色候选选中色（2.0~2.7→≥3:1）与暗色特殊键对比度（2.6~4.3→≥4.5:1），键位与字体未变。
+    downloadUrl:
+      - url: https://github.com/tiengming/xime_flypy_proxy/releases/download/xime_flypy_proxy-1.0.2/xime.custom.yaml
+        sha256: "c04fe40406f2045b1bdfbe760f0fd10eaafcea54f7719577f7551f430fa8919b"
+        size: "17.3 KB"
   - version: "1.0.1"
     date: "2026-10-11"
     changelog: 优化截图体积，单文件交付。
