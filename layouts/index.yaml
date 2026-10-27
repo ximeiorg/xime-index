@@ -1,7 +1,7 @@
 # Xime 键盘布局子索引
 # ⚠️ 此文件由 scripts/ci-update.py 自动生成，请勿手动编辑
 index_version: 1
-updated_at: '2026-10-25'
+updated_at: '2026-10-27'
 layouts:
 - id: comma_period
   name: 逗号句号分开布局
@@ -228,8 +228,15 @@ layouts:
   - https://cdn.jsdelivr.net/gh/tiengming/xime_flypy_proxy@xime_flypy_proxy-v1.0.1/images/img3.jpg
   - https://cdn.jsdelivr.net/gh/tiengming/xime_flypy_proxy@xime_flypy_proxy-v1.0.1/images/img4.jpg
   - https://cdn.jsdelivr.net/gh/tiengming/xime_flypy_proxy@xime_flypy_proxy-v1.0.1/images/img5.jpg
-  currentVersion: 1.0.1
+  currentVersion: 1.0.2
   versions:
+  - version: 1.0.2
+    date: '2026-10-27'
+    changelog: 修复五套配色的亮色候选选中色（2.0~2.7→≥3:1）与暗色特殊键对比度（2.6~4.3→≥4.5:1），键位与字体未变。
+    downloadUrl:
+    - url: https://github.com/tiengming/xime_flypy_proxy/releases/download/xime_flypy_proxy-1.0.2/xime.custom.yaml
+      sha256: c04fe40406f2045b1bdfbe760f0fd10eaafcea54f7719577f7551f430fa8919b
+      size: 17.3 KB
   - version: 1.0.1
     date: '2026-10-11'
     changelog: 优化截图体积，单文件交付。
@@ -288,7 +295,7 @@ layouts:
   author: tiengming
   description: 15 套主题大合集，合并一份配置应用内随意切换、互不顶替：Material You 家族 ×4（紫罗兰/暖玫瑰/海蓝/松绿）、渐变家族
     ×5（极光/暮霞/薄荷/樱粉/深海）、图片背景场景 ×6（银河/晨雾/远山/樱吹雪/星月/海平线，各含暗色变体）；键面 Maple Mono NL CN +
-    候选霞鹜文楷（均 SIL OFL 1.1），11 张原创程序化背景图。适配 Xime 3.0。
+    候选霞鹜文楷（均 SIL OFL 1.1），10 张原创程序化背景图。适配 Xime 3.0。
   tags:
   - 配色
   repo: https://github.com/tiengming/xime_flypy_proxy
@@ -301,8 +308,15 @@ layouts:
   - https://cdn.jsdelivr.net/gh/tiengming/xime_flypy_proxy@xime_theme_pack-1.1.0/images/img3.jpg
   - https://cdn.jsdelivr.net/gh/tiengming/xime_flypy_proxy@xime_theme_pack-1.1.0/images/img4.jpg
   - https://cdn.jsdelivr.net/gh/tiengming/xime_flypy_proxy@xime_theme_pack-1.1.0/images/img5.jpg
-  currentVersion: 1.1.0
+  currentVersion: 1.2.0
   versions:
+  - version: 1.2.0
+    date: '2026-10-27'
+    changelog: 修复图片主题展开候选页亮色白底白字（银河漫游/星月童话补深空底色）；暗色特殊键与候选选中色统一达到 4.5:1 / 3:1；更正背景图数量与截图说明。
+    downloadUrl:
+    - url: https://github.com/tiengming/xime_flypy_proxy/releases/download/xime_theme_pack-1.2.0/xime_theme_pack.zip
+      sha256: fec27d21af97d69d4be531ee8a39bfe1f6733dcf74cd5b254395f8c563c0e1ce
+      size: 20.2 MB
   - version: 1.1.0
     date: '2026-10-25'
     changelog: 首个上架版本：15 套配色（Material You 家族×4 / 渐变×5 / 图片场景×6，各含暗色变体）；键面 Maple Mono
