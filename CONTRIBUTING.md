@@ -264,7 +264,8 @@ versions:
     date: "2026-09-24"
     changelog: 初始发布
     downloadUrl:
-      - url: https://.../xime.custom.yaml   # 纯文本；或用 zip 包（含 themes/fonts）
+      - url: https://github.com/you/my-layout/releases/download/1.0.0/xime.custom.yaml
+        # 必须为 Release 附件；含 themes/fonts 资源时上传 zip 包
         sha256: ""
         size: ""
 ```
@@ -292,7 +293,7 @@ python scripts/ci-update.py
 | 方案 | .zip / .tar.gz | 包含 .schema.yaml + .dict.yaml |
 | 插件（旧版） | .xipk | Lua/DEX 插件，兼容旧版 App |
 | 插件 v2 | .xipk | `manifest.json` + 编译产物 `main.js`（`xipm pack` 产物），宿主 >=3.0.0 |
-| 布局 | xime.custom.yaml 或 .zip | 纯文本直接给 yaml；含 themes/fonts 资源时打 zip（根级 xime.custom.yaml） |
+| 布局 | xime.custom.yaml 或 .zip | 必须上传为 GitHub Release 附件；纯文本直接传 yaml，含 themes/fonts 资源时打 zip（根级 xime.custom.yaml） |
 
 ## 下载地址
 
