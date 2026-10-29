@@ -256,7 +256,7 @@ repo: https://github.com/you/my-layout   # 作者仓库（内容来源）
 license: MIT
 appVersion: ">=3.0.0"
 requiresSchemes: []               # 依赖的输入方案 id，如 [cangjie]
-screenshots:                      # 1~5 张，仅详情页展示
+screenshots:                      # 1~5 张，须为曦码输入法设置界面打开的键盘样式
   - https://.../01.png
 currentVersion: "1.0.0"
 versions:
