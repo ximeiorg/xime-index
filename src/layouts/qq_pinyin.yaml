@@ -5,7 +5,7 @@ description: 一比一复刻 QQ 拼音的中文九宫格、英文与数字键盘
 tags: [布局, 快捷键]
 repo: https://github.com/YeJing22/xime-layout-qq-pinyin
 license: MIT
-appVersion: ">=3.0.0"
+appVersion: ">=3.3.0"
 requiresSchemes: []
 warning: 本布局仅针对九键、英文 26 键与数字键盘设计。因九键的切换语言键与数字键位置做过对调，若你主要使用中文全键盘，切换时可能遇到语言键/数字键位置反复变化，建议先试用再长期使用。
 screenshots:
