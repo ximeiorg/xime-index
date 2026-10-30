@@ -12,8 +12,15 @@ screenshots:
   - https://raw.githubusercontent.com/YeJing22/xime-layout-qq-pinyin/1c919a0e6c5a3403543c8a58b8dd160b5a401c98/screenshots/01-t9.jpg
   - https://raw.githubusercontent.com/YeJing22/xime-layout-qq-pinyin/1c919a0e6c5a3403543c8a58b8dd160b5a401c98/screenshots/02-en.jpg
   - https://raw.githubusercontent.com/YeJing22/xime-layout-qq-pinyin/1c919a0e6c5a3403543c8a58b8dd160b5a401c98/screenshots/03-number.jpg
-currentVersion: "1.0.0"
+currentVersion: "1.0.1"
 versions:
+  - version: "1.0.1"
+    date: "2026-10-30"
+    changelog: 兼容版本提高到 3.3.0（数字键盘自定义布局晚于 3.0 加入，3.0 上应用会失效）。键位未改动。
+    downloadUrl:
+      - url: https://github.com/YeJing22/xime-layout-qq-pinyin/releases/download/1.0.1/xime.custom.yaml
+        sha256: "e0ef83f2571d08b2d7c20a60433b63db75d314e2b7a80f732fd2d899cbcc2889"
+        size: "8.6 KB"
   - version: "1.0.0"
     date: "2026-10-30"
     changelog: 初始版本：九键手势快捷、英文上滑数字与标点、数字键盘按 QQ 拼音排布。
