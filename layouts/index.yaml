@@ -1,7 +1,7 @@
 # Xime 键盘布局子索引
 # ⚠️ 此文件由 scripts/ci-update.py 自动生成，请勿手动编辑
 index_version: 1
-updated_at: '2026-10-27'
+updated_at: '2026-10-30'
 layouts:
 - id: comma_period
   name: 逗号句号分开布局
@@ -127,6 +127,39 @@ layouts:
     - url: https://cdn.jsdelivr.net/gh/cz-archive/number_rows@3ee546e083acd2e93149ed9d71388a4b3f2dd8cc/xime.custom.yaml
       sha256: 88d6e994f193a74ae8be95e134f46cbccbb39d970aed68e6e720dff560b0e271
       size: 2.5 KB
+- id: qq_pinyin
+  name: QQ拼音版布局
+  author: YeJing22
+  description: 一比一复刻 QQ 拼音的中文九宫格、英文与数字键盘，仅改动这三套键盘。九键手势绑定高频动作：1 复制、2 换行、3 剪切、4 全选、5
+    四向移光标与行首行尾、6 粘贴、7/8/9 send_rime 上屏逗号冒号句号；英文 q-p 上滑数字、a-l 上滑标点、z-m 上滑符号。不含配色与字体，套用后原主题不变。
+  tags:
+  - 布局
+  - 快捷键
+  repo: https://github.com/YeJing22/xime-layout-qq-pinyin
+  license: MIT
+  appVersion: '>=3.3.0'
+  requiresSchemes: []
+  screenshots:
+  - https://raw.githubusercontent.com/YeJing22/xime-layout-qq-pinyin/1c919a0e6c5a3403543c8a58b8dd160b5a401c98/screenshots/01-t9.jpg
+  - https://raw.githubusercontent.com/YeJing22/xime-layout-qq-pinyin/1c919a0e6c5a3403543c8a58b8dd160b5a401c98/screenshots/02-en.jpg
+  - https://raw.githubusercontent.com/YeJing22/xime-layout-qq-pinyin/1c919a0e6c5a3403543c8a58b8dd160b5a401c98/screenshots/03-number.jpg
+  warning: 本布局仅针对九键、英文 26 键与数字键盘设计。因九键的切换语言键与数字键位置做过对调，若你主要使用中文全键盘，切换时可能遇到语言键/数字键位置反复变化，建议先试用再长期使用。
+  currentVersion: 1.0.1
+  versions:
+  - version: 1.0.1
+    date: '2026-10-30'
+    changelog: 兼容版本提高到 3.3.0（数字键盘自定义布局晚于 3.0 加入，3.0 上应用会失效）。键位未改动。
+    downloadUrl:
+    - url: https://github.com/YeJing22/xime-layout-qq-pinyin/releases/download/1.0.1/xime.custom.yaml
+      sha256: e0ef83f2571d08b2d7c20a60433b63db75d314e2b7a80f732fd2d899cbcc2889
+      size: 8.6 KB
+  - version: 1.0.0
+    date: '2026-10-30'
+    changelog: 初始版本：九键手势快捷、英文上滑数字与标点、数字键盘按 QQ 拼音排布。
+    downloadUrl:
+    - url: https://github.com/YeJing22/xime-layout-qq-pinyin/releases/download/1.0.0/xime.custom.yaml
+      sha256: 18783a2c64b5351c34240ca667d805dd0953cbfd081a5129765b636458ac18af
+      size: 8.6 KB
 - id: wubi_compact
   name: 五笔86紧凑布局
   author: Kor1
