@@ -1,0 +1,25 @@
+id: moqi_wan_flypymo
+name: "⚡ 惊鸿·游龙（雾凇·墨奇双拼 Lite）"
+author: tiengming
+description: 基于 gaboolic 雾凇·墨奇双拼的精简版：仅保留 moqi_wan_flypymo 一个方案，词典只留「拼音;墨奇」两列并按日常/IT/地理/诗词/长词裁剪，针对 Android / Xime 卡顿优化；保留 emoji、简繁切换、zh-moqi.gram 语法模型与用户词典学习，另内置智能点号 lua 与 15 套 Xime 主题。
+type: remote
+tags:
+- 双拼
+- 辅助码
+- 墨奇
+- 拼音
+homepage: https://github.com/tiengming/rime-shuangpin-fuzhuma
+license: MIT
+dependencies: []
+appVersion: '>=3.0.0'
+warning: 本包同时包含 xime.custom.yaml、themes/ 与 fonts/，安装后会覆盖当前的键盘主题、键面字体与外观设置（方案本身不受影响）；如需保留原主题请先备份 rime/xime.custom.yaml。
+currentVersion: 1.2.0
+versions:
+- version: 1.2.0
+  date: '2026-10-27'
+  changelog: '精简版雾凇·墨奇双拼首发：词典精简至 64.3 MB（1,396,950 条），保留 emoji、简繁切换、zh-moqi.gram 语法模型与用户词典学习；补充 symbols.yaml 消除 builtin 缺失日志；新增智能点号 lua/url_dot.lua（网址续写输出半角点，其余仍为「。」）；附带 xime_theme_pack v1.2.0 的 15 套主题、Maple Mono NL CN / 霞鹜文楷字体与 11 张原创背景图。'
+  downloadUrl:
+  - url: https://github.com/tiengming/rime-shuangpin-fuzhuma/releases/download/v1.2.0/moqi_wan_flypymo-1.2.0.zip
+    sha256: 78373d9f6e98f853f03f9603766a98f2fdec4083bb49b318040d4d77414b4f91
+    size: 46.1 MB
+    sizeBytes: 48387652
