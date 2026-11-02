@@ -1,7 +1,7 @@
 # Xime 模型子索引
 # ⚠️ 此文件由 scripts/ci-update.py 自动生成，请勿手动编辑
 index_version: 1
-updated_at: '2026-11-01'
+updated_at: '2026-11-02'
 models:
 - id: ochwpro
   name: 手写模型
@@ -37,7 +37,7 @@ models:
   author: Kor1
   description: 相比 small 版本，模型更大，预测更准确。需要 v2.6.0 及以上版本才能使用。旧版本理论也支持，但是无法保证可用性。
   category: prediction
-  size: 34.8 MB
+  size: 36.35MB
   type: remote
   tags:
   - 联想
@@ -54,14 +54,14 @@ models:
     files:
     - name: vocab.json
       url: https://www.modelscope.cn/models/bikeand/predictive-text-base/resolve/master/onnx/vocab.json
-      sha256: 3f7a6aa773afe6dacf75701f7861257d36a46a26ac70c0f8ee6dd4032cc3b9c2
-      size: 137.8 KB
-      sizeBytes: 141139
+      sha256: null
+      size: 141.14KB
+      sizeBytes: null
     - name: model_int8_dynamic.onnx
       url: https://www.modelscope.cn/models/bikeand/predictive-text-base/resolve/master/onnx/model_int8_dynamic.onnx
-      sha256: e15009c84d9702056ba8b5f6c04b27ae7d0400167647a5e94cb699f24f885a9d
-      size: 34.7 MB
-      sizeBytes: 36353598
+      sha256: null
+      size: 36.35MB
+      sizeBytes: null
 - id: predictive-text-small
   name: 智能联想模型 small 版本
   author: Kor1
