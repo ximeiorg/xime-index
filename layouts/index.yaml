@@ -1,7 +1,7 @@
 # Xime 键盘布局子索引
 # ⚠️ 此文件由 scripts/ci-update.py 自动生成，请勿手动编辑
 index_version: 1
-updated_at: '2026-11-02'
+updated_at: '2026-11-11'
 layouts:
 - id: comma_period
   name: 逗号句号分开布局
@@ -25,6 +25,7 @@ layouts:
     - url: https://github.com/cz-archive/comma_period/releases/download/1.0.0/xime.custom.yaml
       sha256: 3727498bc94c0867affb14a4af1942572855d720a3cdbae2a93cd8ce651b4099
       size: 1.4 KB
+      sizeBytes: 1478
 - id: flypy
   name: 小鹤双拼带韵母
   author: Kor1
@@ -47,6 +48,7 @@ layouts:
     - url: https://github.com/cz-archive/flypy/releases/download/1.0.1/xime.custom.yaml
       sha256: 374436059654282d191cbaef10eeb2a33fc00d8566e268556a6434cb9429a7c4
       size: 11.9 KB
+      sizeBytes: 12145
   - version: 1.0.0
     date: '2026-09-25'
     changelog: 首个版本。
@@ -76,6 +78,7 @@ layouts:
     - url: https://github.com/cz-archive/msdouble/releases/download/1.0.0/xime.custom.yaml
       sha256: 546818990de4e6ed93a4b7f3ea7534141d317b9f89b47d59ddd5d5a54142fb33
       size: 13.6 KB
+      sizeBytes: 13974
 - id: no_bubble
   name: 无气泡布局
   author: Kor1
@@ -98,6 +101,7 @@ layouts:
     - url: https://github.com/cz-archive/no_bubble/releases/download/1.0.0/xime.custom.yaml
       sha256: a2d9a4a389fbea72a0a641602ca3e0f967015f3c9b2a4d524d4f97fba420fa30
       size: 27.7 KB
+      sizeBytes: 28335
 - id: number_rows
   name: 数字行
   author: Kor1
@@ -120,6 +124,7 @@ layouts:
     - url: https://github.com/cz-archive/number_rows/releases/download/1.0.1/xime.custom.yaml
       sha256: 88d6e994f193a74ae8be95e134f46cbccbb39d970aed68e6e720dff560b0e271
       size: 2.5 KB
+      sizeBytes: 2591
   - version: 1.0.0
     date: '2026-09-24'
     changelog: 首个版本：标准 4 行布局 + 顶部数字行（中英各 5 行）。
@@ -127,6 +132,7 @@ layouts:
     - url: https://cdn.jsdelivr.net/gh/cz-archive/number_rows@3ee546e083acd2e93149ed9d71388a4b3f2dd8cc/xime.custom.yaml
       sha256: 88d6e994f193a74ae8be95e134f46cbccbb39d970aed68e6e720dff560b0e271
       size: 2.5 KB
+      sizeBytes: 2591
 - id: qq_pinyin
   name: QQ拼音版布局
   author: YeJing22
@@ -153,6 +159,7 @@ layouts:
     - url: https://github.com/YeJing22/xime-layout-qq-pinyin/releases/download/1.0.1/xime.custom.yaml
       sha256: e0ef83f2571d08b2d7c20a60433b63db75d314e2b7a80f732fd2d899cbcc2889
       size: 8.6 KB
+      sizeBytes: 8812
   - version: 1.0.0
     date: '2026-10-30'
     changelog: 初始版本：九键手势快捷、英文上滑数字与标点、数字键盘按 QQ 拼音排布。
@@ -160,6 +167,7 @@ layouts:
     - url: https://github.com/YeJing22/xime-layout-qq-pinyin/releases/download/1.0.0/xime.custom.yaml
       sha256: 18783a2c64b5351c34240ca667d805dd0953cbfd081a5129765b636458ac18af
       size: 8.6 KB
+      sizeBytes: 8812
 - id: wubi_compact
   name: 五笔86紧凑布局
   author: Kor1
@@ -182,6 +190,7 @@ layouts:
     - url: https://github.com/cz-archive/wubi_compact/releases/download/1.0.1/xime.custom.yaml
       sha256: 30684dc7767d5a654031f3c38dfb7b3973a70140e2fd1012468c59b18dbe10a9
       size: 10.4 KB
+      sizeBytes: 10685
 - id: xime_26key_enhance
   name: 26键多功能布局
   author: C.C.
@@ -207,6 +216,7 @@ layouts:
     - url: https://github.com/MajoSissi/xime-26key-enhance/releases/download/1.0.0/xime.custom.yaml
       sha256: 3767bbeeab6d690b21a8eae55e6173740fcc42ef4b97b798ce95db884da846ff
       size: 10.2 KB
+      sizeBytes: 10397
 - id: xime_custom_themes
   name: xime 多主题
   author: tiengming
@@ -234,6 +244,7 @@ layouts:
     - url: https://github.com/tiengming/xime_flypy_proxy/releases/download/xime_theme-1.1.0/xime.custom.yaml
       sha256: 0ed1cb8e85f1d9e7f1e0f0875c1d48976e61d2a84e32b1119f61d24e51a50b51
       size: 4.3 KB
+      sizeBytes: 4422
   - version: 1.0.0
     date: '2026-10-19'
     changelog: 初始版本，包含五套主题配色（星野夜航 / Notion 极简 / Claude 暖砂 / Apple 原生 / Material You
@@ -242,6 +253,7 @@ layouts:
     - url: https://github.com/tiengming/xime_flypy_proxy/releases/download/xime_theme-1.0.0/xime.custom.yaml
       sha256: aa3008cb63a1c2ee63df5bf30fb9d427433b0b62967a27c6a5fed55c663347d1
       size: 3.5 KB
+      sizeBytes: 3571
 - id: xime_flypy_proxy
   name: 小鹤双拼多功能配置
   author: tiengming
@@ -270,13 +282,15 @@ layouts:
     - url: https://github.com/tiengming/xime_flypy_proxy/releases/download/xime_flypy_proxy-1.0.2/xime.custom.yaml
       sha256: c04fe40406f2045b1bdfbe760f0fd10eaafcea54f7719577f7551f430fa8919b
       size: 17.3 KB
+      sizeBytes: 17748
   - version: 1.0.1
     date: '2026-10-11'
     changelog: 优化截图体积，单文件交付。
     downloadUrl:
     - url: https://github.com/tiengming/xime_flypy_proxy/releases/download/xime_flypy_proxy-v1.0.1/xime.custom.yaml
       sha256: 24aa932b792ef0fc6d2f8e61daf1d8b7b736ffa563d6038cbc41a61b8d991b0f
-      size: 17 KB
+      size: 16.6 KB
+      sizeBytes: 17045
 - id: xime_index_net
   name: 扩展商店资源加速
   author: tiengming
@@ -299,6 +313,7 @@ layouts:
     - url: https://github.com/tiengming/xime_flypy_proxy/releases/download/xime_index_net-v1.0.1/xime.custom.yaml
       sha256: 5d5b766d4223c868c2f52d7a63b40f6115f80136dce45c48ac6f7ab8fb859e81
       size: 351 B
+      sizeBytes: 351
 - id: xime_layout_romaji
   name: 日语罗马音键盘
   author: 抹露茶柒
@@ -323,6 +338,7 @@ layouts:
     - url: https://github.com/MoruTeaven/xime-layout-romaji/releases/download/1.0.0/xime.custom.yaml
       sha256: 262ff763e1604e1a5175cf3dcbc524ed6e3a7d346422111b2f170ffb009a8b0b
       size: 8.6 KB
+      sizeBytes: 8794
 - id: xime_theme_pack
   name: xime 主题包
   author: tiengming
@@ -350,6 +366,7 @@ layouts:
     - url: https://github.com/tiengming/xime_flypy_proxy/releases/download/xime_theme_pack-1.2.0/xime_theme_pack.zip
       sha256: fec27d21af97d69d4be531ee8a39bfe1f6733dcf74cd5b254395f8c563c0e1ce
       size: 20.2 MB
+      sizeBytes: 21219488
   - version: 1.1.0
     date: '2026-10-25'
     changelog: 首个上架版本：15 套配色（Material You 家族×4 / 渐变×5 / 图片场景×6，各含暗色变体）；键面 Maple Mono
@@ -358,3 +375,4 @@ layouts:
     - url: https://github.com/tiengming/xime_flypy_proxy/releases/download/xime_theme_pack-1.1.0/xime_theme_pack.zip
       sha256: bebe0c23bfa1f8ee2defcd6ae156dfc67570e73acfaa84607a1b7b0d6400fee2
       size: 20.2 MB
+      sizeBytes: 21217126

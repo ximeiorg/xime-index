@@ -1,7 +1,7 @@
 # Xime v2 插件子索引（JS/QuickJS 插件，宿主 >=3.0.0）
 # ⚠️ 此文件由 scripts/ci-update.py 自动生成，请勿手动编辑
 index_version: 2
-updated_at: '2026-11-02'
+updated_at: '2026-11-11'
 plugins:
 - id: com.kingzcheung.xime.plugin.ai_reply
   name: AI 智能回复
@@ -102,7 +102,7 @@ plugins:
     - url: https://github.com/ximeiorg/Xime/releases/download/v3.0.0-beta9/funasr-asr-3.1.1.xipk
       size: 9.6 KB
       sha256: fd2fbf921489504b9d37724f6cd7a8d6f3dd955cf0dccf5eff987be40d99b43c
-      sizeBytes: 9499
+      sizeBytes: 9879
   - version: 3.1.0
     date: '2026-09-29'
     changelog: 1. 优化语音输入在发送场景下的文本处理
@@ -110,7 +110,7 @@ plugins:
     - url: https://github.com/ximeiorg/Xime/releases/download/v3.0.0-beta6/funasr-asr-3.1.0.xipk
       size: 9.6 KB
       sha256: c8dbdb41e0d323f0e3df11d9a24f766fdc1ebe76b3c8aa07ba1ea5d4b7273cd1
-      sizeBytes: 9499
+      sizeBytes: 9826
   - version: 3.0.0
     date: '2026-09-24'
     changelog: v3 重构：TypeScript/QuickJS 插件，需宿主 v3.0.0+
@@ -313,9 +313,9 @@ plugins:
     changelog: fix(asr)：修复ASR插件在连接建立期间的音频发送顺序问题
     downloadUrl:
     - url: https://github.com/ximeiorg/Xime/releases/download/v3.0.0-beta9/volc-asr-3.0.1.xipk
-      size: 8.8 KB
+      size: 8.9 KB
       sha256: 59f4fc12b001bf31a731b160f707b4ad9183c6dfc0256af69b43f16492f444d9
-      sizeBytes: 9043
+      sizeBytes: 9108
   - version: 3.0.0
     date: '2026-09-24'
     changelog: v3 重构：TypeScript/QuickJS 插件，需宿主 v3.0.0+
@@ -357,7 +357,7 @@ plugins:
     - url: https://github.com/ximeiorg/Xime/releases/download/v3.1.0/webdav-backup-3.0.0.xipk
       size: 3.7 KB
       sha256: 890e0070300be81ddae897fd3952985f8fb26ec9409099ad751419766e7ae956
-      sizeBytes: 3780
+      sizeBytes: 3829
   - version: 2.0.0
     date: '2026-09-24'
     changelog: v3 重构：TypeScript/QuickJS 插件，需宿主 v3.0.0+
@@ -397,9 +397,9 @@ plugins:
     changelog: "1. 添加图片剪贴板功能支持 \n2. 支持插件配置剪贴板同步拉取间隔 \n"
     downloadUrl:
     - url: https://github.com/ximeiorg/Xime/releases/download/v3.0.0-beta5/webdav-clipboard-sync-1.1.0.xipk
-      size: 4.07 KB
+      size: 4.1 KB
       sha256: c5eeb5b7a8c9d16d42b3a985f6d74154dd8b86be0753d19861d300e2b43096b6
-      sizeBytes: 3169
+      sizeBytes: 4170
   - version: 1.0.0
     date: '2026-09-24'
     changelog: v3 重构：TypeScript/QuickJS 插件，需宿主 v3.0.0+
