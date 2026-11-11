@@ -15,6 +15,6 @@ versions:
   changelog: '适配纠错功能，提供权重值'
   downloadUrl:
   - url: https://github.com/kingzcheung/rime-wubi/releases/download/2.2.1/rime-wubi-2.2.1.zip
-    size: 5.39 MB
-    sizeBytes: 5390000
+    size: 5.4 MB
+    sizeBytes: 5650988
     sha256: fe8374b5bc115e0df77e9bbbfc2a052d5e8f9fa7f8fc419ecd186048475ff621

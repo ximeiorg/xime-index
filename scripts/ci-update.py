@@ -24,7 +24,7 @@ from lib import (
     fill_download_urls, fill_archive, fill_files_checksums,
     recalc_model_size,
     should_skip_version,
-    check_checksums, prune_bad_versions,
+    check_checksums, prune_bad_versions, apply_size_bytes,
 )
 
 # ─── 源码目录 vs 输出目录 ────────────────────────────────
@@ -156,6 +156,9 @@ def update_source(src_subdir, out_subdir, key, fields, filler, header, index_ver
                 print(f"     实际 sha256: {actual}  ({size_h})")
             for vi, ver, kind, url, reason in report["error"]:
                 print(f"  ⚠ {url} → {reason}（本次无法校验，仍会上架）")
+            for _vi, _ver, _kind, url, expected_bytes, actual_bytes in report["size_warn"]:
+                if apply_size_bytes(filled, url, actual_bytes):
+                    print(f"  📏 {url}: sizeBytes {expected_bytes} → {actual_bytes}（按实际文件修正）")
             filled, _ = prune_bad_versions(filled, f"src/{src_subdir}/{basename}")
             dropped_versions += len(report["bad_versions"])
 

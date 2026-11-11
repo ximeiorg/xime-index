@@ -51,6 +51,28 @@ def download_checksum(url: str):
             os.unlink(tmp_path)
 
 
+def head_size(url: str):
+    """HEAD 探测远端文件体积（不下载内容），返回 (size_bytes, size_human)；失败返回 (None, None)。
+
+    用于体积必须保持准确、但又不适合整文件下载的场景：如 .gram 语法模型（几百 MB，
+    且 URL 指向滚动 tag，sha256 无法固定）或只需补 sizeBytes 的已校验条目。
+    """
+    try:
+        req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT}, method="HEAD")
+        with urllib.request.urlopen(req, timeout=60) as resp:
+            ctype = (resp.headers.get("Content-Type") or "").lower()
+            if "text/html" in ctype:
+                return None, None  # 被重定向到登录/错误页，长度不可信
+            length = resp.headers.get("Content-Length")
+            if not length or not length.isdigit() or int(length) <= 0:
+                return None, None
+            size_bytes = int(length)
+            return size_bytes, human_size(size_bytes)
+    except Exception as exc:
+        print(f"    ⚠ 体积探测失败: {exc}")
+        return None, None
+
+
 def should_skip_version(version: str) -> bool:
     return version.strip().strip('"').strip("'") in SKIP_VERSIONS
 
@@ -71,6 +93,12 @@ def fill_download_urls(data: dict) -> dict:
     补全 data 中 downloadUrl 列表内缺失的 sha256/size/sizeBytes。
     跳过 version 为 master/main 的版本。
     返回新的 dict（深拷贝），不修改入参。
+
+    体积（sizeBytes）是 App 下载进度的分母，必须贴近真实文件：
+      - .gram 语法模型：上游用滚动 tag，文件几百 MB 故不生成 sha256，但每次都用 HEAD
+        刷新体积——否则会长期停留在旧值（万象 .gram 曾记录 117 MiB、实际 399 MiB，
+        App 进度会算到 298%）。
+      - 已有 sha256/size 但缺 sizeBytes 的条目：同样用 HEAD 补齐，不再重复下载。
     """
     import copy
     result = copy.deepcopy(data)
@@ -82,11 +110,26 @@ def fill_download_urls(data: dict) -> dict:
 
         for dl in v.get("downloadUrl", []):
             url = dl.get("url", "")
-            if not url or (dl.get("sha256") and dl.get("size")):
+            if not url:
                 continue
-            # 跳过 .gram 文件，不生成 sha256
             if url.endswith(".gram"):
-                print(f"  ⏭ {url} (.gram 文件，跳过 sha256)")
+                size_bytes, size_h = head_size(url)
+                if size_bytes:
+                    if dl.get("sizeBytes") != size_bytes:
+                        print(f"  📏 {url}: {dl.get('sizeBytes')} → {size_bytes} ({size_h})")
+                    dl["sizeBytes"] = size_bytes
+                    dl["size"] = size_h
+                else:
+                    print(f"  ⏭ {url} (.gram 文件，跳过 sha256，体积探测失败保留原值)")
+                continue
+            if dl.get("sha256") and dl.get("size") and dl.get("sizeBytes"):
+                continue
+            if dl.get("sha256") and dl.get("size"):
+                size_bytes, size_h = head_size(url)
+                if size_bytes:
+                    print(f"  📏 {url}: sizeBytes → {size_bytes} ({size_h})")
+                    dl["sizeBytes"] = size_bytes
+                    dl["size"] = size_h
                 continue
             print(f"  ↓ {url}")
             sha256, size_bytes, size_h = download_checksum(url)
@@ -227,6 +270,21 @@ def check_checksums(data: dict) -> dict:
             result["size_warn"].append((vi, ver, kind, url, recorded_bytes, nbytes))
 
     return result
+
+
+def apply_size_bytes(data: dict, url: str, size_bytes: int) -> bool:
+    """按实际文件大小修正 data 中 URL 匹配的下载项（sizeBytes + size 文本）。
+
+    供更新流程把 sha256 校验时算出的真实体积写回输出索引，避免手工填写的
+    sizeBytes 长期偏离实际（偏差会让 App 的下载进度超过 100%）。
+    """
+    changed = False
+    for _, _, _, item in collect_remote_items(data):
+        if item.get("url") == url and item.get("sizeBytes") != size_bytes:
+            item["sizeBytes"] = size_bytes
+            item["size"] = human_size(size_bytes)
+            changed = True
+    return changed
 
 
 def prune_bad_versions(data: dict, label: str = ""):

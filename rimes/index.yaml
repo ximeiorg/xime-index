@@ -1,7 +1,7 @@
 # Xime 输入方案子索引
 # ⚠️ 此文件由 scripts/ci-update.py 自动生成，请勿手动编辑
 index_version: 1
-updated_at: '2026-11-02'
+updated_at: '2026-11-11'
 schemas:
 - id: builtin
   name: 默认方案
@@ -20,8 +20,8 @@ schemas:
     changelog: 适配纠错功能，提供权重值
     downloadUrl:
     - url: https://github.com/kingzcheung/rime-wubi/releases/download/2.2.1/rime-wubi-2.2.1.zip
-      size: 5.39 MB
-      sizeBytes: 5390000
+      size: 5.4 MB
+      sizeBytes: 5650988
       sha256: fe8374b5bc115e0df77e9bbbfc2a052d5e8f9fa7f8fc419ecd186048475ff621
 - id: cangjie
   name: 倉頡輸入法
@@ -210,10 +210,11 @@ schemas:
     - url: https://github.com/amzxyz/rime-wanxiang/releases/download/v18.1.4/rime-wanxiang-base.zip
       sha256: d12f648327b0eb16c7cfca4ffd010885fc850773fcf7eb81090e2414b6ac9a3e
       size: 24.4 MB
+      sizeBytes: 25586596
     - url: https://github.com/amzxyz/RIME-LMDG/releases/download/LTS/wanxiang-lts-zh-hans.gram
       sha256: ''
-      size: 380 MB
-      sizeBytes: 123026414
+      size: 398.7 MB
+      sizeBytes: 418071596
 - id: stroke
   name: 笔画
   author: rime
