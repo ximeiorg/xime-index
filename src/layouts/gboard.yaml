@@ -1,0 +1,27 @@
+id: gboard
+name: Gboard 风格布局
+author: Kor1
+description: 复刻 Gboard 的 26 键、九键、常用符号与数字面板：键面圆角 4、无阴影、回车是圆形强调色键，?123 与回车都用按键级圆角；附 7 套 Gboard 配色（亮暗合一，跟随系统切换）。
+tags:
+  - 布局
+  - 全键盘
+  - 配色
+repo: https://github.com/ximeiorg/xime-layouts
+license: GPL-3.0
+appVersion: ">=3.5.0"
+requiresSchemes: []
+# 截图：仅详情页展示（1~5 张），固定到 tag
+screenshots:
+  - https://cdn.jsdelivr.net/gh/ximeiorg/xime-layouts@20261112/gboard/images/0.jpg
+  - https://cdn.jsdelivr.net/gh/ximeiorg/xime-layouts@20261112/gboard/images/1.jpg
+  - https://cdn.jsdelivr.net/gh/ximeiorg/xime-layouts@20261112/gboard/images/2.jpg
+  - https://cdn.jsdelivr.net/gh/ximeiorg/xime-layouts@20261112/gboard/images/3.jpg
+currentVersion: "1.0.0"
+versions:
+  - version: "1.0.0"
+    date: "2026-11-12"
+    changelog: 首个版本：26 键 / 九键 / 常用符号 / 数字面板，7 套 Gboard 配色，圆形强调色回车。
+    downloadUrl:
+      - url: https://github.com/ximeiorg/xime-layouts/releases/download/20261112/gboard.zip
+        sha256: "24a68613078226e641dde0dcb6245fa3c27d4b9eb50eba4e754d9a08ab87a557"
+        size: "12.2 KB"

@@ -1,0 +1,26 @@
+id: wetype
+name: 微信输入法风格布局
+author: Kor1
+description: 复刻微信输入法的 26 键、九键、数字与符号面板：微信绿主题、灰蓝功能键、候选选中为半透明白底；数字与符号面板的返回键用主题绿强调色，亮暗自动跟随系统。
+tags:
+  - 布局
+  - 全键盘
+  - 配色
+repo: https://github.com/ximeiorg/xime-layouts
+license: GPL-3.0
+appVersion: ">=3.5.0"
+requiresSchemes: []
+screenshots:
+  - https://cdn.jsdelivr.net/gh/ximeiorg/xime-layouts@20261112/wetype/0.jpg
+  - https://cdn.jsdelivr.net/gh/ximeiorg/xime-layouts@20261112/wetype/1.jpg
+  - https://cdn.jsdelivr.net/gh/ximeiorg/xime-layouts@20261112/wetype/2.jpg
+  - https://cdn.jsdelivr.net/gh/ximeiorg/xime-layouts@20261112/wetype/3.jpg
+currentVersion: "1.0.0"
+versions:
+  - version: "1.0.0"
+    date: "2026-11-12"
+    changelog: 首个版本：26 键 / 九键 / 数字 / 符号面板，微信绿主题，返回键为主题强调色。
+    downloadUrl:
+      - url: https://github.com/ximeiorg/xime-layouts/releases/download/20261112/wetype.zip
+        sha256: "c2bf9044da3a5cf006d254c0d1fa4bca96c03f459e89966da3031d0deb558977"
+        size: "5.3 KB"

@@ -1,0 +1,25 @@
+id: sougou
+name: 搜狗输入法风格布局
+author: Kor1
+description: 复刻搜狗输入法的 26 键、九键、数字与符号面板：底行为 符 / 123 / ，/ 空格 / 。/ 中英 / 发送，发送键跟随主题强调色，数字面板左柱与右列标点为功能键灰底；附橙色「默认布局」与蓝色两套配色。
+tags:
+  - 布局
+  - 全键盘
+  - 配色
+repo: https://github.com/ximeiorg/xime-layouts
+license: GPL-3.0
+appVersion: ">=3.5.0"
+requiresSchemes: []
+screenshots:
+  - https://cdn.jsdelivr.net/gh/ximeiorg/xime-layouts@20261112/sougou/0.jpg
+  - https://cdn.jsdelivr.net/gh/ximeiorg/xime-layouts@20261112/sougou/1.jpg
+  - https://cdn.jsdelivr.net/gh/ximeiorg/xime-layouts@20261112/sougou/2.jpg
+currentVersion: "1.0.0"
+versions:
+  - version: "1.0.0"
+    date: "2026-11-12"
+    changelog: 首个版本：26 键 / 九键 / 数字 / 符号面板，发送键用主题强调色，橙蓝两套配色。
+    downloadUrl:
+      - url: https://github.com/ximeiorg/xime-layouts/releases/download/20261112/sougou.zip
+        sha256: "81f0184710ab6ab151809650f26ad93815039a446c9a89940d4ad1683a81d076"
+        size: "5.7 KB"
