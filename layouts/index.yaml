@@ -1,7 +1,7 @@
 # Xime 键盘布局子索引
 # ⚠️ 此文件由 scripts/ci-update.py 自动生成，请勿手动编辑
 index_version: 1
-updated_at: '2026-11-11'
+updated_at: '2026-11-12'
 layouts:
 - id: comma_period
   name: 逗号句号分开布局
@@ -56,6 +56,34 @@ layouts:
     - url: https://cdn.jsdelivr.net/gh/cz-archive/flypy@c906ab6b2ae87e07f659ec3a2a98fafdce7656ae/xime.custom.yaml
       sha256: 3c54792cf406de0f08df343e22db8555d793b9028e9369299ed125505edaa298
       size: 10.8 KB
+- id: gboard
+  name: Gboard 风格布局
+  author: Kor1
+  description: 复刻 Gboard 的 26 键、九键、常用符号与数字面板：键面圆角 4、无阴影、回车是圆形强调色键，?123 与回车都用按键级圆角；附
+    7 套 Gboard 配色（亮暗合一，跟随系统切换）。
+  tags:
+  - 布局
+  - 全键盘
+  - 配色
+  repo: https://github.com/ximeiorg/xime-layouts
+  license: GPL-3.0
+  appVersion: '>=3.5.0'
+  requiresSchemes: []
+  screenshots:
+  - https://cdn.jsdelivr.net/gh/ximeiorg/xime-layouts@20261112/gboard/images/0.jpg
+  - https://cdn.jsdelivr.net/gh/ximeiorg/xime-layouts@20261112/gboard/images/1.jpg
+  - https://cdn.jsdelivr.net/gh/ximeiorg/xime-layouts@20261112/gboard/images/2.jpg
+  - https://cdn.jsdelivr.net/gh/ximeiorg/xime-layouts@20261112/gboard/images/3.jpg
+  currentVersion: 1.0.0
+  versions:
+  - version: 1.0.0
+    date: '2026-11-12'
+    changelog: 首个版本：26 键 / 九键 / 常用符号 / 数字面板，7 套 Gboard 配色，圆形强调色回车。
+    downloadUrl:
+    - url: https://github.com/ximeiorg/xime-layouts/releases/download/20261112/gboard.zip
+      sha256: 24a68613078226e641dde0dcb6245fa3c27d4b9eb50eba4e754d9a08ab87a557
+      size: 12.2 KB
+      sizeBytes: 12528
 - id: msdouble
   name: 双拼布局（微软双拼）
   author: Kor1
@@ -168,6 +196,59 @@ layouts:
       sha256: 18783a2c64b5351c34240ca667d805dd0953cbfd081a5129765b636458ac18af
       size: 8.6 KB
       sizeBytes: 8812
+- id: sougou
+  name: 搜狗输入法风格布局
+  author: Kor1
+  description: 复刻搜狗输入法的 26 键、九键、数字与符号面板：底行为 符 / 123 / ，/ 空格 / 。/ 中英 / 发送，发送键跟随主题强调色，数字面板左柱与右列标点为功能键灰底；附橙色「默认布局」与蓝色两套配色。
+  tags:
+  - 布局
+  - 全键盘
+  - 配色
+  repo: https://github.com/ximeiorg/xime-layouts
+  license: GPL-3.0
+  appVersion: '>=3.5.0'
+  requiresSchemes: []
+  screenshots:
+  - https://cdn.jsdelivr.net/gh/ximeiorg/xime-layouts@20261112/sougou/0.jpg
+  - https://cdn.jsdelivr.net/gh/ximeiorg/xime-layouts@20261112/sougou/1.jpg
+  - https://cdn.jsdelivr.net/gh/ximeiorg/xime-layouts@20261112/sougou/2.jpg
+  currentVersion: 1.0.0
+  versions:
+  - version: 1.0.0
+    date: '2026-11-12'
+    changelog: 首个版本：26 键 / 九键 / 数字 / 符号面板，发送键用主题强调色，橙蓝两套配色。
+    downloadUrl:
+    - url: https://github.com/ximeiorg/xime-layouts/releases/download/20261112/sougou.zip
+      sha256: 81f0184710ab6ab151809650f26ad93815039a446c9a89940d4ad1683a81d076
+      size: 5.7 KB
+      sizeBytes: 5803
+- id: wetype
+  name: 微信输入法风格布局
+  author: Kor1
+  description: 复刻微信输入法的 26 键、九键、数字与符号面板：微信绿主题、灰蓝功能键、候选选中为半透明白底；数字与符号面板的返回键用主题绿强调色，亮暗自动跟随系统。
+  tags:
+  - 布局
+  - 全键盘
+  - 配色
+  repo: https://github.com/ximeiorg/xime-layouts
+  license: GPL-3.0
+  appVersion: '>=3.5.0'
+  requiresSchemes: []
+  screenshots:
+  - https://cdn.jsdelivr.net/gh/ximeiorg/xime-layouts@20261112/wetype/0.jpg
+  - https://cdn.jsdelivr.net/gh/ximeiorg/xime-layouts@20261112/wetype/1.jpg
+  - https://cdn.jsdelivr.net/gh/ximeiorg/xime-layouts@20261112/wetype/2.jpg
+  - https://cdn.jsdelivr.net/gh/ximeiorg/xime-layouts@20261112/wetype/3.jpg
+  currentVersion: 1.0.0
+  versions:
+  - version: 1.0.0
+    date: '2026-11-12'
+    changelog: 首个版本：26 键 / 九键 / 数字 / 符号面板，微信绿主题，返回键为主题强调色。
+    downloadUrl:
+    - url: https://github.com/ximeiorg/xime-layouts/releases/download/20261112/wetype.zip
+      sha256: c2bf9044da3a5cf006d254c0d1fa4bca96c03f459e89966da3031d0deb558977
+      size: 5.2 KB
+      sizeBytes: 5376
 - id: wubi_compact
   name: 五笔86紧凑布局
   author: Kor1
