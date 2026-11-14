@@ -219,7 +219,7 @@ schemas:
       size: 388.3 MB
       sizeBytes: 407160876
 - id: rime-wbpy-full
-  name: 曦码五笔拼音方案库
+  name: 曦码五笔拼音双拼14键17键18键方案库
   author: ximeiorg
   description: 五笔86（含拼音混输、简入繁出）、简体拼音、自然码/小鹤/微软/搜狗双拼，以及拼音/五笔/双拼的 14/17/18 键合并键版本，默认方案表共
     21 套，共用同一份词库；自带 Xime 合并键键盘布局绑定。
