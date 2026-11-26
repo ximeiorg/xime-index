@@ -55,7 +55,7 @@ PLUGIN_V2_FIELDS = [
 ]
 MODEL_FIELDS = [
     "id", "name", "author", "description", "category", "size",
-    "type", "tags", "homepage", "license", "appVersion", "warning",
+    "type", "tags", "homepage", "license", "platforms", "appVersion", "warning",
     "currentVersion", "versions",
 ]
 LAYOUT_FIELDS = [

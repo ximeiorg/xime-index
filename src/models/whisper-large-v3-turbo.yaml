@@ -1,0 +1,51 @@
+id: whisper-large-v3-turbo
+name: Whisper Large-v3-Turbo 多语种语音识别
+author: OpenAI
+description: Whisper 最新一代：32 层编码器 + 4 层解码器，100 种语言，识别质量高于 small，推理也更快（但翻译能力偏弱）。整段识别，单次
+  30 秒；仅桌面版（macOS / Windows / Linux），模型约 1.5 GB。
+category: asr
+size: 1.51 GB
+type: remote
+tags:
+- 语音
+- 多语种
+- 离线
+- Whisper
+platforms:
+- macos
+- windows
+- linux
+homepage: https://www.modelscope.cn/models/openai-mirror/whisper-large-v3-turbo
+license: MIT
+currentVersion: v1.0
+versions:
+- version: v1.0
+  date: '2026-11-26'
+  changelog: 初始版本：transformers 布局权重（candle 移植；large-v3 特殊 token 比前代 +1）
+  storageDir: ''
+  files:
+  - name: config.json
+    url: https://www.modelscope.cn/models/openai-mirror/whisper-large-v3-turbo/resolve/master/config.json
+    sha256: c5b526b3e3cd64cd8940dabb45e8ba726629e22d8ed389c29b552f9140daf04a
+    size: 1.2 KB
+    sizeBytes: 1256
+  - name: generation_config.json
+    url: https://www.modelscope.cn/models/openai-mirror/whisper-large-v3-turbo/resolve/master/generation_config.json
+    sha256: cce11bfe3aaa6ae9e072ea2637caaec8795e68d9b67e655a5af16ee509681a4c
+    size: 3.7 KB
+    sizeBytes: 3772
+  - name: preprocessor_config.json
+    url: https://www.modelscope.cn/models/openai-mirror/whisper-large-v3-turbo/resolve/master/preprocessor_config.json
+    sha256: 7ccc62c6f2765af1f3b46c00c9b5894426835a05021c8b9c01eecb6dfb542711
+    size: 340 B
+    sizeBytes: 340
+  - name: tokenizer.json
+    url: https://www.modelscope.cn/models/openai-mirror/whisper-large-v3-turbo/resolve/master/tokenizer.json
+    sha256: 297b13372ac43916285644fb9687add3cc62ee2a1adb60da3dc25cc94c1871fd
+    size: 2.6 MB
+    sizeBytes: 2710337
+  - name: model.safetensors
+    url: https://www.modelscope.cn/models/openai-mirror/whisper-large-v3-turbo/resolve/master/model.safetensors
+    sha256: 542566a422ae4f3fd23f1ba11add198fca01bbf82e66e6a2857b3f608b1eb9d1
+    size: 1.51 GB
+    sizeBytes: 1617824864

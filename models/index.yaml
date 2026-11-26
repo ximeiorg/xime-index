@@ -1,7 +1,7 @@
 # Xime 模型子索引
 # ⚠️ 此文件由 scripts/ci-update.py 自动生成，请勿手动编辑
 index_version: 1
-updated_at: '2026-11-14'
+updated_at: '2026-11-26'
 models:
 - id: ochwpro
   name: 手写模型
@@ -122,6 +122,108 @@ models:
       sha256: 76684d3d381bed15057f19e6b22972a00ec79e72fa4bfd5682afde4fdcc5a3a2
       size: 116.3 KB
       sizeBytes: 119104
+- id: whisper-large-v3-turbo
+  name: Whisper Large-v3-Turbo 多语种语音识别
+  author: OpenAI
+  description: Whisper 最新一代：32 层编码器 + 4 层解码器，100 种语言，识别质量高于 small，推理也更快（但翻译能力偏弱）。整段识别，单次
+    30 秒；仅桌面版（macOS / Windows / Linux），模型约 1.5 GB。
+  category: asr
+  size: 1.51 GB
+  type: remote
+  tags:
+  - 语音
+  - 多语种
+  - 离线
+  - Whisper
+  homepage: https://www.modelscope.cn/models/openai-mirror/whisper-large-v3-turbo
+  license: MIT
+  platforms:
+  - macos
+  - windows
+  - linux
+  currentVersion: v1.0
+  versions:
+  - version: v1.0
+    date: '2026-11-26'
+    changelog: 初始版本：transformers 布局权重（candle 移植；large-v3 特殊 token 比前代 +1）
+    storageDir: ''
+    files:
+    - name: config.json
+      url: https://www.modelscope.cn/models/openai-mirror/whisper-large-v3-turbo/resolve/master/config.json
+      sha256: c5b526b3e3cd64cd8940dabb45e8ba726629e22d8ed389c29b552f9140daf04a
+      size: 1.2 KB
+      sizeBytes: 1256
+    - name: generation_config.json
+      url: https://www.modelscope.cn/models/openai-mirror/whisper-large-v3-turbo/resolve/master/generation_config.json
+      sha256: cce11bfe3aaa6ae9e072ea2637caaec8795e68d9b67e655a5af16ee509681a4c
+      size: 3.7 KB
+      sizeBytes: 3772
+    - name: preprocessor_config.json
+      url: https://www.modelscope.cn/models/openai-mirror/whisper-large-v3-turbo/resolve/master/preprocessor_config.json
+      sha256: 7ccc62c6f2765af1f3b46c00c9b5894426835a05021c8b9c01eecb6dfb542711
+      size: 340 B
+      sizeBytes: 340
+    - name: tokenizer.json
+      url: https://www.modelscope.cn/models/openai-mirror/whisper-large-v3-turbo/resolve/master/tokenizer.json
+      sha256: 297b13372ac43916285644fb9687add3cc62ee2a1adb60da3dc25cc94c1871fd
+      size: 2.6 MB
+      sizeBytes: 2710337
+    - name: model.safetensors
+      url: https://www.modelscope.cn/models/openai-mirror/whisper-large-v3-turbo/resolve/master/model.safetensors
+      sha256: 542566a422ae4f3fd23f1ba11add198fca01bbf82e66e6a2857b3f608b1eb9d1
+      size: 1.51 GB
+      sizeBytes: 1617824864
+- id: whisper-small
+  name: Whisper Small 多语种语音识别
+  author: OpenAI
+  description: 离线语音识别，99 种语言自动判定，中英混合直接说。整段识别（说完松手一次上屏），单次 30 秒；仅桌面版（macOS / Windows
+    / Linux），模型约 925 MB。
+  category: asr
+  size: 924.7 MB
+  type: remote
+  tags:
+  - 语音
+  - 多语种
+  - 离线
+  - Whisper
+  homepage: https://www.modelscope.cn/models/openai-mirror/whisper-small
+  license: MIT
+  platforms:
+  - macos
+  - windows
+  - linux
+  currentVersion: v1.0
+  versions:
+  - version: v1.0
+    date: '2026-11-26'
+    changelog: 初始版本：transformers 布局权重（candle 移植，支持自动判语种 / 强制语种 / 翻译）
+    storageDir: ''
+    files:
+    - name: config.json
+      url: https://www.modelscope.cn/models/openai-mirror/whisper-small/resolve/master/config.json
+      sha256: e6a2b489da1b5aed65a8eb8d1e7466fa867ad5643a8bc138ba708bd56b2875c4
+      size: 1.9 KB
+      sizeBytes: 1967
+    - name: generation_config.json
+      url: https://www.modelscope.cn/models/openai-mirror/whisper-small/resolve/master/generation_config.json
+      sha256: 71565b8ef50d0bf7a1193ed4bbed195b94e70c18894d81bba2f1233dcec3ab53
+      size: 3.8 KB
+      sizeBytes: 3868
+    - name: preprocessor_config.json
+      url: https://www.modelscope.cn/models/openai-mirror/whisper-small/resolve/master/preprocessor_config.json
+      sha256: 9b5cd03a36fbb8a627c64d98a5b5b126ead95a77720723944487311f0110b666
+      size: 180.7 KB
+      sizeBytes: 184990
+    - name: tokenizer.json
+      url: https://www.modelscope.cn/models/openai-mirror/whisper-small/resolve/master/tokenizer.json
+      sha256: 27fc476bfe7f17299480be2273fc0608e4d5a99aba2ab5dec5374b4482d1a566
+      size: 2.4 MB
+      sizeBytes: 2480466
+    - name: model.safetensors
+      url: https://www.modelscope.cn/models/openai-mirror/whisper-small/resolve/master/model.safetensors
+      sha256: 1d7734884874f1a1513ed9aa760a4f8e97aaa02fd6d93a3a85d27b2ae9ca596b
+      size: 922.2 MB
+      sizeBytes: 966995080
 - id: x-asr-480ms-zh-en-punct-int8
   name: X-ASR 中英文语音识别（带标点）
   author: X-ASR Team

@@ -155,12 +155,12 @@ python scripts/ci-update.py
 
 ### 步骤 1：创建模型文件
 
-在 `models/` 下新建 `<id>.yaml` 文件。
+在 `src/models/` 下新建 `<id>.yaml` 文件（`models/index.yaml` 是生成产物，别手改）。
 
 **文件列表型模型**（每个文件独立下载）：
 
 ```yaml
-# models/my-model.yaml
+# src/models/my-model.yaml
 id: "my-model"                      # 模型唯一 ID
 name: "我的模型"                     # 显示名称
 author: "你的名字"                   # 作者
@@ -170,6 +170,7 @@ category: "prediction"              # 分类：prediction / asr / punctuation / 
 size: "30 MB"                       # 模型大小描述
 type: "remote"
 tags: ["AI", "ONNX"]                # 搜索标签
+platforms: ["macos", "windows", "linux"]  # 可选：只在这些平台展示（缺省 = 全平台）
 appVersion: ">=2.3.0"               # 兼容的 App 版本
 currentVersion: "v1.0"
 versions:
@@ -191,7 +192,7 @@ versions:
 **归档型模型**（通过 tar.bz2 整包下载）：
 
 ```yaml
-# models/my-asr-model.yaml
+# src/models/my-asr-model.yaml
 id: "my-asr-model"
 name: "语音识别模型"
 author: "你的名字"                   # 作者
@@ -201,6 +202,7 @@ category: "asr"
 size: "36 MB"
 type: "remote"
 tags: ["语音", "sherpa-onnx"]
+platforms: ["android"]              # 可选：只在这些平台展示（缺省 = 全平台）
 appVersion: ">=2.3.0"
 currentVersion: "v1.0"
 versions:
@@ -227,6 +229,11 @@ versions:
 | `punctuation` | 标点预测 |
 | `stroke` | 笔画序列 (预留) |
 | `other` | 其他 |
+
+**`platforms` 可选值：**`android` / `macos` / `windows` / `linux`。缺省（不写）表示全平台可见。
+声明之后就只在列出的平台商店里出现——例如 candle 推理的桌面模型写
+`["macos", "windows", "linux"]`，Android 商店不会列出（那一端没有对应推理后端，下载了也加载不了）。
+索引生成器会原样保留这个字段。
 
 ### 步骤 2：生成索引
 

@@ -52,8 +52,13 @@ Xime 输入法的插件、方案、模型与键盘布局市场索引。
 | `predictive-text-base` | 智能联想模型 base 版本 | Kor1 | prediction | 36.35 MB | >=2.6.0 |
 | `predictive-text-small` | 智能联想模型 small 版本 | Kor1 | prediction | 18.8 MB | >=2.3.0 |
 | `punctuation_int8` | 标点预测模型 int8 | Kor1 | punctuation | 2.2 MB | >=2.3.0 |
+| `whisper-large-v3-turbo` | Whisper Large-v3-Turbo 多语种语音识别 | OpenAI | asr | 1.51 GB | 仅桌面版 |
+| `whisper-small` | Whisper Small 多语种语音识别 | OpenAI | asr | 924.7 MB | 仅桌面版 |
 | `x-asr-480ms-zh-en-punct-int8` | X-ASR 中英文语音识别（带标点） | X-ASR Team | asr | 133.90 MB | >=3.0.0-beta6 |
 | `zipformer-zh-int8` | 中文 Zipformer int8 | kaldi | asr | 132.63 MB | >=2.3.0 |
+
+`asr` 里的 Whisper 条目声明了 `platforms: [macos, windows, linux]`（candle 推理只在桌面端），
+Android 商店不会展示；Android 端的 sherpa-onnx 模型目前没写 `platforms`，桌面商店里仍会列出。
 
 ### 插件 (Plugins，旧版 Lua/DEX)
 
