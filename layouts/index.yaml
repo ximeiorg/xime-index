@@ -1,7 +1,7 @@
 # Xime 键盘布局子索引
 # ⚠️ 此文件由 scripts/ci-update.py 自动生成，请勿手动编辑
 index_version: 1
-updated_at: '2026-11-22'
+updated_at: '2026-11-26'
 layouts:
 - id: adcd
   name: 字母顺序布局
@@ -79,7 +79,6 @@ layouts:
     - url: https://cdn.jsdelivr.net/gh/cz-archive/flypy@c906ab6b2ae87e07f659ec3a2a98fafdce7656ae/xime.custom.yaml
       sha256: 3c54792cf406de0f08df343e22db8555d793b9028e9369299ed125505edaa298
       size: 10.8 KB
-      sizeBytes: 11106
 - id: gboard
   name: Gboard 风格布局
   author: Kor1

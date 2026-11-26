@@ -1,7 +1,7 @@
 # Xime 模型子索引
 # ⚠️ 此文件由 scripts/ci-update.py 自动生成，请勿手动编辑
 index_version: 1
-updated_at: '2026-11-22'
+updated_at: '2026-11-26'
 models:
 - id: ochwpro
   name: 手写模型
@@ -133,7 +133,7 @@ models:
 - id: qwen3-asr-0.6b
   name: Qwen3-ASR 0.6B 中英文语音识别
   author: Qwen
-  description: Qwen3 系列离线语音识别模型（Transformers 权重直发）。桌面端由 xime-infer 的 candle 后端装载，中文、英文与中英混说都能识别。
+  description: Qwen3 系列离线语音识别模型（Transformers 权重直发）。桌面端由 xime-infer 的 candle 后端装载，中文、英文与中英混说都能识别。注意，此模型不支持移动端！
   category: asr
   size: 1.75 GB
   type: remote
