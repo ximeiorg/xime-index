@@ -46,16 +46,15 @@ Xime 输入法的插件、方案、模型与键盘布局市场索引。
 
 ### 模型 (Models)
 
-| ID | 名称 | 作者 | 分类 | 大小 | 最低 App 版本 |
-|---|---|---|---|---|---|
-| `ochwpro` | 手写模型 | Kor1 | handwriting | 7.00 MB | >=2.5.0 |
-| `predictive-text-base` | 智能联想模型 base 版本 | Kor1 | prediction | 36.35 MB | >=2.6.0 |
-| `predictive-text-small` | 智能联想模型 small 版本 | Kor1 | prediction | 18.8 MB | >=2.3.0 |
-| `punctuation_int8` | 标点预测模型 int8 | Kor1 | punctuation | 2.2 MB | >=2.3.0 |
-| `whisper-large-v3-turbo` | Whisper Large-v3-Turbo 多语种语音识别 | OpenAI | asr | 1.51 GB | 仅桌面版 |
-| `whisper-small` | Whisper Small 多语种语音识别 | OpenAI | asr | 924.7 MB | 仅桌面版 |
-| `x-asr-480ms-zh-en-punct-int8` | X-ASR 中英文语音识别（带标点） | X-ASR Team | asr | 133.90 MB | >=3.0.0-beta6 |
-| `zipformer-zh-int8` | 中文 Zipformer int8 | kaldi | asr | 132.63 MB | >=2.3.0 |
+| ID | 名称 | 作者 | 分类 | 平台 | 大小 | 最低 App 版本 |
+|---|---|---|---|---|---|---|
+| `ochwpro` | 手写模型 | Kor1 | handwriting | android | 7.00 MB | >=2.5.0 |
+| `predictive-text-base` | 智能联想模型 base 版本 | Kor1 | prediction | android | 36.35 MB | >=2.6.0 |
+| `predictive-text-small` | 智能联想模型 small 版本 | Kor1 | prediction | android | 18.8 MB | >=2.3.0 |
+| `punctuation_int8` | 标点预测模型 int8 | Kor1 | punctuation | android | 2.2 MB | >=2.3.0 |
+| `qwen3-asr-0.6b` | Qwen3-ASR 0.6B 中英文语音识别 | Qwen | asr | macos, windows, linux | 1.75 GB | — |
+| `x-asr-480ms-zh-en-punct-int8` | X-ASR 中英文语音识别（带标点） | X-ASR Team | asr | android, windows | 133.90 MB | >=3.0.0-beta6 |
+| `zipformer-zh-int8` | 中文 Zipformer int8 | kaldi | asr | android, windows | 132.63 MB | >=2.3.0 |
 
 `asr` 里的 Whisper 条目声明了 `platforms: [macos, windows, linux]`（candle 推理只在桌面端），
 Android 商店不会展示；Android 端的 sherpa-onnx 模型目前没写 `platforms`，桌面商店里仍会列出。
@@ -80,6 +79,13 @@ Android 商店不会展示；Android 端的 sherpa-onnx 模型目前没写 `plat
 `src/plugins/v1/`，继续发布到旧版稳定 URL `plugins/index.yaml`。索引条目在旧扁平结构上追加了新插件系统的
 元数据（`icon` / `activation` / `minHostVersion` / `platforms` / `capabilities` / `network`），
 旧版 App 读取 `plugins/index.yaml`，互不影响。
+
+`platforms` 要逐个写明目标平台：`android`（Android）、`macos`（曦码·逸）、`windows`（曦码·曜）、
+`linux`（Linux 桌面），不支持某个平台就别列。`minHostVersion` 只有 Android 一种口径
+（`3.x`）；桌面三端各有自己的应用版本（`0.1.x` / `0.3.x`），不设桌面版本字段，
+桌面端只按 `platforms` 做门禁。模型（`models/index.yaml`）用同一个 `platforms` 字段，
+因为各端运行时不同：ONNX Runtime / sherpa-onnx 只有 Android（与 Windows）能跑，
+桌面走 candle（`xime-infer`），认 safetensors / Transformers 权重。
 
 | ID | 名称 | 类型 | 大小 | 最低 App 版本 |
 |---|---|---|---|---|

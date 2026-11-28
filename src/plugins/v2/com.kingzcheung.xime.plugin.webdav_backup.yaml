@@ -12,6 +12,9 @@ activation: single
 minHostVersion: '3.0.0'
 platforms:
 - android
+- macos
+- windows
+- linux
 capabilities:
   backup:
     protocols:

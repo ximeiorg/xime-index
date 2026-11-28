@@ -10,6 +10,8 @@ tags:
 - ONNX
 homepage: https://github.com/ximeiorg/ochwpro
 appVersion: '>=2.5.0'
+platforms:
+- android
 currentVersion: v1.0
 versions:
 - version: v1.0

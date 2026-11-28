@@ -1,7 +1,7 @@
 # Xime v2 插件子索引（JS/QuickJS 插件，宿主 >=3.0.0）
 # ⚠️ 此文件由 scripts/ci-update.py 自动生成，请勿手动编辑
 index_version: 2
-updated_at: '2026-11-14'
+updated_at: '2026-11-26'
 plugins:
 - id: com.kingzcheung.xime.plugin.ai_reply
   name: AI 智能回复
@@ -18,6 +18,9 @@ plugins:
   minHostVersion: 3.0.0
   platforms:
   - android
+  - macos
+  - windows
+  - linux
   capabilities:
     tool:
       display: passive
@@ -51,6 +54,9 @@ plugins:
   minHostVersion: 3.0.0
   platforms:
   - android
+  - macos
+  - windows
+  - linux
   capabilities:
     tool:
       display: direct
@@ -83,6 +89,9 @@ plugins:
   minHostVersion: 3.0.0
   platforms:
   - android
+  - macos
+  - windows
+  - linux
   capabilities:
     speech:
       inputMode: streaming
@@ -133,6 +142,9 @@ plugins:
   minHostVersion: 3.0.0
   platforms:
   - android
+  - macos
+  - windows
+  - linux
   capabilities:
     emoji:
       supportsSearch: true
@@ -165,6 +177,9 @@ plugins:
   minHostVersion: 3.0.0
   platforms:
   - android
+  - macos
+  - windows
+  - linux
   capabilities:
     emoji:
       supportsSearch: true
@@ -198,6 +213,9 @@ plugins:
   minHostVersion: 3.0.0
   platforms:
   - android
+  - macos
+  - windows
+  - linux
   capabilities:
     candidate_transform: true
     quick_send_read: true
@@ -231,6 +249,9 @@ plugins:
   minHostVersion: 3.0.0
   platforms:
   - android
+  - macos
+  - windows
+  - linux
   capabilities:
     tool:
       display: direct
@@ -263,6 +284,9 @@ plugins:
   minHostVersion: 3.0.0
   platforms:
   - android
+  - macos
+  - windows
+  - linux
   capabilities:
     tool:
       display: passive
@@ -296,6 +320,9 @@ plugins:
   minHostVersion: 3.0.0
   platforms:
   - android
+  - macos
+  - windows
+  - linux
   capabilities:
     speech:
       inputMode: streaming
@@ -338,6 +365,9 @@ plugins:
   minHostVersion: 3.0.0
   platforms:
   - android
+  - macos
+  - windows
+  - linux
   capabilities:
     backup:
       protocols:
@@ -380,6 +410,9 @@ plugins:
   minHostVersion: 3.0.0
   platforms:
   - android
+  - macos
+  - windows
+  - linux
   capabilities:
     clipboard_sync:
       protocols:

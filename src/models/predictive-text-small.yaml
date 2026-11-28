@@ -11,6 +11,8 @@ tags:
 - ONNX
 homepage: https://github.com/ximeiorg/predictive-text
 appVersion: '>=2.3.0'
+platforms:
+- android
 currentVersion: v1.0
 versions:
 - version: v1.0

@@ -1,0 +1,45 @@
+id: mimipc
+name: 仿PC快捷键布局
+author: 寻风
+description: |-
+  仿PC之快捷，敲码之便捷。
+  上滑：A 全选、Z 撤回、B 回车、N 重复上次操作、
+  X 剪切、C 复制、V 粘贴。
+  中英键盘：空格改居中缩小，左右各加光标控制；
+  逗号与句号合并，单击逗号、上滑句号；
+  逗号句号放左边，中英切换放右边；
+  中英文 QWERPD 上滑符号均为英标符；
+  中文状态上下滑 P 出 + -，上滑 D 出 =；
+  中英状态上下滑 M 分别出各自中英符 ! ?；
+  英文状态适配常用命令符。
+  数字键盘：数字面板改为二级页面，绕过并屏蔽二级符号；
+  左右 + - * / 外多加 @；空格键居中以适应多数人习惯；
+  符号与表情一起放在右边。
+tags: [布局, 快捷键,配色]
+repo: https://github.com/2425888979/xime-layout_MimiPc
+license: MIT
+appVersion: ">=3.0.0"
+requiresSchemes: []
+screenshots:
+  - https://cdn.jsdelivr.net/gh/2425888979/xime-layout_MimiPc@3b4e76b/images/1.1.0/1.png
+  - https://cdn.jsdelivr.net/gh/2425888979/xime-layout_MimiPc@3b4e76b/images/1.1.0/y.png
+  - https://cdn.jsdelivr.net/gh/2425888979/xime-layout_MimiPc@3b4e76b/images/1.1.0/z.png
+currentVersion: "1.1.0"
+versions:
+  - version: "1.1.0"
+    date: "2026-11-22"
+    changelog: |-
+      以新版文档规则重写；新增配色“点缀蓝幽”
+      空格长按进符号面板；上下左右滑动出 ↑↓←→
+      标点符号细微调整；PC 快捷操作沿用上版
+    downloadUrl:
+      - url: https://github.com/2425888979/xime-layout_MimiPc/releases/download/1.1.0/xime.custom.yaml
+        sha256: "e94b6a445d2c8faf3de548e888bae9de933f69c0621a72fa10683522a51e96bd"
+        size: "11.6 KB"
+  - version: "1.0.0"
+    date: "2026-11-21"
+    changelog: 首版
+    downloadUrl:
+      - url: https://github.com/2425888979/xime-layout_MimiPc/releases/download/Minic_Pc/xime.custom.yaml
+        sha256: "f4ac584e2377b0b359445e0461e65e692c0f1f495a3e340af9630c56fafd2f2a"
+        size: "8.1 KB"

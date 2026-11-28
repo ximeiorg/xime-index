@@ -15,6 +15,8 @@ models:
   - ONNX
   homepage: https://github.com/ximeiorg/ochwpro
   appVersion: '>=2.5.0'
+  platforms:
+  - android
   currentVersion: v1.0
   versions:
   - version: v1.0
@@ -45,6 +47,8 @@ models:
   - ONNX
   homepage: https://github.com/ximeiorg/predictive-text
   appVersion: '>=2.6.0'
+  platforms:
+  - android
   currentVersion: v1.0
   versions:
   - version: v1.0
@@ -75,6 +79,8 @@ models:
   - ONNX
   homepage: https://github.com/ximeiorg/predictive-text
   appVersion: '>=2.3.0'
+  platforms:
+  - android
   currentVersion: v1.0
   versions:
   - version: v1.0
@@ -105,6 +111,8 @@ models:
   - ONNX
   homepage: https://github.com/ximeiorg/srf-punctuation
   appVersion: '>=2.3.0'
+  platforms:
+  - android
   currentVersion: v1.0
   versions:
   - version: v1.0
@@ -122,108 +130,67 @@ models:
       sha256: 76684d3d381bed15057f19e6b22972a00ec79e72fa4bfd5682afde4fdcc5a3a2
       size: 116.3 KB
       sizeBytes: 119104
-- id: whisper-large-v3-turbo
-  name: Whisper Large-v3-Turbo 多语种语音识别
-  author: OpenAI
-  description: Whisper 最新一代：32 层编码器 + 4 层解码器，100 种语言，识别质量高于 small，推理也更快（但翻译能力偏弱）。整段识别，单次
-    30 秒；仅桌面版（macOS / Windows / Linux），模型约 1.5 GB。
+- id: qwen3-asr-0.6b
+  name: Qwen3-ASR 0.6B 中英文语音识别
+  author: Qwen
+  description: Qwen3 系列离线语音识别模型（Transformers 权重直发）。桌面端由 xime-infer 的 candle 后端装载，中文、英文与中英混说都能识别。注意，此模型不支持移动端！
   category: asr
-  size: 1.51 GB
+  size: 1.75 GB
   type: remote
   tags:
   - 语音
-  - 多语种
+  - 中英文
   - 离线
-  - Whisper
-  homepage: https://www.modelscope.cn/models/openai-mirror/whisper-large-v3-turbo
-  license: MIT
+  - candle
+  homepage: https://modelscope.cn/models/Qwen/Qwen3-ASR-0.6B
+  license: Apache-2.0
   platforms:
   - macos
   - windows
   - linux
+  warning: 仅桌面端；首次下载约 1.75 GB，建议在 Wi-Fi 下进行。Android 不支持该模型。
   currentVersion: v1.0
   versions:
   - version: v1.0
-    date: '2026-11-26'
-    changelog: 初始版本：transformers 布局权重（candle 移植；large-v3 特殊 token 比前代 +1）
-    storageDir: ''
+    date: '2026-11-18'
+    changelog: 首次上架：直接下发 Transformers 权重（safetensors + BPE 词表）
+    storageDir: models/qwen3-asr-0.6b
     files:
     - name: config.json
-      url: https://www.modelscope.cn/models/openai-mirror/whisper-large-v3-turbo/resolve/master/config.json
-      sha256: c5b526b3e3cd64cd8940dabb45e8ba726629e22d8ed389c29b552f9140daf04a
-      size: 1.2 KB
-      sizeBytes: 1256
-    - name: generation_config.json
-      url: https://www.modelscope.cn/models/openai-mirror/whisper-large-v3-turbo/resolve/master/generation_config.json
-      sha256: cce11bfe3aaa6ae9e072ea2637caaec8795e68d9b67e655a5af16ee509681a4c
-      size: 3.7 KB
-      sizeBytes: 3772
-    - name: preprocessor_config.json
-      url: https://www.modelscope.cn/models/openai-mirror/whisper-large-v3-turbo/resolve/master/preprocessor_config.json
-      sha256: 7ccc62c6f2765af1f3b46c00c9b5894426835a05021c8b9c01eecb6dfb542711
-      size: 340 B
-      sizeBytes: 340
-    - name: tokenizer.json
-      url: https://www.modelscope.cn/models/openai-mirror/whisper-large-v3-turbo/resolve/master/tokenizer.json
-      sha256: 297b13372ac43916285644fb9687add3cc62ee2a1adb60da3dc25cc94c1871fd
+      url: https://www.modelscope.cn/models/Qwen/Qwen3-ASR-0.6B/resolve/master/config.json
+      sha256: 76d3ae4601ce939830b2517f4a6cadb86cc51316c3900af6b020b051c21a478c
+      size: 6.0 KB
+      sizeBytes: 6193
+    - name: model.safetensors
+      url: https://www.modelscope.cn/models/Qwen/Qwen3-ASR-0.6B/resolve/master/model.safetensors
+      sha256: 79d6cbd4c98c7bbffe9db2edac07f56cd6637d0d5944b27f6c2b8353840323ea
+      size: 1.75 GB
+      sizeBytes: 1876091704
+    - name: vocab.json
+      url: https://www.modelscope.cn/models/Qwen/Qwen3-ASR-0.6B/resolve/master/vocab.json
+      sha256: ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910
       size: 2.6 MB
-      sizeBytes: 2710337
-    - name: model.safetensors
-      url: https://www.modelscope.cn/models/openai-mirror/whisper-large-v3-turbo/resolve/master/model.safetensors
-      sha256: 542566a422ae4f3fd23f1ba11add198fca01bbf82e66e6a2857b3f608b1eb9d1
-      size: 1.51 GB
-      sizeBytes: 1617824864
-- id: whisper-small
-  name: Whisper Small 多语种语音识别
-  author: OpenAI
-  description: 离线语音识别，99 种语言自动判定，中英混合直接说。整段识别（说完松手一次上屏），单次 30 秒；仅桌面版（macOS / Windows
-    / Linux），模型约 925 MB。
-  category: asr
-  size: 924.7 MB
-  type: remote
-  tags:
-  - 语音
-  - 多语种
-  - 离线
-  - Whisper
-  homepage: https://www.modelscope.cn/models/openai-mirror/whisper-small
-  license: MIT
-  platforms:
-  - macos
-  - windows
-  - linux
-  currentVersion: v1.0
-  versions:
-  - version: v1.0
-    date: '2026-11-26'
-    changelog: 初始版本：transformers 布局权重（candle 移植，支持自动判语种 / 强制语种 / 翻译）
-    storageDir: ''
-    files:
-    - name: config.json
-      url: https://www.modelscope.cn/models/openai-mirror/whisper-small/resolve/master/config.json
-      sha256: e6a2b489da1b5aed65a8eb8d1e7466fa867ad5643a8bc138ba708bd56b2875c4
-      size: 1.9 KB
-      sizeBytes: 1967
-    - name: generation_config.json
-      url: https://www.modelscope.cn/models/openai-mirror/whisper-small/resolve/master/generation_config.json
-      sha256: 71565b8ef50d0bf7a1193ed4bbed195b94e70c18894d81bba2f1233dcec3ab53
-      size: 3.8 KB
-      sizeBytes: 3868
+      sizeBytes: 2776833
+    - name: merges.txt
+      url: https://www.modelscope.cn/models/Qwen/Qwen3-ASR-0.6B/resolve/master/merges.txt
+      sha256: 8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5
+      size: 1.6 MB
+      sizeBytes: 1671853
+    - name: tokenizer_config.json
+      url: https://www.modelscope.cn/models/Qwen/Qwen3-ASR-0.6B/resolve/master/tokenizer_config.json
+      sha256: 4942d005604266809309cabc9f4e9cb89ce855d59b14681fdc0e1cc62ea26c4c
+      size: 12.2 KB
+      sizeBytes: 12487
     - name: preprocessor_config.json
-      url: https://www.modelscope.cn/models/openai-mirror/whisper-small/resolve/master/preprocessor_config.json
-      sha256: 9b5cd03a36fbb8a627c64d98a5b5b126ead95a77720723944487311f0110b666
-      size: 180.7 KB
-      sizeBytes: 184990
-    - name: tokenizer.json
-      url: https://www.modelscope.cn/models/openai-mirror/whisper-small/resolve/master/tokenizer.json
-      sha256: 27fc476bfe7f17299480be2273fc0608e4d5a99aba2ab5dec5374b4482d1a566
-      size: 2.4 MB
-      sizeBytes: 2480466
-    - name: model.safetensors
-      url: https://www.modelscope.cn/models/openai-mirror/whisper-small/resolve/master/model.safetensors
-      sha256: 1d7734884874f1a1513ed9aa760a4f8e97aaa02fd6d93a3a85d27b2ae9ca596b
-      size: 922.2 MB
-      sizeBytes: 966995080
+      url: https://www.modelscope.cn/models/Qwen/Qwen3-ASR-0.6B/resolve/master/preprocessor_config.json
+      sha256: 45e120a4eda2c20c5d7f2ea9354e63536bf35e27aa573fb7cdf78017b378770d
+      size: 330 B
+      sizeBytes: 330
+    - name: generation_config.json
+      url: https://www.modelscope.cn/models/Qwen/Qwen3-ASR-0.6B/resolve/master/generation_config.json
+      sha256: 1da527824d81e07118facff437e03f2e24a23311e3bdeb2368973fe77e5f275c
+      size: 142 B
+      sizeBytes: 142
 - id: x-asr-480ms-zh-en-punct-int8
   name: X-ASR 中英文语音识别（带标点）
   author: X-ASR Team
@@ -239,6 +206,9 @@ models:
   homepage: https://www.modelscope.cn/models/adaada88/sherpa-onnx-x-asr-480ms-streaming-zipformer-transducer-zh-en-punct-int8
   license: Apache-2.0
   appVersion: '>=3.0.0-beta6'
+  platforms:
+  - android
+  - windows
   currentVersion: v1.0
   versions:
   - version: v1.0
@@ -268,6 +238,9 @@ models:
   - ASR
   homepage: https://www.modelscope.cn/models/bikeand/asr
   appVersion: '>=2.3.0'
+  platforms:
+  - android
+  - windows
   currentVersion: v1.0
   versions:
   - version: v1.0

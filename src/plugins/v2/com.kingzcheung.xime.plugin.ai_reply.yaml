@@ -13,6 +13,9 @@ activation: multi
 minHostVersion: '3.0.0'
 platforms:
 - android
+- macos
+- windows
+- linux
 capabilities:
   tool:
     display: passive

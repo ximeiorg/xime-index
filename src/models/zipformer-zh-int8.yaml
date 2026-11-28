@@ -11,6 +11,9 @@ tags:
 - ASR
 homepage: https://www.modelscope.cn/models/bikeand/asr
 appVersion: '>=2.3.0'
+platforms:
+- android
+- windows
 currentVersion: v1.0
 versions:
 - version: v1.0

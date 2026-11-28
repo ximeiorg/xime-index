@@ -1,8 +1,31 @@
 # Xime 键盘布局子索引
 # ⚠️ 此文件由 scripts/ci-update.py 自动生成，请勿手动编辑
 index_version: 1
-updated_at: '2026-11-14'
+updated_at: '2026-11-26'
 layouts:
+- id: adcd
+  name: 字母顺序布局
+  author: kingzcheung
+  description: 26 键按字母顺序（abcdef…）重排，字母键的上滑数字/符号、下滑字根等手势照旧跟随字母。
+  tags:
+  - 布局
+  - 全键盘
+  repo: https://github.com/ximeiorg/xime-layouts
+  license: GPL-3.0
+  appVersion: '>=3.4.0'
+  requiresSchemes: []
+  screenshots:
+  - https://cdn.jsdelivr.net/gh/ximeiorg/xime-layouts@20261115/adcd/0.jpg
+  currentVersion: 1.0.0
+  versions:
+  - version: 1.0.0
+    date: '2026-11-15'
+    changelog: 首个版本：26 键按字母顺序排列（中英各一套，另含平板 12/11/11 行）。
+    downloadUrl:
+    - url: https://github.com/ximeiorg/xime-layouts/releases/download/20261115/adcd.zip
+      sha256: a09a913fe63bff745c59b1d2e6487cbe23be1679bedfe8b190e495c1106dc034
+      size: 1.2 KB
+      sizeBytes: 1236
 - id: comma_period
   name: 逗号句号分开布局
   author: Kor1
@@ -56,7 +79,6 @@ layouts:
     - url: https://cdn.jsdelivr.net/gh/cz-archive/flypy@c906ab6b2ae87e07f659ec3a2a98fafdce7656ae/xime.custom.yaml
       sha256: 3c54792cf406de0f08df343e22db8555d793b9028e9369299ed125505edaa298
       size: 10.8 KB
-      sizeBytes: 11106
 - id: gboard
   name: Gboard 风格布局
   author: Kor1
@@ -85,6 +107,68 @@ layouts:
       sha256: 24a68613078226e641dde0dcb6245fa3c27d4b9eb50eba4e754d9a08ab87a557
       size: 12.2 KB
       sizeBytes: 12528
+- id: mimipc
+  name: 仿PC快捷键布局
+  author: 寻风
+  description: '仿PC之快捷，敲码之便捷。
+
+    上滑：A 全选、Z 撤回、B 回车、N 重复上次操作、
+
+    X 剪切、C 复制、V 粘贴。
+
+    中英键盘：空格改居中缩小，左右各加光标控制；
+
+    逗号与句号合并，单击逗号、上滑句号；
+
+    逗号句号放左边，中英切换放右边；
+
+    中英文 QWERPD 上滑符号均为英标符；
+
+    中文状态上下滑 P 出 + -，上滑 D 出 =；
+
+    中英状态上下滑 M 分别出各自中英符 ! ?；
+
+    英文状态适配常用命令符。
+
+    数字键盘：数字面板改为二级页面，绕过并屏蔽二级符号；
+
+    左右 + - * / 外多加 @；空格键居中以适应多数人习惯；
+
+    符号与表情一起放在右边。'
+  tags:
+  - 布局
+  - 快捷键
+  - 配色
+  repo: https://github.com/2425888979/xime-layout_MimiPc
+  license: MIT
+  appVersion: '>=3.0.0'
+  requiresSchemes: []
+  screenshots:
+  - https://cdn.jsdelivr.net/gh/2425888979/xime-layout_MimiPc@3b4e76b/images/1.1.0/1.png
+  - https://cdn.jsdelivr.net/gh/2425888979/xime-layout_MimiPc@3b4e76b/images/1.1.0/y.png
+  - https://cdn.jsdelivr.net/gh/2425888979/xime-layout_MimiPc@3b4e76b/images/1.1.0/z.png
+  currentVersion: 1.1.0
+  versions:
+  - version: 1.1.0
+    date: '2026-11-22'
+    changelog: '以新版文档规则重写；新增配色“点缀蓝幽”
+
+      空格长按进符号面板；上下左右滑动出 ↑↓←→
+
+      标点符号细微调整；PC 快捷操作沿用上版'
+    downloadUrl:
+    - url: https://github.com/2425888979/xime-layout_MimiPc/releases/download/1.1.0/xime.custom.yaml
+      sha256: e94b6a445d2c8faf3de548e888bae9de933f69c0621a72fa10683522a51e96bd
+      size: 11.6 KB
+      sizeBytes: 11852
+  - version: 1.0.0
+    date: '2026-11-21'
+    changelog: 首版
+    downloadUrl:
+    - url: https://github.com/2425888979/xime-layout_MimiPc/releases/download/Minic_Pc/xime.custom.yaml
+      sha256: f4ac584e2377b0b359445e0461e65e692c0f1f495a3e340af9630c56fafd2f2a
+      size: 8.1 KB
+      sizeBytes: 8309
 - id: msdouble
   name: 双拼布局（微软双拼）
   author: Kor1
