@@ -1,7 +1,7 @@
 # Xime 键盘布局子索引
 # ⚠️ 此文件由 scripts/ci-update.py 自动生成，请勿手动编辑
 index_version: 1
-updated_at: '2026-11-26'
+updated_at: '2026-11-28'
 layouts:
 - id: adcd
   name: 字母顺序布局
@@ -107,6 +107,56 @@ layouts:
       sha256: 24a68613078226e641dde0dcb6245fa3c27d4b9eb50eba4e754d9a08ab87a557
       size: 12.2 KB
       sizeBytes: 12528
+- id: liquidglass
+  name: 液态玻璃
+  author: kingzcheung
+  description: 键盘底板与键帽半透明，键帽带左上高光边；暗色主题自动压低半透明键帽的亮度，避免发亮。需要 v3.6.0+。
+  tags:
+  - 布局
+  - 全键盘
+  - 配色
+  repo: https://github.com/ximeiorg/xime-layouts
+  license: GPL-3.0
+  appVersion: '>=3.6.0'
+  requiresSchemes: []
+  screenshots:
+  - https://cdn.jsdelivr.net/gh/ximeiorg/xime-layouts@20261128/liquidglass/0.png
+  - https://cdn.jsdelivr.net/gh/ximeiorg/xime-layouts@20261128/liquidglass/1.png
+  currentVersion: 1.0.0
+  versions:
+  - version: 1.0.0
+    date: '2026-11-28'
+    changelog: 首个版本：底板 58% 不透明 + 键帽 62% 不透明 + 高光边，亮暗各自一套。
+    downloadUrl:
+    - url: https://github.com/ximeiorg/xime-layouts/releases/download/20261128/liquidglass.zip
+      sha256: 7a89a35dd4e07a9ae2fd51a066ecf42d5e0b78859bb99da6a5842d60508f62f7
+      size: 1010 B
+      sizeBytes: 1010
+- id: liquidglass-round
+  name: 液态玻璃（大圆角）
+  author: kingzcheung
+  description: 与「液态玻璃」相同，另外给键盘顶部左右两角加 24dp 圆角，底部仍贴屏幕边。需要 v3.6.0+。
+  tags:
+  - 布局
+  - 全键盘
+  - 配色
+  repo: https://github.com/ximeiorg/xime-layouts
+  license: GPL-3.0
+  appVersion: '>=3.6.0'
+  requiresSchemes: []
+  screenshots:
+  - https://cdn.jsdelivr.net/gh/ximeiorg/xime-layouts@20261128/liquidglass-round/0.png
+  - https://cdn.jsdelivr.net/gh/ximeiorg/xime-layouts@20261128/liquidglass-round/1.png
+  currentVersion: 1.0.0
+  versions:
+  - version: 1.0.0
+    date: '2026-11-28'
+    changelog: 首个版本：液态玻璃 + 顶部 24dp 大圆角。
+    downloadUrl:
+    - url: https://github.com/ximeiorg/xime-layouts/releases/download/20261128/liquidglass-round.zip
+      sha256: 537a3c86cdafbf442221196f7cd247956ebfe6c5ec2a521856db619ee0c5cc5d
+      size: 1.0 KB
+      sizeBytes: 1044
 - id: mimipc
   name: 仿PC快捷键布局
   author: 寻风
@@ -245,7 +295,6 @@ layouts:
     - url: https://cdn.jsdelivr.net/gh/cz-archive/number_rows@3ee546e083acd2e93149ed9d71388a4b3f2dd8cc/xime.custom.yaml
       sha256: 88d6e994f193a74ae8be95e134f46cbccbb39d970aed68e6e720dff560b0e271
       size: 2.5 KB
-      sizeBytes: 2591
 - id: qq_pinyin
   name: QQ拼音版布局
   author: YeJing22
