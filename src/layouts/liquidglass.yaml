@@ -1,0 +1,24 @@
+id: liquidglass
+name: 液态玻璃
+author: kingzcheung
+description: 键盘底板与键帽半透明，键帽带左上高光边；暗色主题自动压低半透明键帽的亮度，避免发亮。需要 v3.6.0+。
+tags:
+  - 布局
+  - 全键盘
+  - 配色
+repo: https://github.com/ximeiorg/xime-layouts
+license: GPL-3.0
+appVersion: ">=3.6.0"
+requiresSchemes: []
+screenshots:
+  - https://cdn.jsdelivr.net/gh/ximeiorg/xime-layouts@20261128/liquidglass/0.png
+  - https://cdn.jsdelivr.net/gh/ximeiorg/xime-layouts@20261128/liquidglass/1.png
+currentVersion: "1.0.0"
+versions:
+  - version: "1.0.0"
+    date: "2026-11-28"
+    changelog: 首个版本：底板 58% 不透明 + 键帽 62% 不透明 + 高光边，亮暗各自一套。
+    downloadUrl:
+      - url: https://github.com/ximeiorg/xime-layouts/releases/download/20261128/liquidglass.zip
+        sha256: "7a89a35dd4e07a9ae2fd51a066ecf42d5e0b78859bb99da6a5842d60508f62f7"
+        size: "1.0 KB"

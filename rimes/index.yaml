@@ -1,7 +1,7 @@
 # Xime 输入方案子索引
 # ⚠️ 此文件由 scripts/ci-update.py 自动生成，请勿手动编辑
 index_version: 1
-updated_at: '2026-11-14'
+updated_at: '2026-11-28'
 schemas:
 - id: builtin
   name: 默认方案
@@ -216,8 +216,8 @@ schemas:
       sizeBytes: 25586596
     - url: https://github.com/amzxyz/RIME-LMDG/releases/download/LTS/wanxiang-lts-zh-hans.gram
       sha256: ''
-      size: 388.3 MB
-      sizeBytes: 407160876
+      size: 372.7 MB
+      sizeBytes: 390786092
 - id: rime-wbpy-full
   name: 曦码五笔拼音双拼14键17键18键方案库
   author: ximeiorg
@@ -261,8 +261,8 @@ schemas:
     downloadUrl:
     - url: https://github.com/ximeiorg/rime-stroke/releases/download/0.2.0/rime-stroke-0.2.0.zip
       sha256: 914c3b8ba1e765f1fe9fe869b424006d9c83e4fa4f9b55a9fdc94623b4f23943
-      size: 2.8 MB
-      sizeBytes: 2978235
+      size: 2.84 MB
+      sizeBytes: 2840000
 - id: wubi98
   name: 五笔98
   author: rime

@@ -1,0 +1,24 @@
+id: liquidglass-round
+name: 液态玻璃（大圆角）
+author: kingzcheung
+description: 与「液态玻璃」相同，另外给键盘顶部左右两角加 24dp 圆角，底部仍贴屏幕边。需要 v3.6.0+。
+tags:
+  - 布局
+  - 全键盘
+  - 配色
+repo: https://github.com/ximeiorg/xime-layouts
+license: GPL-3.0
+appVersion: ">=3.6.0"
+requiresSchemes: []
+screenshots:
+  - https://cdn.jsdelivr.net/gh/ximeiorg/xime-layouts@20261128/liquidglass-round/0.png
+  - https://cdn.jsdelivr.net/gh/ximeiorg/xime-layouts@20261128/liquidglass-round/1.png
+currentVersion: "1.0.0"
+versions:
+  - version: "1.0.0"
+    date: "2026-11-28"
+    changelog: 首个版本：液态玻璃 + 顶部 24dp 大圆角。
+    downloadUrl:
+      - url: https://github.com/ximeiorg/xime-layouts/releases/download/20261128/liquidglass-round.zip
+        sha256: "537a3c86cdafbf442221196f7cd247956ebfe6c5ec2a521856db619ee0c5cc5d"
+        size: "1.0 KB"
